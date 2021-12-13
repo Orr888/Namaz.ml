@@ -17,16 +17,18 @@
 		/* BODY STYLE */
 		p {
 			font-family: 'Arial';
+			color: #214C87;
 		}
 
 		a {
-			color: LightYellow;
+			color: #58A6FF;
 			font-weight: bold;
 		}
 
 		body {
 			font-family: 'Arial';
-			background-color: #005959;
+			background-color: #0D1117;
+			color: #214C87;
 			text-align: center;
 		}
 
@@ -35,18 +37,18 @@
 		}
 
 		.beautifully {
-			text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow;
+			text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
 			padding: 180px 0.5em 0.2em 0.5em;
-			color: LightYellow;
+			color: #58A6FF;
 			font-size: 90px;
 			font-family: 'Arial';
 			font-weight: bold;
 		}
 
 		.beautifullyFooter {
-			text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow;
+			text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
 			padding: 0.5em 0.5em 0.2em 0.5em;
-			color: LightYellow;
+			color: #58A6FF;
 			font-size: 60px;
 			font-family: 'Arial';
 			font-weight: bold;
@@ -56,47 +58,34 @@
 
 		/* TABLES STYLE */
 		table {
-			color: LightYellow;
+			color: #C9D1D9;
 			font-family: 'Arial';
 			border-collapse: collapse;
-			background-color: #01171C;
+			background-color: #0D1117;
 			margin: auto;
 			width: 96%;
 		}
 
 		table th {
 			font-family: 'Arial';
-			color: LightYellow;
+			color: #C9D1D9;
 			font-size: 70px;
 			text-align: left;
 			padding: .6em .5em .6em .5em;
-			background-color: #004545;
+			background-color: #0D1117;
 		}
 
 		table td {
-			border: 2px solid Moccasin;
+			border: 2px solid #3F464D;
 			font-family: 'Arial';
 			font-size: 50px;
-			color: Moccasin;
+			color: #C9D1D9;
 			padding: .6em .5em .6em .5em;
-			border-bottom: 2px solid Moccasin;
-			background-color: #003333;
+			border-bottom: 2px solid #3F464D;
+			background-color: #0D1117;
 		}
 
 		/* END TABLES STYLE */
-
-		input[type=checkbox]+label:before {
-			content: "\1f497";
-			float: right;
-			font-family: FontAwesome;
-			font-size: 60px;
-		}
-
-		input[type=checkbox]:checked+label:before {
-			content: "\1f49a";
-		}
-
-		/* END CHECKBOX STYLE*/
 
 		/*<!-- BUTTONS STYLE -->*/
 		.PlayButton {
@@ -105,49 +94,28 @@
 			font-family: FontAwesome;
 			border-radius: 2em;
 			font-size: 45px;
-			color: LightYellow;
-			background-color: SeaGreen;
-			border: solid 2px LightYellow;
+			color: #E9ECFB;
+			background-color: #8957E5;
+			border: solid 2px #E9ECFB;
 			vertical-align: top;
 		}
 
 		.menuBTN {
-			color: LightYellow;
-			background-color: SeaGreen;
+			color: #15B91F;
+			background-color: #0C2616;
 			display: inline-block;
-			border: 0px;
-			text-align: right;
+			border: solid 2px #15B91F;
+			border-radius: 10px;
+			text-align: center;
 			font-size: 80px;
 		}
 
-		.menuBTNHeart {
-			color: LightYellow;
-			background-color: SeaGreen;
-			display: inline-block;
-			width: 190px;
-			border: solid 2px LightYellow;
-			border-radius: 20px;
-			font-size: 45px;
-		}
-
-		.btn {
-			font-size: 45px;
-			text-align: center;
-			display: inline-block;
-			width: 160px;
-			height: 70px;
-			border: solid 2px LightYellow;
-			border-radius: 20px;
-			color: LightYellow;
-			background-color: red;
-		}
-
 		.btn-group button {
-			background-color: SeaGreen;
-			border: 2px solid LightYellow;
+			background-color: #21262D;
+			border: 2px solid #8B949E;
 			border-radius: 20px;
 			/*закругленные углы*/
-			color: LightYellow;
+			color: #8B949E;
 			width: 70%;
 			align-items: center;
 			font-size: 60px;
@@ -172,23 +140,16 @@
 			display: flex;
 			justify-content: space-between;
 			padding: 25px;
-			background-color: SeaGreen;
+			background-color: #132339;
+			border: 2px solid #1E4173;
 			font-weight: bold;
 			position: fixed;
 			width: 100%;
-			z-index: 1000;
 		}
-
 		/* LOGO */
 		.logo {
-			color: LightYellow;
+			color: #C3CCD4;
 			font-size: 80px;
-		}
-
-		.menu {
-			position: absolute;
-			right: 0;
-			left: 0;
 		}
 	</style>
 	<!-- END STYLES -->
@@ -214,224 +175,127 @@
 					document.getElementById('ButtonMENUX').style.display = "none";
 				}</script>
 		</div>
-
+	</nav>
+	<!-- END NAVBAR -->
 		<!-- MENUSECTION DIV -->
-		<div id="MENUSECTION" style="margin-top: 100px; display:none; background-color: MediumSeaGreen;" class="menu">
+		<div id="MENUSECTION" style=" display:none; background-color: #161B22;" class="menu">
 
 			<!-- GROUPBUTTONS DIV -->
 			<div id="GroupButtons"
 				style="display:block; padding: 0.5em 0em 0em 0em; font-size: 50px; font-family: Arial;"
 				class="btn-group" align="center">
 				<!-- HAFATA BUTTONS & scripts -->
-				<button onclick="myFunction1()">I - PAZARTESİ</button>
-				<button onclick="myFunction2()">II - SALI</button>
-				<button onclick="myFunction3()">III - ÇARŞAMBA</button>
-				<button onclick="myFunction4()">IV - PERŞEMBE</button>
-				<button onclick="myFunction5()">V - CUMA</button>
-				<button onclick="myFunction6()">VI - CUMARTESİ</button>
-				<button onclick="myFunction7()">VII - PAZAR</button>
+				<button onclick="NamazFun1()">HACET NAMAZI</button>
+				<button onclick="NamazFun2()">TÖVBE NAMAZI</button>
+				<button onclick="NamazFun3()">İSTİHARE NAMAZI</button>
+				<button onclick="NamazFun4()">HAMD VE ŞÜKÜR NAMAZI</button>
+				<button onclick="NamazFun5()">KUŞLUK NAMAZI</button>
+				<button onclick="NamazFun6()">TEHECCÜD NAMAZI</button>
+				<button onclick="NamazFun7()">TÖVBE VE İSTİĞFAR DUASI</button>
+				<button onclick="NamazFun8()">NAMAZ DUALARI</button>
+				<button onclick="NamazFun9()">NAMAZ SURELERİ</button>
+				<button onclick="NamazFun10()">SOFRA DUALARI</button>
 				<script>
-
-
-					function myFunction1() {
+					function NamazFun1() {
 						document.getElementById('myDIV1').style.display = 'block';
 						document.getElementById('myDIV11').style.display = 'block';
-						document.getElementById('myDIV2').style.display = 'none';
-						document.getElementById('myDIV22').style.display = 'none';
-						document.getElementById('myDIV3').style.display = 'none';
-						document.getElementById('myDIV33').style.display = 'none';
-						document.getElementById('myDIV4').style.display = 'none';
-						document.getElementById('myDIV44').style.display = 'none';
-						document.getElementById('myDIV5').style.display = 'none';
-						document.getElementById('myDIV55').style.display = 'none';
-						document.getElementById('myDIV6').style.display = 'none';
-						document.getElementById('myDIV66').style.display = 'none';
-						document.getElementById('myDIV7').style.display = 'none';
-						document.getElementById('myDIV77').style.display = 'none';
 						document.getElementById('MENUSECTION').style.display = "none";
 						document.getElementById('ButtonMENU').style.display = "block";
 						document.getElementById('ButtonMENUX').style.display = "none";
 					}
-					function myFunction2() {
-						document.getElementById('myDIV1').style.display = 'none';
-						document.getElementById('myDIV11').style.display = 'none';
+					function NamazFun2() {
 						document.getElementById('myDIV2').style.display = 'block';
 						document.getElementById('myDIV22').style.display = 'block';
-						document.getElementById('myDIV3').style.display = 'none';
-						document.getElementById('myDIV33').style.display = 'none';
-						document.getElementById('myDIV4').style.display = 'none';
-						document.getElementById('myDIV44').style.display = 'none';
-						document.getElementById('myDIV5').style.display = 'none';
-						document.getElementById('myDIV55').style.display = 'none';
-						document.getElementById('myDIV6').style.display = 'none';
-						document.getElementById('myDIV66').style.display = 'none';
-						document.getElementById('myDIV7').style.display = 'none';
-						document.getElementById('myDIV77').style.display = 'none';
 						document.getElementById('MENUSECTION').style.display = "none";
 						document.getElementById('ButtonMENU').style.display = "block";
 						document.getElementById('ButtonMENUX').style.display = "none";
 					}
-					function myFunction3() {
-						document.getElementById('myDIV1').style.display = 'none';
-						document.getElementById('myDIV11').style.display = 'none';
-						document.getElementById('myDIV2').style.display = 'none';
-						document.getElementById('myDIV22').style.display = 'none';
+					function NamazFun3() {
 						document.getElementById('myDIV3').style.display = 'block';
 						document.getElementById('myDIV33').style.display = 'block';
-						document.getElementById('myDIV4').style.display = 'none';
-						document.getElementById('myDIV44').style.display = 'none';
-						document.getElementById('myDIV5').style.display = 'none';
-						document.getElementById('myDIV55').style.display = 'none';
-						document.getElementById('myDIV6').style.display = 'none';
-						document.getElementById('myDIV66').style.display = 'none';
-						document.getElementById('myDIV7').style.display = 'none';
-						document.getElementById('myDIV77').style.display = 'none';
 						document.getElementById('MENUSECTION').style.display = "none";
 						document.getElementById('ButtonMENU').style.display = "block";
 						document.getElementById('ButtonMENUX').style.display = "none";
 					}
-					function myFunction4() {
-						document.getElementById('myDIV1').style.display = 'none';
-						document.getElementById('myDIV11').style.display = 'none';
-						document.getElementById('myDIV2').style.display = 'none';
-						document.getElementById('myDIV22').style.display = 'none';
-						document.getElementById('myDIV3').style.display = 'none';
-						document.getElementById('myDIV33').style.display = 'none';
+					function NamazFun4() {
 						document.getElementById('myDIV4').style.display = 'block';
 						document.getElementById('myDIV44').style.display = 'block';
-						document.getElementById('myDIV5').style.display = 'none';
-						document.getElementById('myDIV55').style.display = 'none';
-						document.getElementById('myDIV6').style.display = 'none';
-						document.getElementById('myDIV66').style.display = 'none';
-						document.getElementById('myDIV7').style.display = 'none';
-						document.getElementById('myDIV77').style.display = 'none';
 						document.getElementById('MENUSECTION').style.display = "none";
 						document.getElementById('ButtonMENU').style.display = "block";
 						document.getElementById('ButtonMENUX').style.display = "none";
 					}
-					function myFunction5() {
-						document.getElementById('myDIV1').style.display = 'none';
-						document.getElementById('myDIV11').style.display = 'none';
-						document.getElementById('myDIV2').style.display = 'none';
-						document.getElementById('myDIV22').style.display = 'none';
-						document.getElementById('myDIV3').style.display = 'none';
-						document.getElementById('myDIV33').style.display = 'none';
-						document.getElementById('myDIV4').style.display = 'none';
-						document.getElementById('myDIV44').style.display = 'none';
+					function NamazFun5() {
 						document.getElementById('myDIV5').style.display = 'block';
 						document.getElementById('myDIV55').style.display = 'block';
-						document.getElementById('myDIV6').style.display = 'none';
-						document.getElementById('myDIV66').style.display = 'none';
-						document.getElementById('myDIV7').style.display = 'none';
-						document.getElementById('myDIV77').style.display = 'none';
 						document.getElementById('MENUSECTION').style.display = "none";
 						document.getElementById('ButtonMENU').style.display = "block";
 						document.getElementById('ButtonMENUX').style.display = "none";
 					}
-					function myFunction6() {
-						document.getElementById('myDIV1').style.display = 'none';
-						document.getElementById('myDIV11').style.display = 'none';
-						document.getElementById('myDIV2').style.display = 'none';
-						document.getElementById('myDIV22').style.display = 'none';
-						document.getElementById('myDIV3').style.display = 'none';
-						document.getElementById('myDIV33').style.display = 'none';
-						document.getElementById('myDIV4').style.display = 'none';
-						document.getElementById('myDIV44').style.display = 'none';
-						document.getElementById('myDIV5').style.display = 'none';
-						document.getElementById('myDIV55').style.display = 'none';
+					function NamazFun6() {
 						document.getElementById('myDIV6').style.display = 'block';
 						document.getElementById('myDIV66').style.display = 'block';
-						document.getElementById('myDIV7').style.display = 'none';
-						document.getElementById('myDIV77').style.display = 'none';
 						document.getElementById('MENUSECTION').style.display = "none";
 						document.getElementById('ButtonMENU').style.display = "block";
 						document.getElementById('ButtonMENUX').style.display = "none";
 					}
-					function myFunction7() {
-						document.getElementById('myDIV1').style.display = 'none';
-						document.getElementById('myDIV11').style.display = 'none';
-						document.getElementById('myDIV2').style.display = 'none';
-						document.getElementById('myDIV22').style.display = 'none';
-						document.getElementById('myDIV3').style.display = 'none';
-						document.getElementById('myDIV33').style.display = 'none';
-						document.getElementById('myDIV4').style.display = 'none';
-						document.getElementById('myDIV44').style.display = 'none';
-						document.getElementById('myDIV5').style.display = 'none';
-						document.getElementById('myDIV55').style.display = 'none';
-						document.getElementById('myDIV6').style.display = 'none';
-						document.getElementById('myDIV66').style.display = 'none';
+					function NamazFun7() {
 						document.getElementById('myDIV7').style.display = 'block';
 						document.getElementById('myDIV77').style.display = 'block';
 						document.getElementById('MENUSECTION').style.display = "none";
 						document.getElementById('ButtonMENU').style.display = "block";
 						document.getElementById('ButtonMENUX').style.display = "none";
 					}
-
-				</script>
+					function NamazFun8() {
+						document.getElementById('myDIV8').style.display = 'block';
+						document.getElementById('myDIV88').style.display = 'block';
+						document.getElementById('MENUSECTION').style.display = "none";
+						document.getElementById('ButtonMENU').style.display = "block";
+						document.getElementById('ButtonMENUX').style.display = "none";
+					}
+					function NamazFun9() {
+						document.getElementById('myDIV9').style.display = 'block';
+						document.getElementById('myDIV99').style.display = 'block';
+						document.getElementById('MENUSECTION').style.display = "none";
+						document.getElementById('ButtonMENU').style.display = "block";
+						document.getElementById('ButtonMENUX').style.display = "none";
+					}
+					function NamazFun10() {
+						document.getElementById('myDIV10').style.display = 'block';
+						document.getElementById('myDIV1010').style.display = 'block';
+						document.getElementById('MENUSECTION').style.display = "none";
+						document.getElementById('ButtonMENU').style.display = "block";
+						document.getElementById('ButtonMENUX').style.display = "none";
+					}
+</script>
 				<!-- END HAFTA BUTTONS & scripts -->
 			</div>
 			<!-- END GROUPBUTTONS DIV -->
-
-			<!-- ANLAM ve AYETLER DIV's -->
-			<div id="AyetAnlam"
-				style="color: LightYellow; display:block; text-align: center; padding: 15px 0.5em 15px 0.5em; font-size: 40px; font-family: Arial;">
-				<button type="submit" id="ButtonId" onclick="changeColor();" class="btn">OFF</button>&nbsp;<i
-					class="fa fa-hand-o-left"></i>&nbsp;ESMA AYETİ & ANLAMI&nbsp;&nbsp;&nbsp;&nbsp;
-				<script>	$('.btn').click(function () { $(".block_with_text").fadeToggle(500); $(this).text(function (i, text) { return text === "OFF" ? "ON" : "OFF"; }); });
-					var colors = ["SeaGreen", "red"]; var colorIndex = 0; function changeColor() {
-						var col = document.getElementById("ButtonId"); if (colorIndex >= colors.length) { colorIndex = 0; } col.style.backgroundColor = colors[colorIndex]; colorIndex++;
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-				</script>
-				<!-- CHEKBOX -->
-				<button onclick="ChekBoxClear()" class="menuBTNHeart">
-					&#128154;&#10146;&#128151;</button>
-				<script>
-					function ChekBoxClear() {
-						const result = confirm('Onayları silmek istiyor musunuz?');
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-						if (result) { $("[class='chekboxInput']:checked").prop("checked", false); } else { }
-					}
-				</script>
-			</div>
-
+		</div>
 		</div>
 		<!-- END MENU SECTION DIV -->
-	</nav>
-	<!-- END NAVBAR -->
 
-	<!-- WEEK NAME DIV's -->
 
+	<!-- NAMAZ & DUA DIV's -->
 	<div id="myDIV1" align="center" class="beautifully" style="display:none">
-		I - PAZARTESİ</div>
+		HACET NAMAZI</div>
 	<div id="myDIV2" align="center" class="beautifully" style="display:none">
-		II - SALI</div>
+		TÖVBE NAMAZI</div>
 	<div id="myDIV3" align="center" class="beautifully" style="display:none">
-		III - ÇARŞAMBA</div>
+		İSTİHARE NAMAZI</div>
 	<div id="myDIV4" align="center" class="beautifully" style="display:none">
-		IV - PERŞEMBE</div>
+		HAMD VE ŞÜKÜR NAMAZI</div>
 	<div id="myDIV5" align="center" class="beautifully" style="display:none">
-		V - CUMA</div>
+		KUŞLUK NAMAZI</div>
 	<div id="myDIV6" align="center" class="beautifully" style="display:none">
-		VI - CUMARTESİ</div>
+		TEHECCÜD NAMAZI</div>
 	<div id="myDIV7" align="center" class="beautifully" style="display:none">
-		VII - PAZAR</div>
-
-	<div align="center" class="beautifullyDate">
-		<!-- DATE -->
-		<script language="javascript" type="text/javascript">
-			var d = new Date();
-			var day = new Array("PAZAR", "PAZARTESİ", "SALI", "ÇARŞAMBA", "PERŞEMBE", "CUMA", "CUMARTESİ");
-			var month = new Array("Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
-				"Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık");
-			document.write("Bu gün: ", day[d.getDay()] + ", " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear() + " yıl");
-		</script>
-	</div>
-	<!-- END WEEK NAME DIV's -->
+		TÖVBE VE İSTİĞFAR DUASI</div>
+	<div id="myDIV8" align="center" class="beautifully" style="display:none">
+		NAMAZ DUALARI</div>
+	<div id="myDIV9" align="center" class="beautifully" style="display:none">
+		NAMAZ SURELERİ</div>
+	<div id="myDIV10" align="center" class="beautifully" style="display:none">
+		SOFRA DUALARI</div>
 
 	<!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
 	<script type="text/javascript">
@@ -446,85 +310,17 @@
 	</script>
 	<!-- END NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
 
-
-
 	<!-- NOT CHANGE DIV -->
 	<!------------------------------------------------------->
 	<div
-		style="display:inline-block; color: LightYellow; text-align: center; font-size: 48px; font-family: Arial; padding: 0.5em 0.5em 0.5em 0.5em; ">
+		style="display:inline-block; color: #58A6FF; text-align: center; font-size: 48px; font-family: Arial; padding: 0.5em 0.5em 0.5em 0.5em; ">
 		EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br />
 		BİSMİLLÂHİRRAHMÂNİRRAHÎM</div>
 	<!------------------------------------------------------->
-	<div align="center" style="display:block;">
-		<table align="center" width=100%>
-			<tr>
-				<td><strong><span style="font-size: 80px;">
-							Allah (El İlâh) - 269</span></strong><input id="Heart" style="display: none" type="checkbox"
-						class="chekboxInput">
-					<label for="Heart"></label>
-				</td>
-			</tr>
-		</table>
-	</div>
-
 	<p class="block_with_text" style="display:block;"><br /></p>
-
-	<div class="block_with_text"
-		style="display:block; color: LightYellow; text-align: center; padding: 0em 0.5em 1em 0.5em; font-size: 60px; font-family: Arial;">
-		<a style="font-weight: normal; color: LightYellow;" href='https://mihr.com/kitaplar/457/dua-kitab?chapter=1743'
-			target="_blank">
-			İlgili esmalar çekilmeden önce âyeti okunur.</a>
-	</div>
 	<!------------------------------------------------------->
-	<div align="center" style="display:block;">
-		<table align="center" width=100%>
-			<tr>
-				<th class="block_with_text" style="display:block;">
-					<button class="PlayButton" onclick="togglePlayPause1()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-							class="fa fa-play"></i><i class="fa fa-pause"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<audio id="audio1"
-							src="https://www.mihr.com/Videolar/quran_mp3/ayat/005097.mp3"></audio></button>
-					<script>var audio1 = document.getElementById('audio1'); function togglePlayPause1() { if (audio1.paused || audio1.ended) { audio1.play(); } else { audio1.pause(); } }</script>
-					<a href='https://www.mihr.com/Kuran/Meal/5/maide/97' target="_blank">
-						5/MAİDE-97</a><br />Cealallâhul ka’betel beytel harâme kıyâmen lin nâsi veş şehral harâme vel
-					hedye vel kalâid(kalâide), zâlike li ta’lemû ennellâhe ya’lemu mâ fîs semâvâti ve mâ fîl ardı ve
-					ennallâhe bikulli şey’in alîm(alîmun).<br />
-					<!------------------------------------------------------->
-					<button class="PlayButton" onclick="togglePlayPause2()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-							class="fa fa-play"></i><i class="fa fa-pause"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<audio id="audio2"
-							src="https://www.mihr.com/Videolar/quran_mp3/ayat/039017.mp3"></audio></button>
-					<script>var audio2 = document.getElementById('audio2'); function togglePlayPause2() { if (audio2.paused || audio2.ended) { audio2.play(); } else { audio2.pause(); } }</script>
-					<a href='https://www.mihr.com/Kuran/Meal/39/zumer/17' target="_blank">
-						39/ZUMER-17</a><br />Vellezînectenebût tâgûte en ya’budûhâ ve enâbû ilâllâhi lehumul buşrâ, fe
-					beşşir ibâd(ibâdi).<br />
-					<!------------------------------------------------------->
-					<button class="PlayButton" onclick="togglePlayPause3()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-							class="fa fa-play"></i><i class="fa fa-pause"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<audio id="audio3"
-							src="https://www.mihr.com/Videolar/quran_mp3/ayat/039019.mp3"></audio></button>
-					<script>var audio3 = document.getElementById('audio3'); function togglePlayPause3() { if (audio3.paused || audio3.ended) { audio3.play(); } else { audio3.pause(); } }</script>
-					<a href='https://www.mihr.com/Kuran/Meal/39/zumer/19' target="_blank">
-						39/ZUMER-19</a><br />E fe men hakka aleyhi kelimetul azâb(azâbi), e fe ente tunkızu men fîn
-					nâr(nâri).<br />
-				</th>
-			</tr>
-			<!------------------------------------------------------->
-			<tr>
-				<td><strong>
-						El Masîr - 535</strong><input style="display: none" id="Masir" type="checkbox"
-						class="chekboxInput">
-					<label for="Masir"></label>
-				</td>
-			</tr>
-			<tr>
-				<td class="block_with_text" style="display:block;">
-					Seyreden, hareket eden</td>
-			</tr>
-		</table>
-		<!-- END NOT CHANGE DIV -->
 	</div>
-
+	<!-- END NOT CHANGE DIV -->
 	<p class="block_with_text" style="display:block;"><br /></p>
 	<!--********************************************-->
 
@@ -2205,33 +2001,28 @@
 		</table>
 		<!-- END ESMAÜL HÜSNA VII DIV-->
 	</div>
-
-	<!-- WEEKDAY CHOISE TO OPEN PAGE -->
-	<script> var now = new Date(); var HaftaDay = now.getDay();
-		if (HaftaDay === 1) { myFunction1(); } else { if (HaftaDay === 2) { myFunction2(); } else { if (HaftaDay === 3) { myFunction3(); } else { if (HaftaDay === 4) { myFunction4(); } else { if (HaftaDay === 5) { myFunction5(); } else { if (HaftaDay === 6) { myFunction6(); } else { myFunction7(); }; }; }; }; }; }</script>
-
 	<!--********************************************-->
 
 	<!-- FOOTER -->
 	<footer
-		style="color:LightYellow; display:block; font-size: 40px; font-family: 'Arial'; width: 98%; height: 100%; margin-left:auto; margin-right:auto; text-align:center">
+		style="color:#214C87; display:block; font-size: 40px; font-family: 'Arial'; width: 98%; height: 100%; margin-left:auto; margin-right:auto; text-align:center">
 		<br />
 		<p>
 			Tüm bilgiler<br /><a href='https://www.mihr.com' target="_blank" class="beautifullyFooter">
 				www.MIHR.com</a><br />
 			sitesinden alınmıştır.<br />
 			Kur'ân-ı Kerimin yazılı ve sesli Ayetleri <a href='https://www.mihr.com/Kuran/Tefsir' target="_blank"
-				style="color:LightYellow">
+				style="color:#214C87">
 				Kur'ân-ı Kerim Lafzı ve Ruhu (Tefsir)</a>-den alınmıştır. <br />
 			<a href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1707' target="_blank"
-				style="color:LightYellow">
+				style="color:#214C87">
 				DUA KITABI</a>ndan: <a href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1740' target="_blank"
-				style="color:LightYellow">
+				style="color:#214C87">
 				ESMA-ÜL HÜSNA</a> isimleri ve sayıları, <a
 				href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1742' target="_blank"
-				style="color:LightYellow">
+				style="color:#214C87">
 				ESMA-ÜL HÜSNA'NIN MÂNÂLARI</a> ve<a href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1743'
-				target="_blank" style="color:LightYellow">
+				target="_blank" style="color:#214C87">
 				ESMA-ÜL HÜSNA ÂYETLERİ</a> alınmıştır.<br />
 			Sayfayı oluştururken amacımız, bilgileri bir araya toplamak ve kullanım için daha iyi ortam
 			oluşturmaktı.<br />
