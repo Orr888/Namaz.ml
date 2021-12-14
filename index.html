@@ -4,8 +4,13 @@
 <head>
 	<meta charset=utf-8>
 	<title>NAMAZ & DUA</title>
+	<!-- Awesome SVG Font icons -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<!-- Bootstrap SVG Font icons https://icons.getbootstrap.com -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -104,6 +109,7 @@
 			color: #15B91F;
 			background-color: #0C2616;
 			display: inline-block;
+			padding: 0px 0px;
 			border: solid 2px #15B91F;
 			border-radius: 10px;
 			text-align: center;
@@ -146,10 +152,12 @@
 			position: fixed;
 			width: 100%;
 		}
+
 		/* LOGO */
 		.logo {
 			color: #C3CCD4;
 			font-size: 80px;
+			margin: auto;
 		}
 	</style>
 	<!-- END STYLES -->
@@ -158,12 +166,12 @@
 	<nav class="navbar" id="top_nav">
 
 		<!-- LOGO -->
-		<div class="logo">&nbsp;NAMAZ & DUA</div>
-		<!-- NAVIGATION MENU -->
+		<div class="logo">&nbsp;NAMAZLAR</div>
+		<!-- MENU BUTTON -->
 		<div>
-			<button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN"> &nbsp;<i class="fa fa-bars"></i>&nbsp;</button>
+			<button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN"> &nbsp;<i class="bi bi-list"></i>&nbsp;</button>
 			<button id="ButtonMENUX" onclick="BtnMENUX()" class="menuBTN" style="display:none;">
-				&nbsp;<i class="fa fa-times"></i>&nbsp;</button>
+				&nbsp;<i class="bi bi-x-lg"></i>&nbsp;</button>
 			<script>function BtnMENU() {
 					document.getElementById('MENUSECTION').style.display = "block";
 					document.getElementById('ButtonMENU').style.display = "none";
@@ -177,102 +185,101 @@
 		</div>
 	</nav>
 	<!-- END NAVBAR -->
-		<!-- MENUSECTION DIV -->
-		<div id="MENUSECTION" style=" display:none; background-color: #161B22;" class="menu">
+	<!-- MENUSECTION DIV -->
+	<div id="MENUSECTION" style=" display:none; background-color: #161B22;" class="menu">
 
-			<!-- GROUPBUTTONS DIV -->
-			<div id="GroupButtons"
-				style="display:block; padding: 0.5em 0em 0em 0em; font-size: 50px; font-family: Arial;"
-				class="btn-group" align="center">
-				<!-- HAFATA BUTTONS & scripts -->
-				<button onclick="NamazFun1()">HACET NAMAZI</button>
-				<button onclick="NamazFun2()">TÖVBE NAMAZI</button>
-				<button onclick="NamazFun3()">İSTİHARE NAMAZI</button>
-				<button onclick="NamazFun4()">HAMD VE ŞÜKÜR NAMAZI</button>
-				<button onclick="NamazFun5()">KUŞLUK NAMAZI</button>
-				<button onclick="NamazFun6()">TEHECCÜD NAMAZI</button>
-				<button onclick="NamazFun7()">TÖVBE VE İSTİĞFAR DUASI</button>
-				<button onclick="NamazFun8()">NAMAZ DUALARI</button>
-				<button onclick="NamazFun9()">NAMAZ SURELERİ</button>
-				<button onclick="NamazFun10()">SOFRA DUALARI</button>
-				<script>
-					function NamazFun1() {
-						document.getElementById('myDIV1').style.display = 'block';
-						document.getElementById('myDIV11').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun2() {
-						document.getElementById('myDIV2').style.display = 'block';
-						document.getElementById('myDIV22').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun3() {
-						document.getElementById('myDIV3').style.display = 'block';
-						document.getElementById('myDIV33').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun4() {
-						document.getElementById('myDIV4').style.display = 'block';
-						document.getElementById('myDIV44').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun5() {
-						document.getElementById('myDIV5').style.display = 'block';
-						document.getElementById('myDIV55').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun6() {
-						document.getElementById('myDIV6').style.display = 'block';
-						document.getElementById('myDIV66').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun7() {
-						document.getElementById('myDIV7').style.display = 'block';
-						document.getElementById('myDIV77').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun8() {
-						document.getElementById('myDIV8').style.display = 'block';
-						document.getElementById('myDIV88').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun9() {
-						document.getElementById('myDIV9').style.display = 'block';
-						document.getElementById('myDIV99').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-					function NamazFun10() {
-						document.getElementById('myDIV10').style.display = 'block';
-						document.getElementById('myDIV1010').style.display = 'block';
-						document.getElementById('MENUSECTION').style.display = "none";
-						document.getElementById('ButtonMENU').style.display = "block";
-						document.getElementById('ButtonMENUX').style.display = "none";
-					}
-</script>
-				<!-- END HAFTA BUTTONS & scripts -->
-			</div>
-			<!-- END GROUPBUTTONS DIV -->
+		<!-- GROUPBUTTONS DIV -->
+		<div id="GroupButtons" style="display:block; padding: 0.5em 0em 0em 0em; font-size: 50px; font-family: Arial;"
+			class="btn-group" align="center">
+			<!-- HAFATA BUTTONS & scripts -->
+			<button onclick="NamazFun1()">HACET NAMAZI</button>
+			<button onclick="NamazFun2()">TÖVBE NAMAZI</button>
+			<button onclick="NamazFun3()">İSTİHARE NAMAZI</button>
+			<button onclick="NamazFun4()">HAMD VE ŞÜKÜR NAMAZI</button>
+			<button onclick="NamazFun5()">KUŞLUK NAMAZI</button>
+			<button onclick="NamazFun6()">TEHECCÜD NAMAZI</button>
+			<button onclick="NamazFun7()">TÖVBE VE İSTİĞFAR DUASI</button>
+			<button onclick="NamazFun8()">NAMAZ DUALARI</button>
+			<button onclick="NamazFun9()">NAMAZ SURELERİ</button>
+			<button onclick="NamazFun10()">SOFRA DUALARI</button>
+			<script>
+				function NamazFun1() {
+					document.getElementById('myDIV1').style.display = 'block';
+					document.getElementById('myDIV11').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun2() {
+					document.getElementById('myDIV2').style.display = 'block';
+					document.getElementById('myDIV22').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun3() {
+					document.getElementById('myDIV3').style.display = 'block';
+					document.getElementById('myDIV33').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun4() {
+					document.getElementById('myDIV4').style.display = 'block';
+					document.getElementById('myDIV44').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun5() {
+					document.getElementById('myDIV5').style.display = 'block';
+					document.getElementById('myDIV55').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun6() {
+					document.getElementById('myDIV6').style.display = 'block';
+					document.getElementById('myDIV66').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun7() {
+					document.getElementById('myDIV7').style.display = 'block';
+					document.getElementById('myDIV77').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun8() {
+					document.getElementById('myDIV8').style.display = 'block';
+					document.getElementById('myDIV88').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun9() {
+					document.getElementById('myDIV9').style.display = 'block';
+					document.getElementById('myDIV99').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+				function NamazFun10() {
+					document.getElementById('myDIV10').style.display = 'block';
+					document.getElementById('myDIV1010').style.display = 'block';
+					document.getElementById('MENUSECTION').style.display = "none";
+					document.getElementById('ButtonMENU').style.display = "block";
+					document.getElementById('ButtonMENUX').style.display = "none";
+				}
+			</script>
+			<!-- END HAFTA BUTTONS & scripts -->
 		</div>
-		</div>
-		<!-- END MENU SECTION DIV -->
+		<!-- END GROUPBUTTONS DIV -->
+	</div>
+	</div>
+	<!-- END MENU SECTION DIV -->
 
 
 	<!-- NAMAZ & DUA DIV's -->
@@ -2014,13 +2021,11 @@
 			Kur'ân-ı Kerimin yazılı ve sesli Ayetleri <a href='https://www.mihr.com/Kuran/Tefsir' target="_blank"
 				style="color:#214C87">
 				Kur'ân-ı Kerim Lafzı ve Ruhu (Tefsir)</a>-den alınmıştır. <br />
-			<a href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1707' target="_blank"
-				style="color:#214C87">
+			<a href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1707' target="_blank" style="color:#214C87">
 				DUA KITABI</a>ndan: <a href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1740' target="_blank"
 				style="color:#214C87">
 				ESMA-ÜL HÜSNA</a> isimleri ve sayıları, <a
-				href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1742' target="_blank"
-				style="color:#214C87">
+				href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1742' target="_blank" style="color:#214C87">
 				ESMA-ÜL HÜSNA'NIN MÂNÂLARI</a> ve<a href='https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1743'
 				target="_blank" style="color:#214C87">
 				ESMA-ÜL HÜSNA ÂYETLERİ</a> alınmıştır.<br />
