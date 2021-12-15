@@ -1,0 +1,129 @@
+p {
+    font-family: "Arial";
+    color: #214C87;
+  }
+a {
+    color: #58A6FF;
+    font-weight: bold;
+  }
+body {
+    font-family: 'Arial';
+    background-color: #0D1117;
+    color: #214C87;
+    text-align: center;
+  }
+strong {
+    font-size: 80px;
+  }
+.beautifully {
+    text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
+    padding: 180px 0.5em 0.2em 0.5em;
+    color: #58A6FF;
+    font-size: 90px !important;
+    font-family: "Arial";
+    font-weight: bold;
+  }
+.beautifullyFooter {
+  text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
+  padding: 0.5em 0.5em 0.2em 0.5em;
+  color: #58A6FF;
+    font-size: 60px !important;
+    font-family: "Arial";
+    font-weight: bold;
+  }
+  
+  /* TABLES */
+
+  table {
+    color: #C9D1D9;
+    font-family: "Arial";
+    text-align: left;
+    border-collapse: collapse;
+    background-color: #0D1117;
+    margin: auto;
+    width: 96%;
+  }
+  
+  table th {
+    font-family: "Arial";
+    color: #C9D1D9;
+    font-size: 70px;
+    text-align: left;
+    padding: 0.6em 0.5em 0.6em 0.5em;
+    background-color: #0D1117;
+  }
+  
+  table td {
+    border: 2px solid #3F464D;
+    font-family: "Arial";
+    font-size: 50px;
+    text-align: left;
+    color: #C9D1D9;
+    padding: 0.6em 0.5em 0.6em 0.5em;
+    border-bottom: 2px solid #3F464D;
+    background-color: #0D1117;
+  }
+  
+  /* BUTTONS */
+
+  .PlayButton {
+    display: inline-block;
+    height: 80px;
+    font-family: FontAwesome;
+    border-radius: 2em;
+    font-size: 45px;
+    color: #E9ECFB;
+    background-color: #8957E5;
+    border: solid 2px #E9ECFB;
+    vertical-align: top;
+  }
+  
+  .menuBTN {
+    color: #15B91F;
+    background-color: #0C2616;
+    display: inline-block;
+    padding: 0px 0px;
+    border: solid 2px #15B91F;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .btn-group button {
+    background-color: #21262D;
+    border: 2px solid #8B949E;
+    border-radius: 20px;
+    /*закругленные углы*/
+    color: #8B949E;
+    width: 70%;
+    align-items: center;
+    font-size: 60px;
+    text-align: center;
+    padding: 2px;
+    margin: 2px 0px 2px 0px;
+    /*расположение от верха, правой стооны, низа и левой стооны*/
+  }
+  
+  /* NAVBAR */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #132339;
+    border: 2px solid #1E4173;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+  }
+
+  .logo {
+    color: #C3CCD4;
+    font-size: 80px;
+    margin: auto;
+  }
