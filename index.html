@@ -1,89 +1,79 @@
 <!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <meta charset="utf-8" />
-    <title>NAMAZ & DUA</title>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <!-- Bootstrap and Awesome SVG Font icons https://icons.getbootstrap.com -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar" id="top_nav">
-      <!-- LOGO -->
-      <div class="logo">NAMAZ & DUA</div>
-      <!-- NAVIGATION MENU -->
-      <div>
-        <button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN">
-          &nbsp;<i class="bi bi-list"></i>&nbsp;
-        </button>
-        <button
-          id="ButtonMENUX"
-          onclick="BtnMENUX()"
-          class="menuBTN"
-          style="display: none"
-        >
-          &nbsp;<i class="bi bi-x-lg"></i>&nbsp;
-        </button>
-        <script>
-          function BtnMENU() {
-            ;(document.getElementById("MENUSECTION").style.display = "block"),
+  <html lang="tr">
+    <head>
+      <meta charset="utf-8" />
+      <title>NAMAZ & DUA</title>
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      <!-- Bootstrap and Awesome SVG Font icons https://icons.getbootstrap.com -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+      <nav class="navbar" id="top_nav">
+        <div class="logo">NAMAZ & DUA</div>
+          <button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN">
+            &nbsp;<i class="bi bi-list"></i>&nbsp;
+          </button>
+          <button id="ButtonMENUX" onclick="BtnMENUX()" class="menuBTN" style="display: none">
+            &nbsp;<i class="bi bi-x-lg"></i>&nbsp;
+          </button>
+          <script>
+            function BtnMENU() {
+              ;(document.getElementById("MenuPageDIV").style.display = "block"),
               (document.getElementById("MainPageDIV").style.display = "none"),
               (document.getElementById("ButtonMENU").style.display = "none"),
               (document.getElementById("ButtonMENUX").style.display = "block")
-          }
-        </script>
-        <script>
-          function BtnMENUX() {
-            ;(document.getElementById("MENUSECTION").style.display = "none"),
+            }
+          </script>
+          <script>
+            function BtnMENUX() {
+              ;(document.getElementById("MenuPageDIV").style.display = "none"),
               (document.getElementById("MainPageDIV").style.display = "block"),
               (document.getElementById("ButtonMENU").style.display = "block"),
               (document.getElementById("ButtonMENUX").style.display = "none")
-          }
-        </script>
-      </div>
-    </nav>
-    <!-- MENUSECTION -->
-    <div id="MENUSECTION" class="MenuSectionStyle">
-      <!-- GROUPBUTTONS DIV -->
-      <div class="GroupButton">
-        <!-- NAMAZLAR BUTTONS & scripts -->
-        <button onclick="myFunction1()">HACET NAMAZI</button>
-        <button onclick="myFunction2()">II - SALI</button>
+            }
+          </script>
+        </div>
+      </nav>
 
-        <script>
-          function myFunction1() {
-            ;(document.getElementById("myDIV1").style.display = "block"),
+      <!-- MENU PAGE DIV -->
+      <div id="MenuPageDIV" class="MenuSectionStyle">
+        <!-- GROUP BUTTONS DIV -->
+        <div class="GroupButton">
+          <!-- MENU BUTTONS & Scripts -->
+          <button onclick="myFunction1()">HACET NAMAZI</button>
+          <button onclick="myFunction2()">GÜNLÜK NAMAZLAR</button>
+
+          <script>
+            function myFunction1() {
+              ;(document.getElementById("myDIV1").style.display = "block"),
               (document.getElementById("myDIV11").style.display = "block"),
               (document.getElementById("myDIV2").style.display = "none"),
               (document.getElementById("myDIV22").style.display = "none"),
-              (document.getElementById("MENUSECTION").style.display = "none"),
+              (document.getElementById("MenuPageDIV").style.display = "none"),
               (document.getElementById("MainPageDIV").style.display = "block"),
               (document.getElementById("ButtonMENU").style.display = "block"),
               (document.getElementById("ButtonMENUX").style.display = "none")
-          }
-          function myFunction2() {
-            ;(document.getElementById("myDIV1").style.display = "none"),
+            }
+            function myFunction2() {
+              ;(document.getElementById("myDIV1").style.display = "none"),
               (document.getElementById("myDIV11").style.display = "none"),
               (document.getElementById("myDIV2").style.display = "block"),
               (document.getElementById("myDIV22").style.display = "block"),
-              (document.getElementById("MENUSECTION").style.display = "none"),
+              (document.getElementById("MenuPageDIV").style.display = "none"),
               (document.getElementById("MainPageDIV").style.display = "block"),
               (document.getElementById("ButtonMENU").style.display = "block"),
               (document.getElementById("ButtonMENUX").style.display = "none")
-          }
-        </script>
-        <!-- END HAFTA BUTTONS & scripts -->
-      </div>
-      <!-- END GROUPBUTTONS DIV -->
-	  </div>
-    <!-- END MENU SECTION DIV -->
+            }
+          </script>
+        </div>
+  	  </div>
 	
-	  <!-- MAIN PAGE DIV -->
-    <div id="MainPageDIV">
+      <!-- MAIN PAGE DIV -->
+      <div id="MainPageDIV">
         <!-- NAMAZ NAME DIV's -->
         <div id="myDIV1" class="beautifully" style="display: block">HACET NAMAZI</div>
         <div id="myDIV2" class="beautifully" style="display: none">II - SALI</div>
