@@ -3,7 +3,7 @@ p {
     color: #214C87;
   }
 a {
-    color: #58A6FF;
+    color: #15BA1F;
     font-weight: bold;
   }
 body {
@@ -39,7 +39,7 @@ strong {
     font-family: "Arial";
     text-align: left;
     border-collapse: collapse;
-    background-color: #0D1117;
+    background-color: #161B22;
     margin: auto;
     width: 96%;
   }
@@ -50,7 +50,7 @@ strong {
     font-size: 70px;
     text-align: left;
     padding: 0.6em 0.5em 0.6em 0.5em;
-    background-color: #0D1117;
+    background-color: #21262D;
   }
   
   table td {
@@ -61,7 +61,7 @@ strong {
     color: #C9D1D9;
     padding: 0.6em 0.5em 0.6em 0.5em;
     border-bottom: 2px solid #3F464D;
-    background-color: #0D1117;
+    background-color: #161B22;
   }
   
   /* BUTTONS */
@@ -74,9 +74,9 @@ strong {
     text-align: center;
     margin: 25px 0px 0px 0px;
     padding: 1px 20px 1.01em 20px;
-    color: #E9ECFB;
-    background-color: #8957E5;
-    border: solid 2px #E9ECFB;
+    color: #E78C8E;
+    background-color: #33161B;
+    border: solid 2px #E78C8E;
     vertical-align: bottom;
   }
   
@@ -133,4 +133,14 @@ strong {
     position: absolute;
     right: 0;
     left: 0;
+  }
+
+  /* OTHER */
+  .BISMILLAHIRAHMANIRRAHIM {
+  display: inline-block;
+  color: #ffffe0;
+  text-align: center;
+  font-size: 48px;
+  font-family: Arial;
+  padding: 0.5em 0.5em 0.5em 0.5em;
   }

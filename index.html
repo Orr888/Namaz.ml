@@ -59,7 +59,7 @@
         "
         class="btn-group"
       >
-        <!-- HAFATA BUTTONS & scripts -->
+        <!-- NAMAZLAR BUTTONS & scripts -->
         <div
           style="
             display: block;
@@ -223,76 +223,10 @@
         <!-- END HAFTA BUTTONS & scripts -->
       </div>
       <!-- END GROUPBUTTONS DIV -->
-	  
-	  <!-- ANLAM ve AYETLER DIV's -->
-      <div
-        id="AyetAnlam"
-        style="
-          color: #ffffe0;
-          display: block;
-          padding: 30px 1em 30px 1em;
-          font-size: 50px;
-          font-family: Arial;
-        "
-      >
-        Esma Ayetleri ve Anlamı<br />Görüntüsü için
-      </div>
-      <div>
-        <button type="submit" id="ButtonId" onclick="changeColor()" class="btn">
-          OFF
-        </button>
-        <script>
-          $(".btn").click(function () {
-            $(".block_with_text").fadeToggle(500),
-              $(this).text(function (e, o) {
-                return "OFF" === o ? "ON" : "OFF"
-              })
-          })
-          var colors = ["SeaGreen", "red"],
-            colorIndex = 0
-          function changeColor() {
-            var e = document.getElementById("ButtonId")
-            colorIndex >= colors.length && (colorIndex = 0),
-              (e.style.backgroundColor = colors[colorIndex]),
-              colorIndex++,
-              (document.getElementById("MENUSECTION").style.display = "none"),
-              (document.getElementById("MainPageDIV").style.display = "block"),
-              (document.getElementById("ButtonMENU").style.display = "block"),
-              (document.getElementById("ButtonMENUX").style.display = "none")
-          }
-        </script>
-      </div>
-      <!-- CHEKBOX -->
-      <div
-        style="
-          display: block;
-          padding: 70px 1em 30px 1em;
-          color: #ffffe0;
-          font-size: 50px;
-          font-family: Arial;
-        "
-      >
-        Tüm onayları silmek için
-      </div>
-      <div>
-        <button onclick="ChekBoxClear()" class="menuBTNHeart">
-          &#128154;&#10146;&#128151;
-        </button>
-        <script>
-          function ChekBoxClear() {
-            var e = confirm("Onayları silmek istiyor musunuz?")
-            ;(document.getElementById("MENUSECTION").style.display = "none"),
-              (document.getElementById("MainPageDIV").style.display = "block"),
-              (document.getElementById("ButtonMENU").style.display = "block"),
-              (document.getElementById("ButtonMENUX").style.display = "none"),
-              e && $("[class='chekboxInput']:checked").prop("checked", !1)
-          }
-        </script>
-      </div>
-    </div>
+	  </div>
     <!-- END MENU SECTION DIV -->
 	
-	<!-- MAIN PAGE DIV -->
+	  <!-- MAIN PAGE DIV -->
     <div id="MainPageDIV">
       <!-- WEEK NAME DIV's -->
       <div id="myDIV1" class="beautifully" style="display: none">I - PAZARTESİ</div>
@@ -302,77 +236,12 @@
       <div id="myDIV5" class="beautifully" style="display: none">V - CUMA</div>
       <div id="myDIV6" class="beautifully" style="display: none">VI - CUMARTESİ</div>
       <div id="myDIV7" class="beautifully" style="display: none">VII - PAZAR</div>
-      <!-- DATE -->
-      <div class="beautifullyDate">
-        <script>
-          var d = new Date(),
-            day = new Array(
-              "PAZAR",
-              "PAZARTESİ",
-              "SALI",
-              "ÇARŞAMBA",
-              "PERŞEMBE",
-              "CUMA",
-              "CUMARTESİ"
-            ),
-            month = new Array(
-              "Ocak",
-              "Şubat",
-              "Mart",
-              "Nisan",
-              "Mayıs",
-              "Haziran",
-              "Temmuz",
-              "Ağustos",
-              "Eylül",
-              "Ekim",
-              "Kasım",
-              "Aralık"
-            )
-          document.write(
-            "Bu gün: ",
-            day[d.getDay()] +
-              ", " +
-              d.getDate() +
-              " " +
-              month[d.getMonth()] +
-              " " +
-              d.getFullYear()
-          )
-        </script>
-      </div>
-      <!-- END WEEK NAME DIV's -->
 	  
-	  <!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
-      <script>
-        document.addEventListener(
-          "play",
-          function (e) {
-            for (
-              var t = document.getElementsByTagName("audio"),
-                a = 0,
-                n = t.length;
-              a < n;
-              a++
-            )
-              t[a] != e.target && t[a].pause()
-          },
-          !0
-        )
-      </script>
-      <!-- END NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
+	    <!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
+      <script>document.addEventListener("play",function (e) {for (var t = document.getElementsByTagName("audio"), a = 0, n = t.length; a < n; a++) t[a] != e.target && t[a].pause()}, !0) </script>
 	  
-	  <!-- NOT CHANGE DIV -->
-      <div
-        style="
-          display: inline-block;
-          color: #ffffe0;
-          text-align: center;
-          font-size: 48px;
-          font-family: Arial;
-          padding: 0.5em 0.5em 0.5em 0.5em;
-        "
-      >
+	    <!-- NOT CHANGE DIV -->
+      <div id="BISMILLAHIRAHMANIRRAHIM">
         EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br />BİSMİLLÂHİRRAHMÂNİRRAHÎM
       </div>
       <div style="display: block">
