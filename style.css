@@ -31,6 +31,18 @@ strong {
     font-family: "Arial";
     font-weight: bold;
   }
+.aFooter {
+    color: #276ebe;
+      font-size: 15px !important;
+      font-weight: normal;
+    }
+.MyFooter {
+  color: #2c5380;
+  width: 95%;
+  margin: auto;
+  font-size: 15px !important;
+  font-weight: normal;
+}
   
   /* TABLES */
 
@@ -91,7 +103,7 @@ strong {
     font-size: 80px;
   }
 
-  .btn-group button {
+  .GroupButton button {
     background-color: #21262D;
     border: 2px solid #8B949E;
     border-radius: 20px;
@@ -102,10 +114,18 @@ strong {
     font-size: 60px;
     text-align: center;
     padding: 15px;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 15px 0px;
+    font-size: 50px;
+    font-family: Arial;
     /*расположение от верха, правой стооны, низа и левой стооны*/
   }
-  
+  .MenuSectionStyle {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 190px; 
+    display: none
+  }
   /* NAVBAR */
 
   * {
@@ -129,16 +149,12 @@ strong {
     font-size: 80px;
     margin: auto;
   }
-  .menu {
-    position: absolute;
-    right: 0;
-    left: 0;
-  }
+
 
   /* OTHER */
-  .BISMILLAHIRAHMANIRRAHIM {
-  display: inline-block;
-  color: #ffffe0;
+  .BISMILLAH {
+  display: block;
+  color: #C3CCD4;
   text-align: center;
   font-size: 48px;
   font-family: Arial;

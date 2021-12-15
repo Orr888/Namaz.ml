@@ -2,7 +2,7 @@
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
-    <title>NAMAZLAR</title>
+    <title>NAMAZ & DUA</title>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <!-- Bootstrap and Awesome SVG Font icons https://icons.getbootstrap.com -->
@@ -14,7 +14,7 @@
     <!-- NAVBAR -->
     <nav class="navbar" id="top_nav">
       <!-- LOGO -->
-      <div class="logo">NAMAZLAR</div>
+      <div class="logo">NAMAZ & DUA</div>
       <!-- NAVIGATION MENU -->
       <div>
         <button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN">
@@ -46,32 +46,12 @@
         </script>
       </div>
     </nav>
-    <!-- MENUSECTION DIV -->
-    <div id="MENUSECTION" style="margin-top: 170px; display: none" class="menu">
+    <!-- MENUSECTION -->
+    <div id="MENUSECTION" class="MenuSectionStyle">
       <!-- GROUPBUTTONS DIV -->
-      <div
-        id="GroupButtons"
-        style="
-          display: block;
-          padding: 10px 0 50px 0;
-          font-size: 50px;
-          font-family: Arial;
-        "
-        class="btn-group"
-      >
+      <div class="GroupButton">
         <!-- NAMAZLAR BUTTONS & scripts -->
-        <div
-          style="
-            display: block;
-            padding: 10px 0 50px 0;
-            color: #ffffe0;
-            font-size: 50px;
-            font-family: Arial;
-          "
-        >
-          Haftanın gününü buradan<br />manual seçe bilirsiniz
-        </div>
-        <button onclick="myFunction1()">I - PAZARTESİ</button>
+        <button onclick="myFunction1()">HACET NAMAZI</button>
         <button onclick="myFunction2()">II - SALI</button>
         <button onclick="myFunction3()">III - ÇARŞAMBA</button>
         <button onclick="myFunction4()">IV - PERŞEMBE</button>
@@ -228,8 +208,8 @@
 	
 	  <!-- MAIN PAGE DIV -->
     <div id="MainPageDIV">
-      <!-- WEEK NAME DIV's -->
-      <div id="myDIV1" class="beautifully" style="display: none">I - PAZARTESİ</div>
+      <!-- NAMAZ NAME DIV's -->
+      <div id="myDIV1" class="beautifully" style="display: block">HACET NAMAZI</div>
       <div id="myDIV2" class="beautifully" style="display: none">II - SALI</div>
       <div id="myDIV3" class="beautifully" style="display: none">III - ÇARŞAMBA</div>
       <div id="myDIV4" class="beautifully" style="display: none">IV - PERŞEMBE</div>
@@ -241,136 +221,14 @@
       <script>document.addEventListener("play",function (e) {for (var t = document.getElementsByTagName("audio"), a = 0, n = t.length; a < n; a++) t[a] != e.target && t[a].pause()}, !0) </script>
 	  
 	    <!-- NOT CHANGE DIV -->
-      <div id="BISMILLAHIRAHMANIRRAHIM">
+      <div class="BISMILLAH">
         EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br />BİSMİLLÂHİRRAHMÂNİRRAHÎM
       </div>
-      <div style="display: block">
-        <table>
-          <tr>
-            <td>
-              <strong>Allah (El İlâh) - 269</strong
-              ><input
-                id="Heart"
-                style="display: none"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Heart"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
       <p class="block_with_text" style="display: block"><br /></p>
-      <div
-        class="block_with_text"
-        style="
-          display: block;
-          color: #ffffe0;
-          text-align: center;
-          padding: 0 0.5em 1em 0.5em;
-          font-size: 60px;
-          font-family: Arial;
-        "
-      >
-        <a
-          style="font-weight: 400; color: #ffffe0"
-          href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1743"
-          target="_blank"
-          >İlgili esmalar çekilmeden önce âyeti okunur.</a
-        >
-      </div>
-      <div style="display: block">
-        <table>
-          <tr>
-            <th class="block_with_text" style="display: block">
-              <button class="PlayButton" onclick="togglePlayPause1()">
-                <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i
-                ><audio
-                  id="audio1"
-                  src="https://www.mihr.com/Videolar/quran_mp3/ayat/005097.mp3"
-                ></audio>
-              </button>
-              <script>
-                var audio1 = document.getElementById("audio1")
-                function togglePlayPause1() {
-                  audio1.paused || audio1.ended ? audio1.play() : audio1.pause()
-                }
-              </script>
-              <a
-                href="https://www.mihr.com/Kuran/Meal/5/maide/97"
-                target="_blank"
-                >5/MAİDE-97</a
-              ><br />Cealallâhul ka’betel beytel harâme kıyâmen lin nâsi veş
-              şehral harâme vel hedye vel kalâid(kalâide), zâlike li ta’lemû
-              ennellâhe ya’lemu mâ fîs semâvâti ve mâ fîl ardı ve ennallâhe
-              bikulli şey’in alîm(alîmun).<br /><button
-                class="PlayButton"
-                onclick="togglePlayPause2()"
-              >
-                <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i
-                ><audio
-                  id="audio2"
-                  src="https://www.mihr.com/Videolar/quran_mp3/ayat/039017.mp3"
-                ></audio>
-              </button>
-              <script>
-                var audio2 = document.getElementById("audio2")
-                function togglePlayPause2() {
-                  audio2.paused || audio2.ended ? audio2.play() : audio2.pause()
-                }
-              </script>
-              <a
-                href="https://www.mihr.com/Kuran/Meal/39/zumer/17"
-                target="_blank"
-                >39/ZUMER-17</a
-              ><br />Vellezînectenebût tâgûte en ya’budûhâ ve enâbû ilâllâhi
-              lehumul buşrâ, fe beşşir ibâd(ibâdi).<br /><button
-                class="PlayButton"
-                onclick="togglePlayPause3()"
-              >
-                <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i
-                ><audio
-                  id="audio3"
-                  src="https://www.mihr.com/Videolar/quran_mp3/ayat/039019.mp3"
-                ></audio>
-              </button>
-              <script>
-                var audio3 = document.getElementById("audio3")
-                function togglePlayPause3() {
-                  audio3.paused || audio3.ended ? audio3.play() : audio3.pause()
-                }
-              </script>
-              <a
-                href="https://www.mihr.com/Kuran/Meal/39/zumer/19"
-                target="_blank"
-                >39/ZUMER-19</a
-              ><br />E fe men hakka aleyhi kelimetul azâb(azâbi), e fe ente
-              tunkızu men fîn nâr(nâri).<br />
-            </th>
-          </tr>
-          <tr>
-            <td>
-              <strong>El Masîr - 535</strong
-              ><input
-                style="display: none"
-                id="Masir"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Masir"></label>
-            </td>
-          </tr>
-          <tr>
-            <td class="block_with_text" style="display: block">
-              Seyreden, hareket eden
-            </td>
-          </tr>
-        </table>
-        <!-- END NOT CHANGE DIV -->
-      </div>
-      <p class="block_with_text" style="display: block"><br /></p>
-      <!-- ESMAÜL HÜSNA I DIV-->
+
+      <!-- HACET NAMAZI DIV-->
       <div id="myDIV11" style="display: none">
+        
         <table>
           <tr>
             <th class="block_with_text" style="display: block">
@@ -3019,15 +2877,7 @@
         </table>
       </div>
 
-      <footer
-        id="MyFooter"
-        style="
-          color: #ffffe0;
-          width: 95%;
-          margin: auto;
-          font-size: 15px;
-        "
-      >
+      <footer class="MyFooter">
         <br />
         <p>
           Tüm bilgiler<br /><a
@@ -3039,32 +2889,27 @@
           Ayetleri
           <a
             href="https://www.mihr.com/Kuran/Tefsir"
-            target="_blank"
-            style="color: #ffffe0"
+            target="_blank" class="aFooter"
             >Kur'ân-ı Kerim Lafzı ve Ruhu (Tefsir)</a
           >-den alınmıştır.<br /><a
             href="https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1707"
-            target="_blank"
-            style="color: #ffffe0"
+            target="_blank" class="aFooter"
             >DUA KITABI</a
           >ndan:
           <a
             href="https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1740"
-            target="_blank"
-            style="color: #ffffe0"
+            target="_blank" class="aFooter"
             >ESMA-ÜL HÜSNA</a
           >
           isimleri ve sayıları,
           <a
             href="https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1742"
-            target="_blank"
-            style="color: #ffffe0"
+            target="_blank" class="aFooter"
             >ESMA-ÜL HÜSNA'NIN MÂNÂLARI</a
           >
           ve<a
             href="https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1743"
-            target="_blank"
-            style="color: #ffffe0"
+            target="_blank" class="aFooter"
           >
             ESMA-ÜL HÜSNA ÂYETLERİ</a
           >
@@ -3078,25 +2923,6 @@
         <div style="padding: 100px 0 0 0"></div>
       </footer>
     </div>
-	
-      <!-- WEEKDAY CHOISE TO OPEN PAGE -->
-      <script>
-        var now = new Date(),
-          HaftaDay = now.getDay()
-        ;(1 === HaftaDay
-          ? myFunction1
-          : 2 === HaftaDay
-          ? myFunction2
-          : 3 === HaftaDay
-          ? myFunction3
-          : 4 === HaftaDay
-          ? myFunction4
-          : 5 === HaftaDay
-          ? myFunction5
-          : 6 === HaftaDay
-          ? myFunction6
-          : myFunction7)()
-      </script>
- 
+
   </body>
 </html>
