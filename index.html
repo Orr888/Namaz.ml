@@ -8,7 +8,11 @@
       <!-- Bootstrap and Awesome SVG Font icons https://icons.getbootstrap.com -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="style.css" />
+      <!-- Main Styles -->
+      <link rel="stylesheet" href="/Namaz.ml/CSS/Main.css" />
+      <!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
+      <script src="/Namaz.ml/JavaScripts/StopForPlayNext.js"></script>
+
     </head>
 
     <body>
@@ -44,9 +48,19 @@
         <!-- GROUP BUTTONS DIV -->
         <div class="GroupButton">
           <!-- MENU BUTTONS & Scripts -->
-          <button onclick="myFunction1()">HACET NAMAZI</button>
-          <button onclick="myFunction2()">GÜNLÜK NAMAZLAR</button>
-
+            <div id="NamazDIV" class="DIVLabels">
+              <p><label for="NamazDIV">NAMAZLAR</label></p>
+              <button onclick="NamazFunction1()">HACET NAMAZI</button>
+              <button onclick="NamazFunction2()">GÜNLÜK NAMAZLAR</button>
+              <button onclick="NamazFunction3()">HAMDveŞÜKÜR NAMAZI</button>
+              <button onclick="NamazFunction4()">İSTİHARE NAMAZI</button>
+              <button onclick="NamazFunction5()">TÖVBE NAMAZI</button>
+            </div>
+            <div id="DuaDIV" class="DIVLabels">
+              <p><label for="DuaDIV">DUALAR</label></p>
+              <button onclick="NamazFunction6()">SOFRA DUALARI</button>
+              <button onclick="NamazFunction7()">TEZEKKÜR DUALARI</button>
+            </div>
           <script>
             function myFunction1() {
               ;(document.getElementById("myDIV1").style.display = "block"),
@@ -74,17 +88,14 @@
 	
       <!-- MAIN PAGE DIV -->
       <div id="MainPageDIV">
-        <!-- NAMAZ NAME DIV's -->
+        <!-- PAGE NAME DIV's -->
         <div id="myDIV1" class="beautifully" style="display: block">HACET NAMAZI</div>
-        <div id="myDIV2" class="beautifully" style="display: none">II - SALI</div>
-        <div id="myDIV3" class="beautifully" style="display: none">III - ÇARŞAMBA</div>
-        <div id="myDIV4" class="beautifully" style="display: none">IV - PERŞEMBE</div>
-        <div id="myDIV5" class="beautifully" style="display: none">V - CUMA</div>
-        <div id="myDIV6" class="beautifully" style="display: none">VI - CUMARTESİ</div>
-        <div id="myDIV7" class="beautifully" style="display: none">VII - PAZAR</div>
-	  
-	    <!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
-      <script>document.addEventListener("play",function (e) {for (var t = document.getElementsByTagName("audio"), a = 0, n = t.length; a < n; a++) t[a] != e.target && t[a].pause()}, !0) </script>
+        <div id="myDIV2" class="beautifully" style="display: none">GÜNLÜK NAMAZLAR</div>
+        <div id="myDIV3" class="beautifully" style="display: none">HAMDveŞÜKÜR NAMAZI</div>
+        <div id="myDIV4" class="beautifully" style="display: none">İSTİHARE NAMAZI</div>
+        <div id="myDIV5" class="beautifully" style="display: none">TÖVBE NAMAZI</div>
+        <div id="myDIV6" class="beautifully" style="display: none">SOFRA DUALARI</div>
+        <div id="myDIV7" class="beautifully" style="display: none">TEZEKKÜR DUALARI</div>
 	  
 	        <!-- NOT CHANGE DIV -->
           <div class="BISMILLAH">

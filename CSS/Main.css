@@ -122,21 +122,28 @@ body {
     border-radius: 20px;
     /*закругленные углы*/
     color: #8B949E;
-    width: 60%;
+    width: 80%;
     align-items: center;
     font-size: 60px;
     text-align: center;
     padding: 15px;
     margin: 0px 0px 15px 0px;
-    font-size: 50px;
     font-family: Arial;
     /*расположение от верха, правой стооны, низа и левой стооны*/
+  }
+  .DIVLabels {
+    background-color: transparent;
+    color: #58A6FF;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 0 20px 0;
   }
   .MenuSectionStyle {
     position: absolute;
     right: 0;
     left: 0;
-    margin-top: 190px; 
+    margin-top: 150px; 
     display: none
   }
   /* NAVBAR */
