@@ -69,13 +69,15 @@ strong {
   .PlayButton {
     display: inline-block;
     height: 80px;
-    font-family: FontAwesome;
     border-radius: 2em;
-    font-size: 45px;
+    font-size: 80px;
+    text-align: center;
+    margin: 25px 0px 0px 0px;
+    padding: 1px 20px 1.01em 20px;
     color: #E9ECFB;
     background-color: #8957E5;
     border: solid 2px #E9ECFB;
-    vertical-align: top;
+    vertical-align: bottom;
   }
   
   .menuBTN {
@@ -95,12 +97,12 @@ strong {
     border-radius: 20px;
     /*закругленные углы*/
     color: #8B949E;
-    width: 70%;
+    width: 60%;
     align-items: center;
     font-size: 60px;
     text-align: center;
-    padding: 2px;
-    margin: 2px 0px 2px 0px;
+    padding: 15px;
+    margin: 0px 0px 20px 0px;
     /*расположение от верха, правой стооны, низа и левой стооны*/
   }
   
@@ -117,13 +119,18 @@ strong {
     padding: 25px;
     background-color: #132339;
     border: 2px solid #1E4173;
-    font-weight: bold;
+    font-weight: normal;
     position: fixed;
     width: 100%;
+    z-index: 1000;
   }
-
   .logo {
     color: #C3CCD4;
     font-size: 80px;
     margin: auto;
+  }
+  .menu {
+    position: absolute;
+    right: 0;
+    left: 0;
   }
