@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Main Styles -->
     <link rel="stylesheet" href="./CSS/Main.css" />
-    <!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
-    <script src="./JavaScripts/StopForPlayNext.js"></script>
+    <!-- PLAY & STOP SOUND SCRIPTS -->
+    <script src="./JavaScripts/PlayStopSound.js"></script>
 
   </head>
 
   <body>
+    <!--******* AUDIO PLAYER *******-->
+    <audio id="player"><source id="mp3_src" src="" type="audio/mp3"/></audio>
+
+    <!--******* TOP NAV *******-->
     <nav class="navbar" id="top_nav">
       <div class="logo">Namaz & Dualar</div>
         <button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN">
@@ -52,7 +56,7 @@
             <p><label for="NamazDIV">NAMAZLAR</label></p>
             <button onclick="NamazFunction1()">HACET NAMAZI</button>
             <button onclick="NamazFunction2()">GÜNLÜK NAMAZLAR</button>
-            <button onclick="NamazFunction3()">HAMDveŞÜKÜR NAMAZI</button>
+            <button onclick="NamazFunction3()">HAMD ve ŞÜKÜR NAMAZI</button>
             <button onclick="NamazFunction4()">İSTİHARE NAMAZI</button>
             <button onclick="NamazFunction5()">TÖVBE NAMAZI</button>
           </div>
@@ -62,26 +66,48 @@
             <button onclick="NamazFunction7()">TEZEKKÜR DUALARI</button>
           </div>
         <script>
-          function myFunction1() {
-            ;(document.getElementById("PageName1").style.display = "block"),
-            (document.getElementById("myDIV11").style.display = "block"),
-            (document.getElementById("PageName2").style.display = "none"),
-            (document.getElementById("myDIV22").style.display = "none"),
-            (document.getElementById("MenuPageDIV").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none")
-          }
-          function myFunction2() {
-            ;(document.getElementById("myDIV1").style.display = "none"),
-            (document.getElementById("myDIV11").style.display = "none"),
-            (document.getElementById("myDIV2").style.display = "block"),
-            (document.getElementById("myDIV22").style.display = "block"),
-            (document.getElementById("MenuPageDIV").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none")
-          }
+          function NamazFunction1() { 
+            $('.NamazDIVS').hide();
+            $('#NamazDIV1').show();$('#PageNameDIV1').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function NamazFunction2() { 
+            $('.NamazDIVS').hide();
+            $('#NamazDIV2').show();$('#PageNameDIV2').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function NamazFunction3() { 
+            $('.NamazDIVS').hide();
+            $('#NamazDIV3').show();$('#PageNameDIV3').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function NamazFunction4() { 
+            $('.NamazDIVS').hide();
+            $('#NamazDIV4').show();$('#PageNameDIV4').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function NamazFunction5() { 
+            $('.NamazDIVS').hide();
+            $('#NamazDIV5').show();$('#PageNameDIV5').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function NamazFunction6() { 
+            $('.NamazDIVS').hide();
+            $('#NamazDIV6').show();$('#PageNameDIV6').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function NamazFunction7() { 
+            $('.NamazDIVS').hide();
+            $('#NamazDIV7').show();$('#PageNameDIV7').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
         </script>
       </div>
   	</div>
@@ -90,22 +116,38 @@
     <div id="MainPageDIV">
 
       <!--******* Page NAME DIVs *******-->
-      <div id="PageNameDIV1" class="beautifully" style="display: block">HACET NAMAZI</div>
-      <div id="PageNameDIV2" class="beautifully" style="display: none">GÜNLÜK NAMAZLAR</div>
-      <div id="PageNameDIV3" class="beautifully" style="display: none">HAMDveŞÜKÜR NAMAZI</div>
-      <div id="PageNameDIV4" class="beautifully" style="display: none">İSTİHARE NAMAZI</div>
-      <div id="PageNameDIV5" class="beautifully" style="display: none">TÖVBE NAMAZI</div>
-
-      <div id="PageNameDIV6" class="beautifully" style="display: none">SOFRA DUALARI</div>
-      <div id="PageNameDIV7" class="beautifully" style="display: none">TEZEKKÜR DUALARI</div>
+    <div id="PageNameDIV1" class="NamazDIVS" style="display: block">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1730" target="_blank">
+        HACET NAMAZI</a></div>
+    <div id="PageNameDIV2" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="#" target="_blank">
+        GÜNLÜK NAMAZLAR</a></div>
+    <div id="PageNameDIV3" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1732" target="_blank">
+        HAMD ve ŞÜKÜR NAMAZI</a></div>
+    <div id="PageNameDIV4" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1735" target="_blank">
+        İSTİHARE NAMAZI</a></div>
+    <div id="PageNameDIV5" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1731" target="_blank">
+        TÖVBE NAMAZI</a></div>
+    <div id="PageNameDIV6" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1745" target="_blank">
+        SOFRA DUALARI</a></div>
+    <div id="PageNameDIV7" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="" target="_blank">
+        TEZEKKÜR DUALARI</a></div>
 
       <div class="BISMILLAH">
-        EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br />BİSMİLLÂHİRRAHMÂNİRRAHÎM
+        <a class="aButton" source="https://www.mihr.com/Videolar/quran_mp3/ayat/001000.mp3">
+        EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM</a>
+        <br /><a class="aButton" source="https://www.mihr.com/Videolar/quran_mp3/ayat/001001.mp3">
+        BİSMİLLÂHİRRAHMÂNİRRAHÎM</a>
       </div>
       <p class="block_with_text" style="display: block"><br /></p>
 
       <!--******* Namaz DIV 1 *******-->
-      <div id="NamazDIV1" style="display: block">
+      <div id="NamazDIV1" style="display: block" class="NamazDIVS">
         <table cellpadding="2">
           <tr>
             <td colspan="2">
@@ -121,19 +163,14 @@
               1.<br/>Rekât
             </th>
             <th class="AyatColl">
-              <details><summary>SÜBHANEKE</summary>
-                <button class="PlayButton" onclick="togglePlayPauseSubhaneke()" 
-                        style="display:block;">
-                  <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i>
-                  <audio id="AudioSubhaneke" src="./mp3/subhaneke.mp3"></audio>
-                </button>
-                <script>
-                  var AudioSubhaneke = document.getElementById("AudioSubhaneke")
-                  function togglePlayPauseSubhaneke() {
-                    AudioSubhaneke.paused || AudioSubhaneke.ended ? 
-                    AudioSubhaneke.play() : AudioSubhaneke.pause()
-                  }
-                </script>
+              <details><summary>SÜBHANEKE
+                <div style=" position: relative;float: right;">
+                  <button class="PlayButton">
+                  <a class="aButton" source="./mp3/subhaneke.mp3">
+                  <i class="bi bi-play-fill"></i></a></button>
+                <button class="PlayButton" onclick="AllSoundOff()">
+                  <i class="bi bi-stop-fill"></i></button></div>
+              </summary>
                 <span class="AyatSpanClass">
                   Subhâneke allâhumme ve bi hamdik ve tebârekesmuk 
                   ve teâlâ cedduk ve lâ ilâhe gayruk.
@@ -152,39 +189,34 @@
           </tr>
           <tr>
             <th class="AyatColl">
-              <details><summary>FÂTİHA</summary>
-                <button class="PlayButton" onclick="togglePlayPauseFatiha()" 
-                        style="display:block;">
-                  <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i>
-                  <audio id="AudioFatiha" src="./mp3/fatiha.mp3"></audio>
-                </button>
-                <script>
-                  var AudioFatiha = document.getElementById("AudioFatiha")
-                  function togglePlayPauseFatiha() {
-                    AudioFatiha.paused || AudioFatiha.ended ? 
-                    AudioFatiha.play() : AudioFatiha.pause()
-                  }
-                </script>
+              <details><summary>FÂTİHA
+                <div style=" position: relative;float: right;">
+                  <button class="PlayButton">
+                  <a class="aButton" source="./mp3/fatiha.mp3">
+                  <i class="bi bi-play-fill"></i></a></button>
+                <button class="PlayButton" onclick="AllSoundOff()">
+                  <i class="bi bi-stop-fill"></i></button></div>
+              </summary>
                 <span class="AyatSpanClass">
-                  Bismillâhirrahmânirrahîm<br/>El hamdu lillâhi rabbil âlemîn
-                   er rahmânir rahîm mâliki yevmid dîn iyyâke na'budu ve 
-                  iyyâke nestaîn ihdinas sırâtel mustakîm sırâtallezîne 
-                  en'amte aleyhim gayril magdûbi aleyhim ve lâd dâllîn.
+                  Bismillâhir rahmânir rahîm.<br/>El hamdu lillâhi rabbil âlemîn 
+                  (âlemîne). Er rahmânir rahîm(rahîmi). Mâliki yevmid dîn(dîne). 
+                  İyyâke na’budu ve iyyâke nestaîn(nestaînu). İhdinâs sırâtel 
+                  mustakîm(mustakîme). Sırâtallezîne en’amte aleyhim gayril 
+                  magdûbi aleyhim ve lâd dâllîn(dâllîne).
                 </span>
                 <details><summary>
                   <span class="AnlamSpanClass">Tefsir</summary>
-                    <span class="AnlamSpanClass">
-                    Rahmân ve rahîm olan Allah'ın ismi ile. Hamd, âlemlerin Rabbi 
-                    olan Allah’adır. Rahmân’dır, Rahîm’dir. Dîn gününün mâlikidir. 
-                    (Allah'ım!) Yalnız Sana kul oluruz ve yalnız Senden İSTİANE 
-                    (mürşidimizi) isteriz. (Bu istiane'n ile) bizi, SIRATI MUSTAKÎM'e 
-                    hidayet et (ulaştır). O yol (SIRATI MUSTAKÎM) ki; üzerlerine nimet 
-                    verdiklerinin yoludur. Üzerlerine gadap duyulmuşların ve dalâlette 
-                    kalmışların (Allah’a ulaşmayı dilemeyenlerin) yolu değil.
-                    <a href="https://mihr.com/Kuran/Meal/1/fatiha" target="_blank">
-                      <br/>Açıklama</a>
-                    </span>
-                  </span>
+                  <span class="AnlamSpanClass">
+                  Rahmân ve rahîm olan Allah'ın ismi ile. Hamd, âlemlerin Rabbi 
+                  olan Allah’adır. Rahmân’dır, Rahîm’dir. Dîn gününün mâlikidir. 
+                  (Allah'ım!) Yalnız Sana kul oluruz ve yalnız Senden İSTİANE 
+                  (mürşidimizi) isteriz. (Bu istiane'n ile) bizi, SIRATI MUSTAKÎM'e 
+                  hidayet et (ulaştır). O yol (SIRATI MUSTAKÎM) ki; üzerlerine nimet 
+                  verdiklerinin yoludur. Üzerlerine gadap duyulmuşların ve dalâlette 
+                  kalmışların (Allah’a ulaşmayı dilemeyenlerin) yolu değil.
+                  <a class="aAchiqlama" href="https://www.mihr.com/Kuran/Tefsir" target="_blank">
+                  <br/>FÂTİHA suresine keçid linki</a>
+                  </span></span>
                 </details>
               </details>
             </th>
@@ -306,8 +338,9 @@
           </tr>
           <tr>
             <td colspan="2">
-              &nbsp;&nbsp;&nbsp;&nbsp;Namaz bittikten sonra kişi, Allah'tan haceti neyse onu veya mürşidini 
-              diler. Konuşulmaz. Kıble, yatağın sağ tarafında kalmalı ve kişi 
+              &nbsp;&nbsp;&nbsp;&nbsp;Namaz bittikten sonra kişi, Allah'tan haceti 
+              neyse onu veya mürşidini diler. Konuşulmaz. 
+              Kıble, yatağın sağ tarafında kalmalı ve kişi 
               vücudunun ön cephesi kıbleye doğru olarak, yanüstü dönüp yatmalıdır. 
               Yattıktan sonra üç kere Âyetel Kürsî okunur. Allah'tan, zahirî veya 
               batınî hacet ya da mürşid dilenir. Ardından sessiz zikir (zikr-i hafi) 
@@ -316,9 +349,9 @@
               sebebiyle) rahatça duyulacağı pozisyona gelinir. Kalbin her çift 
               atışında "Allah, Allah" diyerek, sessiz şekilde içinden Allah 
               zikredilir.<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;Hacet namazının ilk kılındığı gece, hacete dair bir rüya görülmezse, 
-              hedefe ulaşana kadar perşembeyi cumaya bağlayan geceler, kılmaya devam 
-              edilmelidir. Her gece de kılınabilir.
+              &nbsp;&nbsp;&nbsp;&nbsp;Hacet namazının ilk kılındığı gece, 
+              hacete dair bir rüya görülmezse, hedefe ulaşana kadar perşembeyi cumaya 
+              bağlayan geceler, kılmaya devam edilmelidir. Her gece de kılınabilir.
             </td>
           </tr>
         </table>
