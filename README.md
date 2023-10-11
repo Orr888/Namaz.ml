@@ -228,6 +228,10 @@ Allah hepinizden razı olsun!
 
 El Fatiha meas salâvât...
 
+## NAZARDAN KORUNMA DUASI
+
+ - Uîzu bi kelimâtillâhit tâmmâti min kulli şeytânin ve hâmmetin ve min kulli aynin lâmmeh.
+
 ## AİLE GEÇİMSİZLİĞİNE KARŞI DUA
 
 Her sabah ve akşam önce 1 Fatiha, 3 İhlâs, sonra bu dua 7 defa okunur:
