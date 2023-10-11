@@ -8,8 +8,9 @@ body {
     color: #C3CCD4;
     text-align: center;
   }
-p {
+.pBody {
     margin: auto;
+    padding: auto;
     font-size: 35px !important;
     text-align: left;
   }
