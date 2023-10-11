@@ -16,6 +16,11 @@ color: #58A6FF;
     font-size: 35px !important;
     text-align: left;
   }
+ol {
+    padding: 0em 1em 0em 1em;
+    font-size: 35px !important;
+    text-align: left;
+  }
 .BISMILLAH {
     display: block;
     color: #C3CCD4;
