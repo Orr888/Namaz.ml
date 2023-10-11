@@ -21,7 +21,7 @@
 
     <!--******* TOP NAV *******-->
     <nav class="navbar" id="top_nav">
-      <div class="logo">TASAVVUFİ MENU</div>
+      <div class="logo">TASAVVUF-MENU</div>
         <button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN">
           &nbsp;<i class="bi bi-list"></i>&nbsp;
         </button>
@@ -56,7 +56,8 @@
             <p><label for="GorevDIV">TASAVVUF</label></p>
             <button onclick="GorevFunction1()">ÖNSÖZ</button>
             <button onclick="GorevFunction2()">GÜNLÜK GÖREVLER</button>
-          </div>
+            <button onclick="GorevFunction3()">ESMAÜL HÜSNA</button>
+	  </div>
           <div id="NamazDIV" class="DIVLabels">
             <p><label for="NamazDIV">NAMAZLAR</label></p>
             <button onclick="NamazFunction1()">GÜNLÜK NAMAZLAR</button>
@@ -72,10 +73,28 @@
             <button onclick="DuaFunction3()">SOFRA DUALARI</button>
             <button onclick="DuaFunction4()">NAZARDAN KORUNMA DUASI</button>
             <button onclick="DuaFunction5()">AİLE GEÇİMSİZLİĞİNE KARŞI DUA</button>
-            <button onclick="DuaFunction6()">SİHİR VE BÜYÜDEN KORUNMA DUASI</button>
+            <button onclick="DuaFunction6()">SİHİR VE BÜYÜDEN KORUNMA</button>
             <button onclick="DuaFunction7()">HATİM DUASI</button>
 	  </div>
         <script>
+          function GorevFunction1() { 
+            $('.NamazDIVS').hide();
+            $('#GorevDIV1').show();$('#GorevPageNameDIV1').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function GorevFunction2() { 
+            $('.NamazDIVS').hide();
+            $('#GorevDIV2').show();$('#GorevPageNameDIV2').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function GorevFunction3() { 
+            $('.NamazDIVS').hide();
+            $('#GorevDIV3').show();$('#GorevPageNameDIV3').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
           function NamazFunction1() { 
             $('.NamazDIVS').hide();
             $('#NamazDIV1').show();$('#PageNameDIV1').show();
@@ -106,15 +125,45 @@
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
             $('#ButtonMENU').show();$('#ButtonMENUX').hide();
           } 
-          function NamazFunction6() { 
+          function DuaFunction1() { 
             $('.NamazDIVS').hide();
-            $('#NamazDIV6').show();$('#PageNameDIV6').show();
+            $('#DuaDIV1').show();$('#DuaPageNameDIV1').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
             $('#ButtonMENU').show();$('#ButtonMENUX').hide();
           } 
-          function NamazFunction7() { 
+          function DuaFunction2() { 
             $('.NamazDIVS').hide();
-            $('#NamazDIV7').show();$('#PageNameDIV7').show();
+            $('#DuaDIV2').show();$('#DuaPageNameDIV2').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function DuaFunction3() { 
+            $('.NamazDIVS').hide();
+            $('#DuaDIV3').show();$('#DuaPageNameDIV3').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function DuaFunction4() { 
+            $('.NamazDIVS').hide();
+            $('#DuaDIV4').show();$('#DuaPageNameDIV4').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function DuaFunction5() { 
+            $('.NamazDIVS').hide();
+            $('#DuaDIV5').show();$('#DuaPageNameDIV5').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function DuaFunction6() { 
+            $('.NamazDIVS').hide();
+            $('#DuaDIV6').show();$('#DuaPageNameDIV6').show();
+            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+            $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function DuaFunction7() { 
+            $('.NamazDIVS').hide();
+            $('#DuaDIV7').show();$('#DuaPageNameDIV7').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
             $('#ButtonMENU').show();$('#ButtonMENUX').hide();
           } 
@@ -126,9 +175,19 @@
     <div id="MainPageDIV">
 
 <!--******* Page NAME DIVs *******-->
+    <div id="GorevPageNameDIV1" class="NamazDIVS" style="display: block">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1732" target="_blank">
+        ÖNSÖZ</a></div>
+    <div id="GorevPageNameDIV2" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="#" target="_blank">
+        TASAVVUFA GİREN KİŞİNİN GÜNLÜK GÖREVLERİ</a></div>
+    <div id="GorevPageNameDIV3" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1730" target="_blank">
+        ESMAÜL HÜSNA</a></div>
+
     <div id="PageNameDIV1" class="NamazDIVS" style="display: block">
       <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1732" target="_blank">
-        GÜNLÜK NAMAZLAR</a></div>
+        GÜNLÜK NAMAZLAR (5 vakit + kuşluk + teheccüd)</a></div>
     <div id="PageNameDIV2" class="NamazDIVS" style="display: none">
       <a class="aPageName" href="#" target="_blank">
         HACET NAMAZI</a></div>
@@ -141,12 +200,28 @@
     <div id="PageNameDIV5" class="NamazDIVS" style="display: none">
       <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1731" target="_blank">
         TÖVBE NAMAZI</a></div>
-    <div id="PageNameDIV6" class="NamazDIVS" style="display: none">
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1745" target="_blank">
+
+    <div id="DuaPageNameDIV1" class="NamazDIVS" style="display: block">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1732" target="_blank">
+        NAMAZ DUALARI</a></div>
+    <div id="DuaPageNameDIV2" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="#" target="_blank">
+        TÖVBE VE İSTİĞFAR DUASI</a></div>
+    <div id="DuaPageNameDIV3" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1730" target="_blank">
         SOFRA DUALARI</a></div>
-    <div id="PageNameDIV7" class="NamazDIVS" style="display: none">
+    <div id="DuaPageNameDIV4" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1735" target="_blank">
+        NAZARDAN KORUNMA DUASI</a></div>
+    <div id="DuaPageNameDIV5" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1731" target="_blank">
+        AİLE GEÇİMSİZLİĞİNE KARŞI DUA</a></div>
+    <div id="DuaPageNameDIV6" class="NamazDIVS" style="display: none">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1745" target="_blank">
+        SİHİR VE BÜYÜ NASIL ETKİSİZ HALE GETİRİLİR?</a></div>
+    <div id="DuaPageNameDIV7" class="NamazDIVS" style="display: none">
       <a class="aPageName" href="" target="_blank">
-        TEZEKKÜR DUALARI</a></div>
+        HATİM DUASI</a></div>
 <!--******* END Page NAME DIVs *******-->
 	    
       <div class="BISMILLAH">
