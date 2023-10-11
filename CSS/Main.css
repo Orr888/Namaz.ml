@@ -6,12 +6,10 @@ body {
     font-family: 'Arial';
     background-color: #0D1117;
     color: #C3CCD4;
-    text-align: center;
   }
   .p {
-    color: #C3CCD4;
     margin: auto;
-    font-size: 25px;
+    font-size: 35px !important;
     text-align: left;
   }
 .BISMILLAH {
