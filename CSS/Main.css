@@ -8,6 +8,9 @@ body {
     color: #C3CCD4;
     text-align: center;
   }
+strong {
+color:yellow;
+}
 .pBody {
     padding: 1em 1em 1em 1em;
     font-size: 35px !important;
