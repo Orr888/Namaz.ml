@@ -53,23 +53,28 @@
       <div class="GroupButton">
         <!-- MENU BUTTONS & Scripts -->
           <div id="GorevDIV" class="DIVLabels">
-            <p><label for="NamazDIV">TASAVVUF</label></p>
+            <p><label for="GorevDIV">TASAVVUF</label></p>
             <button onclick="GorevFunction1()">ÖNSÖZ</button>
             <button onclick="GorevFunction2()">GÜNLÜK GÖREVLER</button>
           </div>
           <div id="NamazDIV" class="DIVLabels">
             <p><label for="NamazDIV">NAMAZLAR</label></p>
-            <button onclick="NamazFunction1()">HACET NAMAZI</button>
-            <button onclick="NamazFunction2()">GÜNLÜK NAMAZLAR</button>
+            <button onclick="NamazFunction1()">GÜNLÜK NAMAZLAR</button>
+            <button onclick="NamazFunction2()">HACET NAMAZI</button>
             <button onclick="NamazFunction3()">HAMD ve ŞÜKÜR NAMAZI</button>
-            <button onclick="NamazFunction4()">İSTİHARE NAMAZI</button>
-            <button onclick="NamazFunction5()">TÖVBE NAMAZI</button>
+            <button onclick="NamazFunction4()">TÖVBE NAMAZI</button>
+            <button onclick="NamazFunction5()">İSTİHARE NAMAZI</button>
           </div>
           <div id="DuaDIV" class="DIVLabels">
             <p><label for="DuaDIV">DUALAR</label></p>
-            <button onclick="NamazFunction6()">SOFRA DUALARI</button>
-            <button onclick="NamazFunction7()">TEZEKKÜR DUALARI</button>
-          </div>
+            <button onclick="DuaFunction1()">NAMAZ DUALARI</button>
+            <button onclick="DuaFunction2()">TÖVBE VE İSTİĞFAR DUASI</button>
+            <button onclick="DuaFunction3()">SOFRA DUALARI</button>
+            <button onclick="DuaFunction4()">NAZARDAN KORUNMA DUASI</button>
+            <button onclick="DuaFunction5()">AİLE GEÇİMSİZLİĞİNE KARŞI DUA</button>
+            <button onclick="DuaFunction6()">SİHİR VE BÜYÜDEN KORUNMA DUASI</button>
+            <button onclick="DuaFunction7()">HATİM DUASI</button>
+	  </div>
         <script>
           function NamazFunction1() { 
             $('.NamazDIVS').hide();
@@ -117,18 +122,18 @@
       </div>
   	</div>
 	
-    <!--******* Main Page DIV *******-->
+<!--******* Main Page DIV *******-->
     <div id="MainPageDIV">
 
-      <!--******* Page NAME DIVs *******-->
+<!--******* Page NAME DIVs *******-->
     <div id="PageNameDIV1" class="NamazDIVS" style="display: block">
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1730" target="_blank">
-        HACET NAMAZI</a></div>
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1732" target="_blank">
+        GÜNLÜK NAMAZLAR</a></div>
     <div id="PageNameDIV2" class="NamazDIVS" style="display: none">
       <a class="aPageName" href="#" target="_blank">
-        GÜNLÜK NAMAZLAR</a></div>
+        HACET NAMAZI</a></div>
     <div id="PageNameDIV3" class="NamazDIVS" style="display: none">
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1732" target="_blank">
+      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1730" target="_blank">
         HAMD ve ŞÜKÜR NAMAZI</a></div>
     <div id="PageNameDIV4" class="NamazDIVS" style="display: none">
       <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1735" target="_blank">
@@ -142,7 +147,8 @@
     <div id="PageNameDIV7" class="NamazDIVS" style="display: none">
       <a class="aPageName" href="" target="_blank">
         TEZEKKÜR DUALARI</a></div>
-
+<!--******* END Page NAME DIVs *******-->
+	    
       <div class="BISMILLAH">
         <a class="aButton" source="https://www.mihr.com/Videolar/quran_mp3/ayat/001000.mp3">
         EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM</a>
@@ -151,673 +157,12 @@
       </div>
       <p class="block_with_text" style="display: block"><br /></p>
 
-      <!--******* Namaz DIV 1 *******-->
+<!--******* Namaz DIV 1 *******-->
       <div id="NamazDIV1" style="display: block" class="NamazDIVS">
-        <table cellpadding="2">
-          <tr>
-            <td colspan="2">
-              &nbsp;&nbsp;&nbsp;&nbsp;Allah'tan herhangibir haceti olan veya mürşidine ulaşmak isteyen kimse 
-              hacet namazı kılar. Bu namaz, perşembeyi cumaya bağlayan gece ya da 
-              kandil gecelerinde kılınır. Bu mümkün olmazsa herhangibir gecede de 
-              kılınabilir. Öncelikle boy abdesti alınır. Hacet namazına niyet 
-              edildikten sonra aşağıdaki âyetler okunur:
-            </td>
-          </tr>
-          <tr>
-            <th rowspan="3" class="RekatColl">
-              1.<br/>Rekât
-            </th>
-            <th class="AyatColl">
-              <details><summary>SÜBHANEKE
-                <div style=" position: relative;float: right;">
-                  <button class="PlayButton">
-                  <a class="aButton" source="./mp3/subhaneke.mp3">
-                  <i class="bi bi-play-fill"></i></a></button>
-                <button class="PlayButton" onclick="AllSoundOff()">
-                  <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-                <span class="AyatSpanClass">
-                  Subhâneke allâhumme ve bi hamdik ve tebârekesmuk 
-                  ve teâlâ cedduk ve lâ ilâhe gayruk.
-                </span>
-                <details><summary>
-                    <span class="AnlamSpanClass">Anlamı</summary>
-                      <span class="AnlamSpanClass">
-                      Allah'ım! Sen eksik sıfatlardan pak ve uzaksın. 
-                      Seni daima böyle tenzih eder ve överim. Senin adın mübarektir. 
-                      Varlığın her şeyden üstündür. Senden başka ilah yoktur.
-                      </span>
-                    </span>
-                </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>FÂTİHA
-                <div style=" position: relative;float: right;">
-                  <button class="PlayButton">
-                  <a class="aButton" source="./mp3/fatiha.mp3">
-                  <i class="bi bi-play-fill"></i></a></button>
-                <button class="PlayButton" onclick="AllSoundOff()">
-                  <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-                <span class="AyatSpanClass">
-                  Bismillâhir rahmânir rahîm.<br/>El hamdu lillâhi rabbil âlemîn 
-                  (âlemîne). Er rahmânir rahîm(rahîmi). Mâliki yevmid dîn(dîne). 
-                  İyyâke na’budu ve iyyâke nestaîn(nestaînu). İhdinâs sırâtel 
-                  mustakîm(mustakîme). Sırâtallezîne en’amte aleyhim gayril 
-                  magdûbi aleyhim ve lâd dâllîn(dâllîne).
-                </span>
-                <details><summary>
-                  <span class="AnlamSpanClass">Tefsir</summary>
-                  <span class="AnlamSpanClass">
-                  Rahmân ve rahîm olan Allah'ın ismi ile. Hamd, âlemlerin Rabbi 
-                  olan Allah’adır. Rahmân’dır, Rahîm’dir. Dîn gününün mâlikidir. 
-                  (Allah'ım!) Yalnız Sana kul oluruz ve yalnız Senden İSTİANE 
-                  (mürşidimizi) isteriz. (Bu istiane'n ile) bizi, SIRATI MUSTAKÎM'e 
-                  hidayet et (ulaştır). O yol (SIRATI MUSTAKÎM) ki; üzerlerine nimet 
-                  verdiklerinin yoludur. Üzerlerine gadap duyulmuşların ve dalâlette 
-                  kalmışların (Allah’a ulaşmayı dilemeyenlerin) yolu değil.
-                  <a class="aAchiqlama" 
-                  href="https://www.mihr.com/Kuran/Tefsir" target="_blank">
-                  <br/>FÂTİHA suresine keçid linki</a>
-                  </span></span>
-                </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>3 ÂYETEL KÜRSÎ
-                <div style=" position: relative;float: right;">
-                  <button class="PlayButton">
-                  <a class="aButton" 
-                  source="https://mihr.com/Videolar/quran_mp3/ayat/002255.mp3">
-                  <i class="bi bi-play-fill"></i></a></button>
-                <button class="PlayButton" onclick="AllSoundOff()">
-                  <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-                <span class="AyatSpanClass">
-                  Allâhu lâ ilâhe illâ huvel hayyul kayyûm(kayyûmu), lâ te’huzuhu 
-                  sinetun ve lâ nevm(nevmun), lehu mâ fîs semâvâti ve mâ fil 
-                  ard(ardı), menzellezî yeşfeu indehû illâ bi iznih(iznihî) ya’lemu 
-                  mâ beyne eydîhim ve mâ halfehum, ve lâ yuhîtûne bi şey’in min 
-                  ilmihî illâ bi mâ şâe, vesia kursiyyuhus semâvâti vel ard(arda), 
-                  ve lâ yeûduhu hıfzuhumâ ve huvel aliyyul azîm(azîmu).
-                </span>
-                <details><summary>
-                  <span class="AnlamSpanClass">Tefsir</summary>
-                  <span class="AnlamSpanClass">
-                    Allah ki, O’ndan başka ilâh yoktur (Sadece O vardır). Hayy’dır 
-                    Kayyum’dur. O’nu ne bir uyuklama ve ne de bir uyku hali tutmaz. 
-                    Göklerde ve yerde olan herşey O’nundur. O'nun izni olmadan, 
-                    O’nun katında kim şefaat etme yetkisine sahiptir? Onların 
-                    önlerinde ve arkalarında olanları (geçmiş ve geleceklerini) bilir. 
-                    Ve O’nun ilminden, O’nun dilediğinden başka bir şey ihata 
-                    edemezler (kavrayamazlar). O’nun kürsüsü gökleri ve yeri 
-                    kaplamıştır. Ve o ikisini muhafaza etmek (yerlerin ve göklerin 
-                    dengesini korumak, gözetmek), Kendisine zor gelmez ve O Alâ’dır 
-                    (çok yücedir), Azîm’dir (çok büyüktür).
-                  <a class="aAchiqlama" 
-                  href="https://www.mihr.com/Kuran/Tefsir/2/bakara/255" target="_blank">
-                  <br/>ÂYETEL KÜRSÎ-ye keçid linki</a>
-                  </span></span>
-                </details>
-              </details>
-          </tr>
-          <tr>
-            <th rowspan="4" class="RekatColl">
-              2.<br/>Rekât
-            </th>
-            <th class="AyatColl">
-              <details><summary>FÂTİHA
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/fatiha.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-              Bismillâhir rahmânir rahîm.<br/>El hamdu lillâhi rabbil âlemîn 
-              (âlemîne). Er rahmânir rahîm(rahîmi). Mâliki yevmid dîn(dîne). 
-              İyyâke na’budu ve iyyâke nestaîn(nestaînu). İhdinâs sırâtel 
-              mustakîm(mustakîme). Sırâtallezîne en’amte aleyhim gayril 
-              magdûbi aleyhim ve lâd dâllîn(dâllîne).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-              Rahmân ve rahîm olan Allah'ın ismi ile. Hamd, âlemlerin Rabbi 
-              olan Allah’adır. Rahmân’dır, Rahîm’dir. Dîn gününün mâlikidir. 
-              (Allah'ım!) Yalnız Sana kul oluruz ve yalnız Senden İSTİANE 
-              (mürşidimizi) isteriz. (Bu istiane'n ile) bizi, SIRATI MUSTAKÎM'e 
-              hidayet et (ulaştır). O yol (SIRATI MUSTAKÎM) ki; üzerlerine nimet 
-              verdiklerinin yoludur. Üzerlerine gadap duyulmuşların ve dalâlette 
-              kalmışların (Allah’a ulaşmayı dilemeyenlerin) yolu değil.
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir" target="_blank">
-              <br/>FÂTİHA suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>İHLÂS
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/ihlas.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul huvallâhu ehad(ehadun). Allâhus samed(samedu). Lem yelid ve 
-                lem yûled. Ve lem yekun lehu kufuven ehad(ehadun).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “O Allah, Bir’dir (Tek’tir).” Allah Samed’dir (herşey O’na 
-                muhtaçtır, O, hiçbir şeye muhtaç değildir). O, doğurmadı ve 
-                doğurulmadı. Ve O’nun bir dengi olmadı (olamaz).
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/112/ihlas/1" target="_blank">
-              <br/>İHLÂS suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>FELAK
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/felak.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul eûzu bi rabbil felak(felakı). Min şerri mâ halak(halaka). 
-                Ve min şerri gâsikın izâ vekab(vekabe). Ve min şerrin neffâsâti 
-                fîl ukadi. Ve min şerri hâsidin izâ hased(hasede).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “Ben, Felâk’ın Rabbine sığınırım.” Yarattıklarının şerrinden. 
-                Ve karanlığı çöktüğü zaman gecenin şerrinden. Ve düğümlere üfleyenlerin 
-                şerrinden. Ve haset ettiği zaman, haset edenin şerrinden.
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/113/felak/1" target="_blank">
-              <br/>FELAK suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>NÂS
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/nas.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul eûzu bi rabbin nâs(nâsi). Melikin nâs(nâsi). İlâhin nâs(nâsi). 
-                Min şerril vesvâsil hannâs(hannâsi). Ellezî yuvesvisu fî sudûrin 
-                nâs(nâsi). Minel cinneti ven nâs(nâsi).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “Ben insanların Rabbine sığınırım.” İnsanların melikine 
-                (mâlikine). İnsanların İlâhı’na (sığınırım). Hannasın 
-                vesveselerinin şerrinden. Ki o (hannas), insanların göğüslerine 
-                vesvese verir. İnsanlardan ve cinlerden (insanların Rabbine, 
-                Meliki’ne ve İlâhı’na sığınırım).
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/114/nas/1" target="_blank">
-              <br/>NÂS suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="OturusColl">
-              Oturuş
-            </th>
-            <th class="AyatColl">
-              <details><summary>ET TEHİYYATÜ
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/ettehiyyatu.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Et tehıyyâtu lillâhi ves salavâtu vet tayyibâtu es selâmu aleyke 
-                eyyûhen nebiyyu ve rahmetullâhi ve berekâtuh, es selâmu aleynâ ve 
-                alâ ibâdillâhis sâlihin(sâlihine). Eşhedu en lâ ilâhe illâllâh ve 
-                eşhedu enne muhammeden abduhu ve resûluh(resûluhu).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Anlamı</summary>
-              <span class="AnlamSpanClass">
-                Allah'ın selamı rahmet ve bereketi senin üzerine olsun, selam bizim 
-                üzerimize ve Allah'ın tüm iyi kulları üzerine olsun. Şahitlik ederim 
-                ki; Allah'tan başka ilah yoktur. Şahitli ederim ki; Muhammed, O'nun 
-                kulu ve Peygamberidir.
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th rowspan="4" class="RekatColl">
-              3.<br/>Rekât
-            </th>
-            <th class="AyatColl">
-              <details><summary>FÂTİHA
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/fatiha.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-              Bismillâhir rahmânir rahîm.<br/>El hamdu lillâhi rabbil âlemîn 
-              (âlemîne). Er rahmânir rahîm(rahîmi). Mâliki yevmid dîn(dîne). 
-              İyyâke na’budu ve iyyâke nestaîn(nestaînu). İhdinâs sırâtel 
-              mustakîm(mustakîme). Sırâtallezîne en’amte aleyhim gayril 
-              magdûbi aleyhim ve lâd dâllîn(dâllîne).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-              Rahmân ve rahîm olan Allah'ın ismi ile. Hamd, âlemlerin Rabbi 
-              olan Allah’adır. Rahmân’dır, Rahîm’dir. Dîn gününün mâlikidir. 
-              (Allah'ım!) Yalnız Sana kul oluruz ve yalnız Senden İSTİANE 
-              (mürşidimizi) isteriz. (Bu istiane'n ile) bizi, SIRATI MUSTAKÎM'e 
-              hidayet et (ulaştır). O yol (SIRATI MUSTAKÎM) ki; üzerlerine nimet 
-              verdiklerinin yoludur. Üzerlerine gadap duyulmuşların ve dalâlette 
-              kalmışların (Allah’a ulaşmayı dilemeyenlerin) yolu değil.
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir" target="_blank">
-              <br/>FÂTİHA suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>İHLÂS
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/ihlas.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul huvallâhu ehad(ehadun). Allâhus samed(samedu). Lem yelid ve 
-                lem yûled. Ve lem yekun lehu kufuven ehad(ehadun).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “O Allah, Bir’dir (Tek’tir).” Allah Samed’dir (herşey O’na 
-                muhtaçtır, O, hiçbir şeye muhtaç değildir). O, doğurmadı ve 
-                doğurulmadı. Ve O’nun bir dengi olmadı (olamaz).
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/112/ihlas/1" target="_blank">
-              <br/>İHLÂS suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>FELAK
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/felak.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul eûzu bi rabbil felak(felakı). Min şerri mâ halak(halaka). 
-                Ve min şerri gâsikın izâ vekab(vekabe). Ve min şerrin neffâsâti 
-                fîl ukadi. Ve min şerri hâsidin izâ hased(hasede).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “Ben, Felâk’ın Rabbine sığınırım.” Yarattıklarının şerrinden. 
-                Ve karanlığı çöktüğü zaman gecenin şerrinden. Ve düğümlere üfleyenlerin 
-                şerrinden. Ve haset ettiği zaman, haset edenin şerrinden.
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/113/felak/1" target="_blank">
-              <br/>FELAK suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>NÂS
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/nas.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul eûzu bi rabbin nâs(nâsi). Melikin nâs(nâsi). İlâhin nâs(nâsi). 
-                Min şerril vesvâsil hannâs(hannâsi). Ellezî yuvesvisu fî sudûrin 
-                nâs(nâsi). Minel cinneti ven nâs(nâsi).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “Ben insanların Rabbine sığınırım.” İnsanların melikine 
-                (mâlikine). İnsanların İlâhı’na (sığınırım). Hannasın 
-                vesveselerinin şerrinden. Ki o (hannas), insanların göğüslerine 
-                vesvese verir. İnsanlardan ve cinlerden (insanların Rabbine, 
-                Meliki’ne ve İlâhı’na sığınırım).
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/114/nas/1" target="_blank">
-              <br/>NÂS suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th rowspan="4" class="RekatColl">
-              4.<br/>Rekât
-            </th>
-            <th class="AyatColl">
-              <details><summary>FÂTİHA
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/fatiha.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-              Bismillâhir rahmânir rahîm.<br/>El hamdu lillâhi rabbil âlemîn 
-              (âlemîne). Er rahmânir rahîm(rahîmi). Mâliki yevmid dîn(dîne). 
-              İyyâke na’budu ve iyyâke nestaîn(nestaînu). İhdinâs sırâtel 
-              mustakîm(mustakîme). Sırâtallezîne en’amte aleyhim gayril 
-              magdûbi aleyhim ve lâd dâllîn(dâllîne).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-              Rahmân ve rahîm olan Allah'ın ismi ile. Hamd, âlemlerin Rabbi 
-              olan Allah’adır. Rahmân’dır, Rahîm’dir. Dîn gününün mâlikidir. 
-              (Allah'ım!) Yalnız Sana kul oluruz ve yalnız Senden İSTİANE 
-              (mürşidimizi) isteriz. (Bu istiane'n ile) bizi, SIRATI MUSTAKÎM'e 
-              hidayet et (ulaştır). O yol (SIRATI MUSTAKÎM) ki; üzerlerine nimet 
-              verdiklerinin yoludur. Üzerlerine gadap duyulmuşların ve dalâlette 
-              kalmışların (Allah’a ulaşmayı dilemeyenlerin) yolu değil.
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir" target="_blank">
-              <br/>FÂTİHA suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>İHLÂS
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/ihlas.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul huvallâhu ehad(ehadun). Allâhus samed(samedu). Lem yelid ve 
-                lem yûled. Ve lem yekun lehu kufuven ehad(ehadun).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “O Allah, Bir’dir (Tek’tir).” Allah Samed’dir (herşey O’na 
-                muhtaçtır, O, hiçbir şeye muhtaç değildir). O, doğurmadı ve 
-                doğurulmadı. Ve O’nun bir dengi olmadı (olamaz).
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/112/ihlas/1" target="_blank">
-              <br/>İHLÂS suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>FELAK
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/felak.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul eûzu bi rabbil felak(felakı). Min şerri mâ halak(halaka). 
-                Ve min şerri gâsikın izâ vekab(vekabe). Ve min şerrin neffâsâti 
-                fîl ukadi. Ve min şerri hâsidin izâ hased(hasede).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “Ben, Felâk’ın Rabbine sığınırım.” Yarattıklarının şerrinden. 
-                Ve karanlığı çöktüğü zaman gecenin şerrinden. Ve düğümlere üfleyenlerin 
-                şerrinden. Ve haset ettiği zaman, haset edenin şerrinden.
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/113/felak/1" target="_blank">
-              <br/>FELAK suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>NÂS
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/nas.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Kul eûzu bi rabbin nâs(nâsi). Melikin nâs(nâsi). İlâhin nâs(nâsi). 
-                Min şerril vesvâsil hannâs(hannâsi). Ellezî yuvesvisu fî sudûrin 
-                nâs(nâsi). Minel cinneti ven nâs(nâsi).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Tefsir</summary>
-              <span class="AnlamSpanClass">
-                De ki: “Ben insanların Rabbine sığınırım.” İnsanların melikine 
-                (mâlikine). İnsanların İlâhı’na (sığınırım). Hannasın 
-                vesveselerinin şerrinden. Ki o (hannas), insanların göğüslerine 
-                vesvese verir. İnsanlardan ve cinlerden (insanların Rabbine, 
-                Meliki’ne ve İlâhı’na sığınırım).
-              <a class="aAchiqlama" 
-              href="https://www.mihr.com/Kuran/Tefsir/114/nas/1" target="_blank">
-              <br/>NÂS suresine keçid linki</a>
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th rowspan="4" class="OturusColl">
-              Oturuş
-            </th>
-            <th class="AyatColl">
-              <details><summary>ET TEHİYYATÜ
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/ettehiyyatu.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Et tehıyyâtu lillâhi ves salavâtu vet tayyibâtu es selâmu aleyke 
-                eyyûhen nebiyyu ve rahmetullâhi ve berekâtuh, es selâmu aleynâ ve 
-                alâ ibâdillâhis sâlihin(sâlihine). Eşhedu en lâ ilâhe illâllâh ve 
-                eşhedu enne muhammeden abduhu ve resûluh(resûluhu).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Anlamı</summary>
-              <span class="AnlamSpanClass">
-                Allah'ın selamı rahmet ve bereketi senin üzerine olsun, selam bizim 
-                üzerimize ve Allah'ın tüm iyi kulları üzerine olsun. Şahitlik ederim 
-                ki; Allah'tan başka ilah yoktur. Şahitli ederim ki; Muhammed, O'nun 
-                kulu ve Peygamberidir.
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>ALLAHÜMME SALLİ
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/salli.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Allâhumme salli alâ seyyidinâ muhammedin ve alâ âli muhammedin kemâ 
-                salleyte alâ ibrâhîme ve alâ âli ibrâhîme inneke hamîdun mecîd(mecîdun).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Anlamı</summary>
-              <span class="AnlamSpanClass">
-                Allah'ım! Muhammed'e ve Muhammed'in ümmetine rahmet eyle; şerefini 
-                yücelt. İbrahim'e ve İbrahim'in ümmetine rahmet ettiğin gibi. 
-                Şüphesiz övülmeye layık yalnız sensin, şan ve şeref sahibi de sensin.
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>ALLAHÜMME BARİK
-              <div style=" position: relative;float: right;">
-              <button class="PlayButton">
-              <a class="aButton" source="./mp3/salli.mp3">
-              <i class="bi bi-play-fill"></i></a></button>
-              <button class="PlayButton" onclick="AllSoundOff()">
-              <i class="bi bi-stop-fill"></i></button></div>
-              </summary>
-              <span class="AyatSpanClass">
-                Allâhumme bârik alâ muhammedin ve alâ âli muhammedin kemâ bârekte 
-                alâ ibrâhîme ve alâ âli ibrâhîme inneke hamîdun mecîd(mecîdun).
-              </span>
-              <details><summary>
-              <span class="AnlamSpanClass">Anlamı</summary>
-              <span class="AnlamSpanClass">
-                Ey Allah'ım! İbrâhîm'e Aleyhisselâm ve âline bereketler ihsan ettiğin 
-                gibi, (Efendimiz) Muhammed'e (Sallallâhu Aleyhi ve Sellem) ve âline 
-                de bereketler ihsan eyle. Muhakkak Sen hamîd (övülen) ve mecîd'sin 
-                (şanı büyük).
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <th class="AyatColl">
-              <details><summary>RABBENA
-              </summary>
-              <span class="AyatSpanClass">
-                <details><summary>RABBENA ATİNA
-                  <div style=" position: relative;float: right;">
-                  <button class="PlayButton">
-                  <a class="aButton" 
-                  source="https://mihr.com/Videolar/quran_mp3/ayat/002201.mp3">
-                  <i class="bi bi-play-fill"></i></a></button>
-                  <button class="PlayButton" onclick="AllSoundOff()">
-                  <i class="bi bi-stop-fill"></i></button></div>
-                  </summary>
-                Rabbenâ âtinâ fîd dunyâ haseneten ve fîl âhirati haseneten ve 
-                kınâ azâben nâr(nâri).
-              </span>
-              <details><summary>
-                <span class="AnlamSpanClass">Anlamı</summary>
-                  <span class="AnlamSpanClass">
-                    Rabbimiz bize dünyada hasene (güzellik ve iyilikler) ver ve 
-                    ahirette de hasene (güzellik ve iyilikler) ver. Bizi ateşin azabından koru.<br/>
+      </div>
+<!--******* END Namaz DIV 1 *******-->
 
-
-                RABBENA FİRLİ
-                https://mihr.com/Videolar/quran_mp3/ayat/014041.mp3
-                <br/>Rabbenâgfirlî ve li vâlideyye ve lil mu'minîne yevme yekûmul hisâbu.
-
-
-                RABBENA ATİNA
-
-                RABBENA FİRLİ
-                <br/>Rabbimiz, hesap yapıldığı (görüldüğü) gün beni, annemi, babamı 
-                ve mü’minleri mağfiret et (günahlarımızı affet).
-              </span></span>
-              </details>
-              </details>
-            </th>
-          </tr>
-          <tr>
-            <td colspan="2">
-              &nbsp;&nbsp;&nbsp;&nbsp;Namaz bittikten sonra kişi, Allah'tan haceti 
-              neyse onu veya mürşidini diler. Konuşulmaz. 
-              Kıble, yatağın sağ tarafında kalmalı ve kişi 
-              vücudunun ön cephesi kıbleye doğru olarak, yanüstü dönüp yatmalıdır. 
-              Yattıktan sonra üç kere Âyetel Kürsî okunur. Allah'tan, zahirî veya 
-              batınî hacet ya da mürşid dilenir. Ardından sessiz zikir (zikr-i hafi) 
-              yapılır. Yanüstü yatıldığından sağ kulak yastığa gelecektir. Baş, 
-              hafifçe sağa sola oynatılarak kalp atışlarının (kulaktaki basınç 
-              sebebiyle) rahatça duyulacağı pozisyona gelinir. Kalbin her çift 
-              atışında "Allah, Allah" diyerek, sessiz şekilde içinden Allah 
-              zikredilir.<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;Hacet namazının ilk kılındığı gece, 
-              hacete dair bir rüya görülmezse, hedefe ulaşana kadar perşembeyi cumaya 
-              bağlayan geceler, kılmaya devam edilmelidir. Her gece de kılınabilir.
-            </td>
-          </tr>
-        </table>
-      </div><!--******* END Namaz DIV 1 *******-->
-
-      <!--******* FOOTER *******-->
+<!--******* FOOTER *******-->
       <footer class="MyFooter">
        <br />
         <p>
@@ -862,9 +207,11 @@
           sevgilerimizle.<br />Allah hepinizden sonsuz razı olsun.
         </p>
         <div style="padding: 100px 0 0 0"></div>
-      </footer> <!--******* END FOOTER *******-->
+      </footer> 
+<!--******* END FOOTER *******-->
 
-    </div> <!--******* END Main Page DIV *******-->
+    </div> 
+<!--******* END Main Page DIV *******-->
 
   </body>
 
