@@ -30,7 +30,7 @@ Kuşluk namazında niyetler şöyledir:
  - 2.2 Kuşluk sünneti niyetine, ikindi namazının borcuna (4 rekât)
  - 2.3 Kuşluk sünneti niyetine, akşam (şam) namazının borcuna (3 rekât)
 
-` (Bir günlük geçmiş namazın borcunu, bu süreler içinde kıldığımız zaman hem kuşluk ve teheccüd namazlarının sevabını kazanırız hem de borcumuzu öderiz.) `
+Bir günlük geçmiş namazın borcunu, bu süreler içinde kıldığımız zaman hem kuşluk ve teheccüd namazlarının sevabını kazanırız hem de borcumuzu öderiz.
 
 ### 3. ÖĞLE (GÜNORTA) NAMAZI
 
