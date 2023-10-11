@@ -18,27 +18,21 @@ Namazdan sonra duada: Allah'tan hacet neyse o istenir. Allah'tan mürşid isteme
 ***
 
 # GÜNLÜK NAMAZLAR
- ## 5 VAKİT FARZ
-  ### 1. SÜB
-  ### 2. GÜNORTA (ÖGLE)
-  ### 3. IKINDI ()
-  ### 4. AXŞAM (ŞAM)
-  ### 5. GECE (YATSI)
- ## KUŞLUK SÜNNETI
- ## TEHECCÜD (GECEYARI) SÜNNETI
+
+## 1. SÜB NAMAZI
+## 2. KUŞLUK NAMAZI
+## 3. GÜNORTA (ÖGLE) NAMAZI
+## 4. IKINDI NAMAZI
+## 5. AXŞAM (ŞAM) NAMAZI
+## 6. GECE (YATSI) NAMAZI
+## 7. TEHECCÜD (GECEYARI) NAMAZI
+
 # HAMD VE ŞÜKÜR NAMAZI
 # İSTİHARE NAMAZI
 # TÖVBE NAMAZI
 # DUALAR
- ## NAMAZ SURELERİ
- ## NAMAZ DUALARI
- ## KUNUT DUALARI
- ## TÖVBE VE İSTİĞFAR DUASI
- ## SOFRA DUALARI
- ## TEZEKKÜR DUALARI
-
-[26.09, 12:54] Oruc Qafarov: 7. Təhəccüt namazının sünnəti
-
-7.1 Süb namazının borcu (2 rukət)
-7.2 Gecə namazının borcu (4 rukət)
-7.3 Vitir namazının borcu (3 rukət)
+## NAMAZ DUALARI
+## KUNUT DUALARI
+## TÖVBE VE İSTİĞFAR DUASI
+## SOFRA DUALARI
+## TEZEKKÜR DUALARI
