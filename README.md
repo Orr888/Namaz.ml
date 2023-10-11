@@ -1,4 +1,22 @@
 # HACET NAMAZI
+
+Hacet namazının persembeyi cumaya bağlayan gecelerde veya kandil gecelerinde kılınması asıldır ama bütün gecelerde de kılınabilir. Önce boy abdesti alınır. Sonra hacet namazına niyet edilir.
+|Rekât|Ayetler|
+|---|---|
+| 1. Rekât| Subhaneke + Fâtiha + 3 Âyetel Kürsî|
+| 2. Rekât| Fâtiha + İhlâs + Felâk + Nas|
+| Oturuş | Ettehiyyâtü|
+| 3. Rekâtta| Fâtiha + İhlâs + Felâk + Nas|
+| 4. Rekâtta| Fâtiha + İhlâs + Felâk + Nas|
+| Oturuş| Et Tehiyyatü + Allahümme Salli + Allahümme Barik + Rabbena|
+
+Namazdan sonra duada: Allah'tan hacet neyse o istenir. Allah'tan mürşid istemek için bu namaz kılındıysa mürşid istenir.|
+
+ - Bu namazdan sonra hiç konuşmadan yatmak gerekir. Yatarken kıbleyi sağa alacak şekilde yatak kurulur. Vücudun ön cephesi kıbleye çevrilerek yan üstü yatılır. 3 Âyetel Kürsî okunur ve Allah'tan mürşid istenir. Eğer kişinin haceti mürşid değil de başka bir hedefe ulaşmaksa (zahirî veya batinî bir hedef olabilir) o hedefe ulaşmak istenir. Sessiz zikir (hafî zikir) bu istekten sonra başlar. Yan üstü yatıldığı için sağ kulak yastığa gelecektir. Baş biraz sağa, sola oynatılarak kulakta kalbin atışlarının, basınç sebebiyle rahatça duyulacağı pozisyona gelinir. Ve kalbin her çift atışında "Allah, Allah" diyerek kişi Allah'ı zikr-i hafî ile (yani sessiz olarak) içinden zikredecektir.
+ - Eğer ilk namazdan sonra yatıldığında bir şey görülmez ise, tekrar tekrar her perşembeyi cumaya bağlayan gece namaza devam edilmelidir. Her gece de kılınabilir.
+
+***
+
 # GÜNLÜK NAMAZLAR
  ## 5 VAKİT FARZ
   ### 1. SÜB
@@ -19,49 +37,6 @@
  ## SOFRA DUALARI
  ## TEZEKKÜR DUALARI
 
-[26.09, 12:36] Oruc Qafarov: 1. Süb namazı
-2. Quşluq namazı
-3. Günorta namazı
-4. İkindi namazı
-5. Axşam namazı
-6. Gecə namazı
-7. Təhəccüt namazı
-[26.09, 12:43] Oruc Qafarov: 1. Süb namazı:
-
-1.1 Borc (2 rukət)
-1.2 Sünnət (2 rukət)
-1.3 Fərz (2 rukət)
-1.4 Həmd və Şükür namazı (4 rukət)
-[26.09, 12:44] Oruc Qafarov: 2. Quşluq namazının sünnəti
-
-2.1 Günorta namazının borcu (4 rukət)
-2.2 İkindi namazının borcu (4 rukət)
-2.3 Axşam namazının borcu (3 rukət)
-[26.09, 12:46] Oruc Qafarov: 3. Günorta namazı
-
-3.1 Borc (4 rukət)
-3.2 Ön sünnət (4 rukət)
-3.3 Fərz (4 rukət)
-3.4 Son sünnət (2 rukət)
-[26.09, 12:48] Oruc Qafarov: 4. İkindi namazı
-
-4.1 Borc (4 rukət)
-4.2 Ön sünnət (4 rukət)
-4.3 Fərz (4 rukət)
-4.4 Həmd və Şükür namazı (4 rukət)
-[26.09, 12:51] Oruc Qafarov: 5. Axşam namazı
-
-5.1 Borc (3 rukət)
-5.2 Fərz (3 rukət)
-5.3 Sünnət (2 rukət)
-[26.09, 12:53] Oruc Qafarov: 6. Gecə namazı
-
-6.1 Fərzin borcu (4 rukət)
-6.2 Vitirin borcu (3 rukət)
-6.3 Ön sünnət (4 rukət)
-6.4 Fərz (4 rukət)
-6.5 Son sünnət (2 rukət)
-6.6 Vitir namazı (3 rukət)
 [26.09, 12:54] Oruc Qafarov: 7. Təhəccüt namazının sünnəti
 
 7.1 Süb namazının borcu (2 rukət)
