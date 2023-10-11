@@ -9,8 +9,7 @@ body {
     text-align: center;
   }
 .pBody {
-    margin: auto;
-    padding: auto;
+    padding: 1em 1em 1em 1em;
     font-size: 35px !important;
     text-align: left;
   }
