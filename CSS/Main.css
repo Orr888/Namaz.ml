@@ -179,10 +179,10 @@ color: #58A6FF;
     display: none
   }
   /* NAVBAR */
-
-  * {
-    box-sizing: border-box;
-  }
+/*  
+    background-color: #132339;
+    border: 1px solid #58A6FF;
+*/
   .navbar {
     position: fixed;
     width: 100%;
