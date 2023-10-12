@@ -14,6 +14,7 @@ color: #58A6FF;
     padding: 0em 1em 0em 1em;
     font-size: 35px !important;
     text-align: left !important;
+    margin: auto;
   }
 .BISMILLAH {
     display: block;
@@ -28,7 +29,7 @@ color: #58A6FF;
     }
 .aPageName {
   text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
-        text-align: center;
+  text-align: center;
   color: #58A6FF;
   padding: 180px 0.5em 0.2em 0.5em;
   font-size: 90px !important;
@@ -56,7 +57,7 @@ color: #58A6FF;
   margin: auto;
   font-size: 15px !important;
   font-weight: normal;
-        text-align: center;
+  text-align: center;
 }
   
   /* TABLES */
@@ -180,22 +181,15 @@ color: #58A6FF;
   /* NAVBAR */
 
   * {
-    margin: 0;
     box-sizing: border-box;
   }
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    background-color: #132339;
-    border: 1px solid #58A6FF;
-    font-weight: normal;
     position: fixed;
     width: 100%;
     z-index: 1000;
   }
-  .logo {
-    color: #C3CCD4;
-    font-size: 80px;
-    margin: auto;
+  .navbarDiv {
+  margin-top: 15px; 
+  margin-right: 145px; 
+  float: right;
   }
