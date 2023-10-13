@@ -25,13 +25,9 @@ li {
 
 .BISMILLAH {
     display: block;
-    padding: 1em 0em 1em 0em;
-    color: #C3CCD4;
+    padding: 1em 1em 1em 1em;
     text-align: center;
-    font-size: x-large;
-    width: 90%;
-    display: table;
-    margin: auto;
+    font-size: xx-small;
     }
 .aPageName {
   text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
@@ -64,7 +60,7 @@ li {
   /* BUTTONS */
 
   .aButton {
-    color: #C3CCD4;
+    color: #58A6FF;
   }
   
   .menuBTN {
@@ -104,7 +100,8 @@ li {
     position: absolute;
     right: 0;
     left: 0;
-    display: none
+    display: none;
+    padding: 4em 0em 4em 0em;
   }
 
   /* NAVBAR */
