@@ -2,19 +2,26 @@ a {
     color: #276ebe;
   }
 body {
-    padding: 0em 0.5em 0em 0.5em;
+    padding: 0em 0em 0em 0em;
     font-family: Arial;
     font-size: x-large;
-    background-color: #132339;
+    background-color: #161b22;
     color: #C3CCD4;
   }
 strong {
     color: #58A6FF;
   }
 p {
-    padding: 0em 1em 0em 1em;
+    padding: 0em 1em 1em 1em;
     margin: auto;
   }
+ol {
+    padding: 0em 0em 0em 2em;
+    margin: auto;
+}
+li {
+    padding: 0em 1em 1em 1em;
+}
 
 .BISMILLAH {
     display: block;
@@ -22,7 +29,6 @@ p {
     color: #C3CCD4;
     text-align: center;
     font-size: xx-large;
-    font-family: Arial;
     width: 90%;
     display: table;
     margin: auto;
@@ -83,7 +89,6 @@ p {
     text-align: center;
     padding: 15px;
     margin: 0px 0px 15px 0px;
-    font-family: Arial;
     /*расположение от верха, правой стооны, низа и левой стооны*/
   }
   .DIVLabels {
@@ -95,10 +100,10 @@ p {
     padding: 25px 0 20px 0;
   }
   .MenuSectionStyle {
+    background-color: #132339;
     position: absolute;
     right: 0;
     left: 0;
-    margin-top: 20px; 
     display: none
   }
 
