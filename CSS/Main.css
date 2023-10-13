@@ -10,6 +10,7 @@ body {
   }
 strong {
     color: #58A6FF;
+    font-weight: normal;
   }
 p {
     padding: 0em 1em 1em 1em;
@@ -96,11 +97,12 @@ li {
     padding: 0.1em 0em 0.1em 0em;
   }
   .MenuSectionStyle {
+    display: none;
     background-color: #132339;
     position: absolute;
     right: 0;
     left: 0;
-    display: none;
+    top: 0;
     padding: 4em 0em 4em 0em;
   }
 
