@@ -17,7 +17,7 @@ p {
     margin: auto;
   }
 ol {
-    padding: 0em 0em 0em 2.5em;
+    padding: 0em 0em 0em 2em;
     margin: auto;
 }
 li {
@@ -38,7 +38,7 @@ table, tr, td {
   text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
   text-align: center;
   color: #58A6FF;
-  padding: 3em 1em 0em 1em;
+  padding: 2em 1em 0em 1em;
   font-size: 2.8em !important;
   font-weight: bold;
   text-decoration: none; 
@@ -72,11 +72,11 @@ table, tr, td {
     color: #58A6FF;
     background-color: #21262D;
     display: inline-block;
-    padding: 10px 0px;
+    padding: 3px 0px;
     border: solid 2px #58A6FF;
     border-radius: 10px;
     text-align: center;
-    font-size: 4em;
+    font-size: 2.8em;
   }
 
   .GroupButton button {
@@ -87,18 +87,18 @@ table, tr, td {
     color: #8B949E;
     width: 80%;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
     padding: 0.3em 0.3em 0.3em 0.3em;
-    margin: 10px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
     /*расположение от верха, правой стооны, низа и левой стооны*/
   }
   .DIVLabels {
     background-color: transparent;
     color: #58A6FF;
-    font-size: 3.5em;
+    font-size: 2.5em;
     text-align: center;
-    padding: 0.7em 0em 0.1em 0em;
+    padding: 0.1em 0em 0.1em 0em;
   }
   .MenuSectionStyle {
     display: none;
@@ -119,6 +119,6 @@ table, tr, td {
   }
   .navbarDiv {
   margin-top: 15px; 
-  margin-right: 200px; 
+  margin-right: 145px; 
   float: right;
   }
