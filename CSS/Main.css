@@ -72,11 +72,11 @@ table, tr, td {
     color: #58A6FF;
     background-color: #21262D;
     display: inline-block;
-    padding: 3px 0px;
+    padding: 10px 0px;
     border: solid 2px #58A6FF;
     border-radius: 10px;
     text-align: center;
-    font-size: 2.8em;
+    font-size: 4em;
   }
 
   .GroupButton button {
@@ -96,7 +96,7 @@ table, tr, td {
   .DIVLabels {
     background-color: transparent;
     color: #58A6FF;
-    font-size: 2.5em;
+    font-size: 3.5em;
     text-align: center;
     padding: 0.1em 0em 0.1em 0em;
   }
