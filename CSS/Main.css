@@ -23,6 +23,10 @@ ol {
 li {
     padding: 0em 1em 1em 1em;
 }
+table, tr, td {
+    border: 1px solid #58A6FF;
+    border-collapse: collapse;
+}
 
 .BISMILLAH {
     display: block;
