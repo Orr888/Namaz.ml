@@ -62,8 +62,7 @@
             <button onclick="GorevFunction4()">VİRD'İN AÇILMASI</button>
             <button onclick="GorevFunction5()">GÖK KATLARINA GÖRE ZİKRİN ÇEKİLMESİ</button>
             <button onclick="GorevFunction3()">ESMA-ÜL HÜSNA ÂYETLERİ</button>
-            <form action="https://orrstudio.github.io/Esmalar" method="get" target="_blank">
-            <button type="submit">ESMA-ÜL HÜSNA</button>
+            <button onclick="GorevFunction7()">ESMA-ÜL HÜSNA</button>
 	  </div>
           <div id="NamazDIV" class="DIVLabels">
             <label for="NamazDIV">NAMAZLAR</label><br>
@@ -119,6 +118,9 @@
             $('#GorevDIV6').show();$('#GorevPageNameDIV6').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
             $('#ButtonMENU').show();$('#ButtonMENUX').hide();
+          } 
+          function GorevFunction7() { 
+	    window.open("https://orrstudio.github.io/Esmalar" target="_blank");
           } 
           function NamazFunction1() { 
             $('.NamazDIVS').hide();
