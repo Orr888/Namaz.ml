@@ -80,11 +80,10 @@ table, tr, td {
     color: #58A6FF;
     background-color: #21262D;
     display: inline-block;
-    padding: 3px 0px;
-    border: solid 2px #58A6FF;
-    border-radius: 10px;
+    border: solid 4px #58A6FF;
+    border-radius: 30px;
     text-align: center;
-    font-size: 2.8em;
+    font-size: 120px;
   }
 
   .GroupButton button {
@@ -127,6 +126,6 @@ table, tr, td {
   }
   .navbarDiv {
   margin-top: 15px; 
-  margin-right: 145px; 
+  margin-right: 220px; 
   float: right;
   }
