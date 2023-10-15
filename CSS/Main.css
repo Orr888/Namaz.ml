@@ -22,7 +22,7 @@ p {
     padding: 0em 1em 1em 1em;
     margin: auto;
   }
-pCenter {
+.pCenter {
   text-align: center;
 }
 
