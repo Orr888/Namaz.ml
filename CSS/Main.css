@@ -37,7 +37,7 @@ table, tr, td {
 }
 
 .BISMILLAH {
-    display: none;
+    display: block;
     padding: 1em 1em 1em 1em;
     text-align: center;
     font-size: 0.7em;
