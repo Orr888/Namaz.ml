@@ -42,10 +42,10 @@
           <div id="GorevDIV" class="DIVLabels">
             <p class="aPageName">TASAVVUF</p> 
             <button onclick="GorevFunctionON()">ÖNSÖZ</button>
-            <button onclick="GorevFunction-MV()">MİHR VAKFI</button>
-            <button onclick="GorevFunction-GG()">GÖREVLER</button>
-            <button onclick="GorevFunction-VR()">VİRD</button>
-            <button onclick="GorevFunction-ES()">ESMA-ÜL HÜSNA</button>
+            <button onclick="GorevFunctionMV()">MİHR VAKFI</button>
+            <button onclick="GorevFunctionGG()">GÖREVLER</button>
+            <button onclick="GorevFunctionVR()">VİRD</button>
+            <button onclick="GorevFunctionES()">ESMA-ÜL HÜSNA</button>
 	  </div>
           <div id="NamazDIV" class="DIVLabels">
             <p class="aPageName">NAMAZLAR</p>
@@ -73,22 +73,22 @@
           }  
           function GorevFunctionMV() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV-MV').show();$('#GorevPageNameDIV-MV').show();
+            $('#GorevDIVMV').show();$('#GorevPageNameDIVMV').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           } 
           function GorevFunctionGG() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV-GG').show();$('#GorevPageNameDIV-GG').show();
+            $('#GorevDIVGG').show();$('#GorevPageNameDIVGG').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           }  
           function GorevFunctionVR() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV-VR').show();$('#GorevPageNameDIV-VR').show();
+            $('#GorevDIVVR').show();$('#GorevPageNameDIVVR').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           }  
           function GorevFunctionES() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV-ES').show();$('#GorevPageNameDIV-ES').show();
+            $('#GorevDIVES').show();$('#GorevPageNameDIVES').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           }  
 
@@ -169,7 +169,7 @@
     <div id="GorevPageNameDIVGG" class="NamazDIVS" style="display: none"><p></p><p></p>
       <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1737" target="_blank">
         TASAVVUFA GİREN KİŞİNİN GÜNLÜK GÖREVLERİ</a></div>
-    <div id="GorevPageNameDIV-R" class="NamazDIVS" style="display: none"><p></p><p></p>
+    <div id="GorevPageNameDIVVR" class="NamazDIVS" style="display: none"><p></p><p></p>
       <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1738" target="_blank">
         VİRD'İN AÇILMASI</a></div>
     <div id="GorevPageNameDIVES" class="NamazDIVS" style="display: none"><p></p><p></p>
@@ -218,7 +218,7 @@
       <div><p><strong>EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br>BİSMİLLÂHİRRAHMÂNİRRAHÎM</strong></p></div>
 
 <!--******* Gorev DIVS *******-->
-      <div id="GorevDIV-ON" style="display: none" class="NamazDIVS">
+      <div id="GorevDIVON" style="display: none" class="NamazDIVS">
 <p>&nbsp; &nbsp; Sevgili okuyucular, Allah ile O’nun en kıymetli yaratığı olan insan arasındaki en büyük ilişki vasıtası duadır.
 </p><p>&nbsp; &nbsp; Allah, Kendisinden talep edilendir. Kul, Allah’tan talep edendir.
 </p><p>&nbsp; &nbsp; Allah’a dua edilir. Dua, Allah’ı herhangibir şeyi yerine getirme konusundaki davetin adıdır. Dua ve davet kelimeleri aynı kökten gelir.
@@ -243,7 +243,7 @@
 </p><p class="pCenter">Allah razı olsun.</p>
       </div>
 
-      <div id="GorevDIV-MV" style="display: none" class="NamazDIVS">
+      <div id="GorevDIVMV" style="display: none" class="NamazDIVS">
 <p>&nbsp; &nbsp; Mihr Vakfı Genel Başkanı <strong>Efendi Hazretleri Dr. İskender Ali Mihr</strong>'in vakıf hakkındaki kısa açıklaması: 
 <br>Allah-û Tealâ 1989 yılında MİHR VAKFI'nı kurmayı nasip kıldı. MİHR VAKFI Allah yolunda çalışan, Allah için var olan bir vakıftır. Bu vakfın müntesiplerinin en güzele ulaşması, bu vakıf muhtevası içinde ele alınmıştır. Atalarımız diyorlar ki: <br>"Bir elin nesi var, iki elin sesi var."<br>Biz çok elli, çok sesli bir dizaynın sahibiyiz.</p>
 <p class="pCenter"><strong>MİHR VAKFI TÜRKİYE'NİN VE İSLÂM'IN GELECEĞE AÇILAN BİR KÖPRÜSÜDÜR.</strong></p>
@@ -362,7 +362,7 @@
 </ol>
       </div>
 
-      <div id="GorevDIV-GG" style="display: none" class="NamazDIVS">
+      <div id="GorevDIVGG" style="display: none" class="NamazDIVS">
 	<ol>
   <li> Virdi 7000 zikirle başlar ve 47000'e ulaşıncaya kadar 15 günde bir 2000 artırır.</li>
   <li> Beş vakit namazı, her vaktin kazası ile birlikte kılar. Vaktin kazasında vakit farz namazı kılınır.</li>
@@ -375,7 +375,7 @@
 	</ol>
       </div>
 
-      <div id="GorevDIV-VR" style="display: none" class="NamazDIVS">
+      <div id="GorevDIVVR" style="display: none" class="NamazDIVS">
 <p>&nbsp; &nbsp; Takriben 2,5m.x2,5m. ebatlarında tülbentten yapılmış beyaz vird örtüsü altında, yatmadan önce, sabah ezanından önce veya ne zaman istenirse 25 defa uzun olarak "<b>estağfurullah</b>" çekilir. Her "<b>estağfurullah</b>" kelimesi, derinden alınan nefes yavaş yavaş bırakılırken, nefes bitene kadar uzatılarak söylenir.</p>
 <p>&nbsp; &nbsp; 7 Fatiha Suresi okunur ve "<b>Yarabbi, okuduğum Fatihaları başta Peygamber Efendimiz (S.A.V)'e ve bütün peygamberlere, kıymetli ashabına, bütün mürşidlere ve Mehdi (A.S)'a hediye ettim, kabul buyur.</b>" denilerek bağışlanır. Mürşid düşünülür (rabıta).</p>
 <p>&nbsp; &nbsp; Sabah namaz vaktinden ertesi sabah namazı vaktine kadar bildirilen sayıda zikir yapılır. Her 100, 500 veya 1000 "<b>Allah</b>" zikrinden sonra; "<b>ilâhi ente maksudî ve rızake matlubî</b>" denir.</p>
@@ -395,7 +395,7 @@
 </ol>
       </div>
 
-      <div id="GorevDIV3" style="display: none" class="NamazDIVS">
+      <div id="GorevDIVES" style="display: none" class="NamazDIVS">
 <p><strong>5/MAİDE-97:</strong> Cealallâhul ka'betel beytel harâme kıyâmen lin nâsi veş şehral harâme vel hedye vel kalâid(kalâide), zâlike li ta'lemû ennellâhe ya'lemu mâ fîs semâvâti ve mâ fîl ardı ve ennallâhe bikulli şey'in alîm(alîmun).
 </p><p><strong>19/MERYEM-19, 20:</strong> Kâle innemâ ene resûlu rabbiki li ehebe leki gulâmen zekiyyâ(zekiyyen) kâlet ennâ yekûnu lî gulâmun ve lem yemsesnî beşerun ve lem eku bagıyyâ(bagıyyen).
 </p><p><strong>21/ENBİYA-32, 33:</strong> Ve cealnes semâe sakfen mahfûzâ(mahfûzen), ve hum an âyâtihâ mu'ridûn(mu'ridûne) ve huvellezî halakal leyle ven nehâre veş şemse vel kamer(kamere), kullun fî felekin yesbehûn(yesbehûne).
