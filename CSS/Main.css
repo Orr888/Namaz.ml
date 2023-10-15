@@ -120,50 +120,45 @@ table, tr, td {
 /*ESMA*/
 
   .beautifully {
-    text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow;
-    padding: 180px 0.5em 0.2em 0.5em;
-    color: LightYellow;
+    text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
+    color: #58A6FF;
     font-size: 90px !important;
-    font-family: "Arial";
     font-weight: bold;
   }
   
   .beautifullyDate {
-    color: Yellow;
+    color: #58A6FF;
     text-align: center;
-    padding: 25px 0.5em 25px 0.5em;
-    font-size: 1.5em !important;
+    padding: 25px 10px 25px 10px;
+    font-size: 60px !important;
   }
 
   /* TABLES STYLE */
 
 table {
-  color: LightYellow;
-  font-family: "Arial";
+  color: #58A6FF;
   text-align: left;
   border-collapse: collapse;
-  background-color: #01171c;
-  margin: auto;
-  width: 96%;
+  background-color: #132339;
+  /* width: 96%; */
 }
 
 table th {
-  font-family: "Arial";
-  color: LightYellow;
+  color: #58A6FF;
   font-size: 70px;
   text-align: left;
-  padding: 0.6em 0.5em 0.6em 0.5em;
-  background-color: #004545;
+  padding: 25px 10px 25px 10px;
+  background-color: #132339;
 }
 
 table td {
-  border: 2px solid Moccasin;
+  border: 2px solid #58A6FF;
   font-family: "Arial";
   font-size: 50px;
   text-align: left;
-  color: Moccasin;
-  padding: 0.6em 0.5em 0.6em 0.5em;
-  border-bottom: 2px solid Moccasin;
+  color: #58A6FF;
+  padding: 25px 10px 25px 10px;
+  border-bottom: 2px solid #58A6FF;
   background-color: #003333;
 }
 
