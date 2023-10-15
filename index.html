@@ -433,65 +433,23 @@
 </p>
 
 
-      <!-- DATE -->
-      <div class="beautifullyDate" style="font-size: 2.5em">
-        <script>
-          var d = new Date(),
-            day = new Array(
-              "PAZAR",
-              "PAZARTESİ",
-              "SALI",
-              "ÇARŞAMBA",
-              "PERŞEMBE",
-              "CUMA",
-              "CUMARTESİ"
-            ),
-            month = new Array(
-              "Ocak",
-              "Şubat",
-              "Mart",
-              "Nisan",
-              "Mayıs",
-              "Haziran",
-              "Temmuz",
-              "Ağustos",
-              "Eylül",
-              "Ekim",
-              "Kasım",
-              "Aralık"
-            );
-          document.write(
-            day[d.getDay()] +
-              ", " +
-              d.getDate() +
-              " " +
-              month[d.getMonth()] +
-              " " +
-              d.getFullYear()
-          );
-        </script>
-      </div>
-
     <!-- MAIN PAGE DIV -->
     <div id="MainPageDIV">
       <!-- WEEK NAME DIV's -->
       <div id="myDIV1" class="beautifully" style="display: none">
-        I - PAZARTESİ
-      </div>
-      <div id="myDIV2" class="beautifully" style="display: none">II - SALI</div>
+        I - PAZARTESİ</div>
+      <div id="myDIV2" class="beautifully" style="display: none">
+        II - SALI</div>
       <div id="myDIV3" class="beautifully" style="display: none">
-        III - ÇARŞAMBA
-      </div>
+        III - ÇARŞAMBA</div>
       <div id="myDIV4" class="beautifully" style="display: none">
-        IV - PERŞEMBE
-      </div>
-      <div id="myDIV5" class="beautifully" style="display: none">V - CUMA</div>
+        IV - PERŞEMBE</div>
+      <div id="myDIV5" class="beautifully" style="display: none">
+        V - CUMA</div>
       <div id="myDIV6" class="beautifully" style="display: none">
-        VI - CUMARTESİ
-      </div>
+        VI - CUMARTESİ</div>
       <div id="myDIV7" class="beautifully" style="display: none">
-        VII - PAZAR
-      </div>
+        VII - PAZAR</div>
       <!-- DATE -->
       <div class="beautifullyDate">
         <script>
@@ -532,24 +490,8 @@
       </div>
       <!-- END WEEK NAME DIV's -->
 
-
-
       <!-- NOT CHANGE DIV -->
-      <div class="BISMILLAH">
-        <a
-          class="aButton"
-          source="https://www.mihr.com/Videolar/quran_mp3/ayat/001000.mp3"
-        >
-          EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM</a
-        >
-        <br /><a
-          class="aButton"
-          source="https://www.mihr.com/Videolar/quran_mp3/ayat/001001.mp3"
-        >
-          BİSMİLLÂHİRRAHMÂNİRRAHÎM</a
-        >
-      </div>
-      <p class="block_with_text" style="display: block"><br /></p>
+      <p class="pCenter" style="font-size:20px;">EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br>BİSMİLLÂHİRRAHMÂNİRRAHÎM</p>
 
       <div style="display: block">
         <table>
@@ -567,100 +509,8 @@
           </tr>
         </table>
       </div>
-      <p class="block_with_text" style="display: block"><br /></p>
-      <div
-        class="block_with_text"
-        style="
-          display: block;
-          color: #ffffe0;
-          text-align: center;
-          padding: 0 0.5em 1em 0.5em;
-          font-size: 60px;
-          font-family: Arial;
-        "
-      >
-        <a
-          style="font-weight: 400; color: #ffffe0"
-          href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1743"
-          target="_blank"
-          >İlgili esmalar çekilmeden önce âyeti okunur.</a
-        >
-      </div>
       <div style="display: block">
         <table>
-          <tr>
-            <th class="block_with_text" style="display: block">
-              <button class="PlayButton" onclick="togglePlayPause1()">
-                <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i
-                ><audio
-                  id="audio1"
-                  src="https://www.mihr.com/Videolar/quran_mp3/ayat/005097.mp3"
-                ></audio>
-              </button>
-              <script>
-                var audio1 = document.getElementById("audio1");
-                function togglePlayPause1() {
-                  audio1.paused || audio1.ended
-                    ? audio1.play()
-                    : audio1.pause();
-                }
-              </script>
-              <a
-                href="https://www.mihr.com/Kuran/Meal/5/maide/97"
-                target="_blank"
-                >5/MAİDE-97</a
-              ><br />Cealallâhul ka’betel beytel harâme kıyâmen lin nâsi veş
-              şehral harâme vel hedye vel kalâid(kalâide), zâlike li ta’lemû
-              ennellâhe ya’lemu mâ fîs semâvâti ve mâ fîl ardı ve ennallâhe
-              bikulli şey’in alîm(alîmun).<br /><button
-                class="PlayButton"
-                onclick="togglePlayPause2()"
-              >
-                <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i
-                ><audio
-                  id="audio2"
-                  src="https://www.mihr.com/Videolar/quran_mp3/ayat/039017.mp3"
-                ></audio>
-              </button>
-              <script>
-                var audio2 = document.getElementById("audio2");
-                function togglePlayPause2() {
-                  audio2.paused || audio2.ended
-                    ? audio2.play()
-                    : audio2.pause();
-                }
-              </script>
-              <a
-                href="https://www.mihr.com/Kuran/Meal/39/zumer/17"
-                target="_blank"
-                >39/ZUMER-17</a
-              ><br />Vellezînectenebût tâgûte en ya’budûhâ ve enâbû ilâllâhi
-              lehumul buşrâ, fe beşşir ibâd(ibâdi).<br /><button
-                class="PlayButton"
-                onclick="togglePlayPause3()"
-              >
-                <i class="bi bi-play-fill"></i><i class="bi bi-pause-fill"></i
-                ><audio
-                  id="audio3"
-                  src="https://www.mihr.com/Videolar/quran_mp3/ayat/039019.mp3"
-                ></audio>
-              </button>
-              <script>
-                var audio3 = document.getElementById("audio3");
-                function togglePlayPause3() {
-                  audio3.paused || audio3.ended
-                    ? audio3.play()
-                    : audio3.pause();
-                }
-              </script>
-              <a
-                href="https://www.mihr.com/Kuran/Meal/39/zumer/19"
-                target="_blank"
-                >39/ZUMER-19</a
-              ><br />E fe men hakka aleyhi kelimetul azâb(azâbi), e fe ente
-              tunkızu men fîn nâr(nâri).<br />
-            </th>
-          </tr>
           <tr>
             <td>
               <strong>El Masîr - 535</strong
