@@ -137,7 +137,7 @@ table, tr, td {
   /* TABLES STYLE */
 
 table {
-  color: #58A6FF;
+  color: #8B949E;
   text-align: left;
   border-collapse: collapse;
   background-color: #132339;
@@ -146,8 +146,8 @@ table {
 }
 
 table th {
-  color: #58A6FF;
-  font-size: 70px;
+  color: #8B949E;
+  font-size: 90px;
   text-align: left;
   padding: 25px 10px 25px 10px;
   background-color: #132339;
@@ -156,7 +156,7 @@ table th {
 table td {
   border: 2px solid #58A6FF;
   font-family: "Arial";
-  font-size: 50px;
+  font-size: 40px;
   text-align: left;
   color: #58A6FF;
   padding: 25px 10px 25px 10px;
