@@ -454,15 +454,6 @@
       <div class="beautifullyDate">
         <script>
           var d = new Date(),
-            day = new Array(
-              "PAZAR",
-              "PAZARTESİ",
-              "SALI",
-              "ÇARŞAMBA",
-              "PERŞEMBE",
-              "CUMA",
-              "CUMARTESİ"
-            ),
             month = new Array(
               "Ocak",
               "Şubat",
@@ -478,8 +469,6 @@
               "Aralık"
             );
           document.write(
-            day[d.getDay()] +
-              ", " +
               d.getDate() +
               " " +
               month[d.getMonth()] +
