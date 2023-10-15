@@ -142,6 +142,7 @@ table {
   border-collapse: collapse;
   background-color: #132339;
   width: 100%;
+  margin: auto;
 }
 
 table th {
