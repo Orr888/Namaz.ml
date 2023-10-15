@@ -41,66 +41,57 @@
         <!-- MENU BUTTONS & Scripts -->
           <div id="GorevDIV" class="DIVLabels">
             <p class="aPageName">TASAVVUF</p> 
-            <button onclick="GorevFunction1()">ÖNSÖZ</button>
-            <button onclick="GorevFunction6()">MİHR VAKFI</button>
-            <button onclick="GorevFunction2()">GÜNLÜK GÖREVLER</button>
-            <button onclick="GorevFunction4()">VİRD'İN AÇILMASI</button>
-            <button onclick="GorevFunction5()">GÖK KATLARINA GÖRE ZİKRİN ÇEKİLMESİ</button>
-            <button onclick="GorevFunction3()">ESMA-ÜL HÜSNA ÂYETLERİ</button>
-            <button onclick="GorevFunction7()">ESMA-ÜL HÜSNA ZİKRLERİ</button>
+            <button onclick="GorevFunction-ON()">ÖNSÖZ</button>
+            <button onclick="GorevFunction-MV()">MİHR VAKFI</button>
+            <button onclick="GorevFunction-GG()">GÖREVLER</button>
+            <button onclick="GorevFunction-VR()">VİRD</button>
+            <button onclick="GorevFunction-ES()">ESMA-ÜL HÜSNA</button>
 	  </div>
           <div id="NamazDIV" class="DIVLabels">
             <p class="aPageName">NAMAZLAR</p>
             <button onclick="NamazFunction1()">GÜNLÜK NAMAZLAR</button>
             <button onclick="NamazFunction2()">HACET NAMAZI</button>
-            <button onclick="NamazFunction3()">HAMD ve ŞÜKÜR NAMAZI</button>
+            <button onclick="NamazFunction3()">HAMD VE ŞÜKÜR</button>
             <button onclick="NamazFunction4()">TÖVBE NAMAZI</button>
             <button onclick="NamazFunction5()">İSTİHARE NAMAZI</button>
           </div>
           <div id="DuaDIV" class="DIVLabels">
             <p class="aPageName">DUALAR</p>
             <button onclick="DuaFunction1()">NAMAZ DUALARI</button>
-            <button onclick="DuaFunction2()">TÖVBE VE İSTİĞFAR DUASI</button>
+            <button onclick="DuaFunction2()">TÖVBE VE İSTİĞFAR</button>
             <button onclick="DuaFunction3()">SOFRA DUALARI</button>
-            <button onclick="DuaFunction4()">NAZARDAN KORUNMA DUASI</button>
-            <button onclick="DuaFunction5()">AİLE GEÇİMSİZLİĞİNE KARŞI DUA</button>
-            <button onclick="DuaFunction6()">SİHİR VE BÜYÜDEN KORUNMA</button>
+            <button onclick="DuaFunction4()">NAZARDAN</button>
+            <button onclick="DuaFunction5()">GEÇİMSİZLİĞDEN</button>
+            <button onclick="DuaFunction6()">SİHİR VE BÜYÜDEN</button>
             <button onclick="DuaFunction7()">HATİM DUASI</button>
 	  </div>
         <script>
-          function GorevFunction1() { 
+          function GorevFunction-ON() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV1').show();$('#GorevPageNameDIV1').show();
+            $('#GorevDIV-ON').show();$('#GorevPageNameDIV-ON').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           }  
-          function GorevFunction2() { 
+          function GorevFunction-MV() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV2').show();$('#GorevPageNameDIV2').show();
+            $('#GorevDIV-MV').show();$('#GorevPageNameDIV-MV').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           } 
-          function GorevFunction3() { 
+          function GorevFunction-GG() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV3').show();$('#GorevPageNameDIV3').show();
+            $('#GorevDIV-GG').show();$('#GorevPageNameDIV-GG').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           }  
-          function GorevFunction4() { 
+          function GorevFunction-VR() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV4').show();$('#GorevPageNameDIV4').show();
+            $('#GorevDIV-VR').show();$('#GorevPageNameDIV-VR').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           }  
-          function GorevFunction5() { 
+          function GorevFunction-ES() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV5').show();$('#GorevPageNameDIV5').show();
+            $('#GorevDIV-ES').show();$('#GorevPageNameDIV-ES').show();
             $('#MenuPageDIV').hide();$('#MainPageDIV').show();
           }  
-          function GorevFunction6() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIV6').show();$('#GorevPageNameDIV6').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function GorevFunction7() { 
-	    window.open("https://orrstudio.github.io/Esmalar");
-          } 
+
           function NamazFunction1() { 
             $('.NamazDIVS').hide();$('#ButtonMENU').show();
             $('#NamazDIV1').show();$('#PageNameDIV1').show();
