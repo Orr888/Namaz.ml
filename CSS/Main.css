@@ -1,6 +1,8 @@
-a {
-    color: #276ebe;
-  }
+.MainPageDIV {
+  margin: 10px 10px 10px 10px;
+  /* border:1px solid #58A6FF; */
+  padding: 10px 10px 10px 10px;
+}
 body {
     padding: 0em 0em 0em 0em;
     font-family: Arial;
@@ -12,18 +14,25 @@ strong {
     color: #58A6FF;
     font-weight: normal;
   }
+
+a {
+    color: #276ebe;
+  }
 p {
     padding: 0em 1em 1em 1em;
     margin: auto;
   }
+
 ol {
     list-style-position:inside;
     padding: 0em 0em 0em 2em;
     margin: auto;
 }
 li {
+    list-style-position:inside;
     padding: 0em 1em 1em 1em;
 }
+
 table, tr, td {
     border: 1px solid #58A6FF;
     border-collapse: collapse;
