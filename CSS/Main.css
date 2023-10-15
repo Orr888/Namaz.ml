@@ -124,6 +124,7 @@ table, tr, td {
     color: #58A6FF;
     font-size: 90px !important;
     font-weight: bold;
+    text-align: center;
   }
   
   .beautifullyDate {
