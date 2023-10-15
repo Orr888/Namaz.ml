@@ -50,7 +50,7 @@ table, tr, td {
   font-size: 2.8em !important;
   font-weight: bold;
   text-decoration: none; 
-  display: none;
+  display: block;
   }
 
 .beautifullyFooter {
