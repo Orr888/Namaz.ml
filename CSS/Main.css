@@ -46,7 +46,7 @@ table, tr, td {
   text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
   text-align: center;
   color: #58A6FF;
-  padding: 140px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   font-size: 100px !important;
   font-weight: bold;
   text-decoration: none; 
@@ -55,16 +55,13 @@ table, tr, td {
 
 .beautifullyFooter {
   text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
-  padding: 0.5em 0.5em 0.2em 0.5em;
   color: #58A6FF;
-  font-size: xx-large !important;
+  font-size: 64px !important;
   font-weight: bold;
   }
 .MyFooter {
   color: #276ebe;
-  width: 95%;
-  margin: auto;
-  font-size: small !important;
+  font-size: 24px !important;
   font-weight: normal;
   text-align: center;
   }
