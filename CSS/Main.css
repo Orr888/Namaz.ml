@@ -37,7 +37,7 @@ table, tr, td {
 }
 
 .BISMILLAH {
-    display: block;
+    display: none;
     padding: 1em 1em 1em 1em;
     text-align: center;
     font-size: 0.7em;
@@ -50,7 +50,7 @@ table, tr, td {
   font-size: 2.8em !important;
   font-weight: bold;
   text-decoration: none; 
-  display: block;
+  display: none;
   }
 
 .beautifullyFooter {
@@ -109,7 +109,7 @@ table, tr, td {
     padding: 0.1em 0em 0.1em 0em;
   }
   .MenuSectionStyle {
-    display: none;
+    display: block;
     background-color: #132339;
     position: absolute;
     right: 0;
