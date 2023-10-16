@@ -136,34 +136,33 @@ table, tr, td {
 
   /* TABLES STYLE */
 
-table {
-  color: #8B949E;
-  text-align: left;
-  border-collapse: collapse;
-  background-color: #132339;
-  width: 100%;
-  margin: auto;
-}
-
-table td {
-  border: 2px solid #58A6FF;
-  font-size: 90px;
-  text-align: left;
-  color: #58A6FF;
-  /* padding: 25px 10px 25px 10px; */
-  border-bottom: 1px solid #58A6FF;
-  background-color: #161b22;
-}
-
-/* CHEKBOX STYLE */
-
-input[type="checkbox"] + label:before {
-  content: "\1f497";
-  float: right;
-  font-family: FontAwesome;
-  font-size: 60px;
-}
-
-input[type="checkbox"]:checked + label:before {
-  content: "\1f49a";
-}
+  table {
+    color: #C3CCD4;
+    text-align: left;
+    border-collapse: collapse;
+    background-color: #161b22;
+    width: 100%;
+    margin: auto;
+  }
+  
+  table td {
+    border: 1px solid #58A6FF;
+    border-collapse: collapse;
+    font-size: 80px;
+    text-align: left;
+    color: #C3CCD4;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  /* CHEKBOX STYLE */
+  
+  input[type="checkbox"] + label:before {
+    content: "\1f497";
+    float: right;
+    font-family: FontAwesome;
+    font-size: 80px;
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    content: "\1f49a";
+  }
