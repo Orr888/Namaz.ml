@@ -12,10 +12,10 @@ body {
     margin: 0 auto !important; 
     float: none !important; 
   }
-.header-container, .body-container, .footer-container { 
-    max-width: 1080px; 
+/* .header-container, .body-container, .footer-container { 
+    max-width: 1024px; 
     margin: 0 auto; 
-  }
+  } */
 strong {
     color: #58A6FF;
     font-weight: normal;
