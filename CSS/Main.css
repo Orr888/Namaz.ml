@@ -12,10 +12,10 @@ body {
     margin: 0 auto !important; 
     float: none !important; 
   }
-/* .header-container, .body-container, .footer-container { 
+.header-container, .body-container, .footer-container { 
     max-width: 1024px; 
     margin: 0 auto; 
-  }  */
+  } 
 strong {
     color: #58A6FF;
     font-weight: normal;
@@ -107,7 +107,7 @@ table, tr, td {
     float: none !important; 
     display: block;
     background-color: transparent;
-    position: absolute;
+/*     position: absolute; */
     right: 0;
     left: 0;
     top: 0;
