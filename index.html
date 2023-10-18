@@ -1,1733 +1,1565 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8" />
-    <title>TASAVVUFİ HAYAT</title>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <!-- Bootstrap and Awesome SVG Font icons https://icons.getbootstrap.com -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Main Styles -->
-    <link rel="stylesheet" href="./CSS/Main.css" />
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <title>TASAVVUFİ HAYAT</title>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <!-- Bootstrap and Awesome SVG Font icons https://icons.getbootstrap.com -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="./CSS/Main.css" />
+</head>
 
 <body>
-<div class="GeneralDIV">
+  <div class="GeneralDIV">
 
-          <!--******* TOP NAV *******-->
-          <div class="navbarDiv">
-            <nav class="navbar" id="top_nav">
-              <button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN" style="display: none">
-                &nbsp;<i class="bi bi-list"></i>&nbsp;
-              </button>
-              <script>
-                function BtnMENU() {
-                  ;(document.getElementById("MenuPageDIV").style.display = "block"),
-                  (document.getElementById("MainPageDIV").style.display = "none"),
-                  (document.getElementById("ButtonMENU").style.display = "none")
-                }
-              </script>
-            </nav>
-          </div>
-      
+    <!--******* TOP NAV *******-->
+    <div class="navbarDiv">
+      <nav class="navbar" id="top_nav">
+        <button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN" style="display: none">
+          &nbsp;<i class="bi bi-list"></i>&nbsp;
+        </button>
+        <script>
+          function BtnMENU() {
+            ; (document.getElementById("MenuPageDIV").style.display = "block"),
+              (document.getElementById("MainPageDIV").style.display = "none"),
+              (document.getElementById("ButtonMENU").style.display = "none")
+          }
+        </script>
+      </nav>
+    </div>
+
     <!-- MENU PAGE DIV -->
     <div id="MenuPageDIV" class="MenuSectionStyle">
       <!-- GROUP BUTTONS DIV -->
       <div class="GroupButton">
         <!-- MENU BUTTONS & Scripts -->
-          <div id="GorevDIV" class="DIVLabels">
-            <p class="aPageName">TASAVVUF</p> 
-            <button onclick="GorevFunctionON()">ÖNSÖZ</button>
-            <button onclick="GorevFunctionMV()">MİHR VAKFI</button>
-            <button onclick="GorevFunctionGG()">GÖREVLER</button>
-            <button onclick="GorevFunctionVR()">VİRD</button>
-            <button onclick="GorevFunctionES()">ESMAÜL HÜSNA</button>
-	  </div>
-          <div id="NamazDIV" class="DIVLabels">
-            <p class="aPageName">NAMAZLAR</p>
-            <button onclick="NamazFunction1()">FARZ NAMAZLAR</button>
-            <button onclick="NamazFunction2()">HACET NAMAZI</button>
-            <button onclick="NamazFunction3()">HAMD VE ŞÜKÜR</button>
-            <button onclick="NamazFunction4()">TÖVBE NAMAZI</button>
-            <button onclick="NamazFunction5()">İSTİHARE NAMAZI</button>
-          </div>
-          <div id="DuaDIV" class="DIVLabels">
-            <p class="aPageName">DUALAR</p>
-            <button onclick="DuaFunction1()">NAMAZ DUALARI</button>
-            <button onclick="DuaFunction2()">TÖVBE VE İSTİĞFAR</button>
-            <button onclick="DuaFunction3()">SOFRA DUALARI</button>
-            <button onclick="DuaFunction4()">NAZARDAN</button>
-            <button onclick="DuaFunction5()">GEÇİMSİZLİĞDEN</button>
-            <button onclick="DuaFunction6()">SİHİR VE BÜYÜDEN</button>
-            <button onclick="DuaFunction7()">HATİM DUASI</button>
-	  </div>
+        <div id="GorevDIV" class="DIVLabels">
+          <p class="aPageName">TASAVVUF</p>
+          <button onclick="GorevFunctionON()">ÖNSÖZ</button>
+          <button onclick="GorevFunctionMV()">MİHR VAKFI</button>
+          <button onclick="GorevFunctionGG()">GÖREVLER</button>
+          <button onclick="GorevFunctionVR()">VİRD</button>
+          <button onclick="GorevFunctionES()">ESMAÜL HÜSNA</button>
+        </div>
+        <div id="NamazDIV" class="DIVLabels">
+          <p class="aPageName">NAMAZLAR</p>
+          <button onclick="NamazFunction1()">FARZ NAMAZLAR</button>
+          <button onclick="NamazFunction2()">HACET NAMAZI</button>
+          <button onclick="NamazFunction3()">HAMD VE ŞÜKÜR</button>
+          <button onclick="NamazFunction4()">TÖVBE NAMAZI</button>
+          <button onclick="NamazFunction5()">İSTİHARE NAMAZI</button>
+        </div>
+        <div id="DuaDIV" class="DIVLabels">
+          <p class="aPageName">DUALAR</p>
+          <button onclick="DuaFunction1()">NAMAZ DUALARI</button>
+          <button onclick="DuaFunction2()">TÖVBE VE İSTİĞFAR</button>
+          <button onclick="DuaFunction3()">SOFRA DUALARI</button>
+          <button onclick="DuaFunction4()">NAZARDAN</button>
+          <button onclick="DuaFunction5()">GEÇİMSİZLİĞDEN</button>
+          <button onclick="DuaFunction6()">SİHİR VE BÜYÜDEN</button>
+          <button onclick="DuaFunction7()">HATİM DUASI</button>
+        </div>
         <script>
-          function GorevFunctionON() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIVON').show();$('#GorevPageNameDIVON').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function GorevFunctionMV() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIVMV').show();$('#GorevPageNameDIVMV').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          } 
-          function GorevFunctionGG() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIVGG').show();$('#GorevPageNameDIVGG').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function GorevFunctionVR() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIVVR').show();$('#GorevPageNameDIVVR').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function GorevFunctionES() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#GorevDIVES').show();$('#GorevPageNameDIVES').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
+          function GorevFunctionON() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#GorevDIVON').show(); $('#GorevPageNameDIVON').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function GorevFunctionMV() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#GorevDIVMV').show(); $('#GorevPageNameDIVMV').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function GorevFunctionGG() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#GorevDIVGG').show(); $('#GorevPageNameDIVGG').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function GorevFunctionVR() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#GorevDIVVR').show(); $('#GorevPageNameDIVVR').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function GorevFunctionES() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#GorevDIVES').show(); $('#GorevPageNameDIVES').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
 
-          function NamazFunction1() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#NamazDIV1').show();$('#PageNameDIV1').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function NamazFunction2() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#NamazDIV2').show();$('#PageNameDIV2').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function NamazFunction3() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#NamazDIV3').show();$('#PageNameDIV3').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function NamazFunction4() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#NamazDIV4').show();$('#PageNameDIV4').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function NamazFunction5() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#NamazDIV5').show();$('#PageNameDIV5').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function DuaFunction1() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#DuaDIV1').show();$('#DuaPageNameDIV1').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function DuaFunction2() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#DuaDIV2').show();$('#DuaPageNameDIV2').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function DuaFunction3() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#DuaDIV3').show();$('#DuaPageNameDIV3').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function DuaFunction4() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#DuaDIV4').show();$('#DuaPageNameDIV4').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function DuaFunction5() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#DuaDIV5').show();$('#DuaPageNameDIV5').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function DuaFunction6() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#DuaDIV6').show();$('#DuaPageNameDIV6').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
-          }  
-          function DuaFunction7() { 
-            $('.NamazDIVS').hide();$('#ButtonMENU').show();
-            $('#DuaDIV7').show();$('#DuaPageNameDIV7').show();
-            $('#MenuPageDIV').hide();$('#MainPageDIV').show();
+          function NamazFunction1() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#NamazDIV1').show(); $('#PageNameDIV1').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function NamazFunction2() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#NamazDIV2').show(); $('#PageNameDIV2').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function NamazFunction3() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#NamazDIV3').show(); $('#PageNameDIV3').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function NamazFunction4() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#NamazDIV4').show(); $('#PageNameDIV4').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function NamazFunction5() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#NamazDIV5').show(); $('#PageNameDIV5').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function DuaFunction1() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#DuaDIV1').show(); $('#DuaPageNameDIV1').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function DuaFunction2() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#DuaDIV2').show(); $('#DuaPageNameDIV2').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function DuaFunction3() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#DuaDIV3').show(); $('#DuaPageNameDIV3').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function DuaFunction4() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#DuaDIV4').show(); $('#DuaPageNameDIV4').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function DuaFunction5() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#DuaDIV5').show(); $('#DuaPageNameDIV5').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function DuaFunction6() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#DuaDIV6').show(); $('#DuaPageNameDIV6').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
+          }
+          function DuaFunction7() {
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#DuaDIV7').show(); $('#DuaPageNameDIV7').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show();
           }  
         </script>
       </div>
-  	</div>
-	
-<!--******* Main Page DIV *******-->
-    <div id="MainPageDIV" style="display: none;">
-
-<!--******* Page NAME DIVs *******-->
-    <div id="GorevPageNameDIVON" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1708" target="_blank">
-        ÖNSÖZ</a></div>
-    <div id="GorevPageNameDIVMV" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://www.mihr.com/mihrvakfi" target="_blank">
-        MİHR VAKFI</a></div>
-    <div id="GorevPageNameDIVGG" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1737" target="_blank">
-        TASAVVUFA GİREN KİŞİNİN GÜNLÜK GÖREVLERİ</a></div>
-    <div id="GorevPageNameDIVVR" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1738" target="_blank">
-        VİRD'İN AÇILMASI</a></div>
-    <div id="GorevPageNameDIVES" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1743" target="_blank">
-	ESMAÜL HÜSNA ÂYETLERİ</a></div>
-
-    <div id="PageNameDIV1" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://www.mihr.com/sohbetler/29/0/namazlar-dualar-ve-zikir" target="_blank">
-        GÜNLÜK NAMAZLAR<br>(5 vakit + kuşluk + teheccüd)</a></div>
-    <div id="PageNameDIV2" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1730" target="_blank">
-        HACET NAMAZI</a></div>
-    <div id="PageNameDIV3" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1732" target="_blank">
-        HAMD ve ŞÜKÜR NAMAZI</a></div>
-    <div id="PageNameDIV4" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1731" target="_blank">
-        TÖVBE NAMAZI</a></div>
-    <div id="PageNameDIV5" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1735" target="_blank">
-        İSTİHARE NAMAZI</a></div>
-
-    <div id="DuaPageNameDIV1" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1729" target="_blank">
-        NAMAZ DUALARI</a></div>
-    <div id="DuaPageNameDIV2" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1736" target="_blank">
-        TÖVBE VE İSTİĞFAR DUASI</a></div>
-    <div id="DuaPageNameDIV3" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1745" target="_blank">
-        SOFRA DUALARI</a></div>
-    <div id="DuaPageNameDIV4" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1723" target="_blank">
-        NAZARDAN KORUNMA DUASI</a></div>
-    <div id="DuaPageNameDIV5" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1725" target="_blank">
-        AİLE GEÇİMSİZLİĞİNE KARŞI DUA</a></div>
-    <div id="DuaPageNameDIV6" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1726" target="_blank">
-        SİHİR VE BÜYÜ NASIL ETKİSİZ HALE GETİRİLİR?</a></div>
-    <div id="DuaPageNameDIV7" class="NamazDIVS" style="display: none"><p></p><p></p>
-      <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1746" target="_blank">
-        HATİM DUASI</a></div>
-<!--******* END Page NAME DIVs *******-->
-	    
-      <p class="pCenter" style="font-size:20px"><strong>EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br>BİSMİLLÂHİRRAHMÂNİRRAHÎM</strong></p>
-
-<!--******* Gorev DIVS *******-->
-      <div id="GorevDIVON" style="display: none" class="NamazDIVS">
-<p>&nbsp; &nbsp; Sevgili okuyucular, Allah ile O’nun en kıymetli yaratığı olan insan arasındaki en büyük ilişki vasıtası duadır.
-</p><p>&nbsp; &nbsp; Allah, Kendisinden talep edilendir. Kul, Allah’tan talep edendir.
-</p><p>&nbsp; &nbsp; Allah’a dua edilir. Dua, Allah’ı herhangibir şeyi yerine getirme konusundaki davetin adıdır. Dua ve davet kelimeleri aynı kökten gelir.
-</p><p>&nbsp; &nbsp; Dünyaya ait olan duada, kişi ister Allah’a ulaşmayı dilesin ister dilemesin Allah o talebi kabul eder. Yeter ki kişinin kalbinde talep olsun. Haksız para kazanma talebi... Ne olursa... Allahû Tealâ onları kabul eder ama o insanlar o kadar da cezayı yüklenerek bu dünyadan ayrılırlar.
-</p><p>&nbsp; &nbsp; Kişi, Allah’a ulaşmayı dilemezse onun davetine icabet edilmez!
-</p><p>&nbsp; &nbsp; Allah’a ulaşmayı dilemeyenlerin kurtuluşları mümkün değildir! Onların Allah’ın cennetine gitmek, dünya saadetine ulaşmak konusundaki talepleri kabul edilmez! Onların şükürleri de kabul edilmez!
-</p><p>&nbsp; &nbsp; Allahû Tealâ’nın yolunda eğer Allah’a manevî tekâmül konusunda dua edecekseniz, eğer siz, Allah’a karşı tevekkül sahibi iseniz o zaman duanız mutlaka kabul edilir.
-</p><p>&nbsp; &nbsp; Kesin şekilde inanmak, kalbî talebin sahibi olmak demektir. İnsanlar Allah’a ulaşmayı dilemedikçe, talepleri Allahû Tealâ tarafından kabul edilmez!
-</p><p>&nbsp; &nbsp; Allahû Tealâ’dan kalbinizden bir dilekte bulunmak, kalbinizle bir dilekte bulunmak, duadır.
-</p><p><strong>Dua, Allah’ı davettir</strong>.
-</p><p><strong>Allah’ı, ruhu Kendisine ulaştırmaya davettir</strong>.
-</p><p><strong>Allah’ı, fizik vücudu teslim almaya davettir</strong>.
-</p><p><strong>Allah’ı, nefsi teslim almaya davettir</strong>.
-</p><p><strong>Allah’ı, bizleri irşada ulaştırmaya davettir</strong>.
-</p><p><strong>Allah’ı, iradeyi teslim almasına davettir</strong>.
-</p><p>&nbsp; &nbsp; Allah, kalbinde inanç bulunanlara, o talebin sahibi olanlara gerekeni yapar. Allah ile ilişkinizi sağlayan müessesenin adı, duadır. Ama kalbinizle dua etmediyseniz, sadece söz olarak dua ettiyseniz bu Allah’ın katında bir değer ifade etmez. Allah söze bakmaz, kalbe bakar. Kalbinizde ne var?
-</p><p>&nbsp; &nbsp; Sevgili okuyucular, Allah’a bütün duaları <strong>“inanarak”</strong> edin!
-</p><p>&nbsp; &nbsp; Kalbinizde ne varsa, kalbiniz aynadır, onu Allah’a aksettirir. Diliniz aksettirmeye yeterli değildir. Diliniz sadece kalbinizdekini söylediği taktirde, konuşmanız Allahû Tealâ tarafından dua hüviyetine girer. Öyleyse Allahû Tealâ sizin kalbinizde olan inanç seviyesiyle ilişkilidir.
-</p><p><strong>Îmân, duanın temelini teşkil eder</strong>.
-</p><p>&nbsp; &nbsp; Talep ettiğiniz şeyin Allahû Tealâ tarafından yerine getirileceğine inanın! İnanıyorsanız, bu inancın kalben sahibi iseniz Allahû Tealâ o talebinizi mutlaka yerine getirir.
-</p><p>&nbsp; &nbsp; Îmânınız, Allah katındaki miyarınızdır. Allah’ın size değer verme ölçüsü, îmânınızdır. Neye ve ne kadar inanıyorsunuz? Allah yolunda hangi güçlükler olursa olsun, hepsine katlanmaya hazır mısınız? Bu îmânı kalbinize yerleştirdiniz mi, o zaman korkmayın! Güçlüklerin mahiyeti ne olursa olsun, hepsinin üstesinden gelirsiniz.
-</p><p class="pCenter">Allah razı olsun.</p>
-      </div>
-
-      <div id="GorevDIVMV" style="display: none" class="NamazDIVS">
-<p>&nbsp; &nbsp; Mihr Vakfı Genel Başkanı <strong>Efendi Hazretleri Dr. İskender Ali Mihr</strong>'in vakıf hakkındaki kısa açıklaması: 
-<br>Allah-û Tealâ 1989 yılında MİHR VAKFI'nı kurmayı nasip kıldı. MİHR VAKFI Allah yolunda çalışan, Allah için var olan bir vakıftır. Bu vakfın müntesiplerinin en güzele ulaşması, bu vakıf muhtevası içinde ele alınmıştır. Atalarımız diyorlar ki: <br>"Bir elin nesi var, iki elin sesi var."<br>Biz çok elli, çok sesli bir dizaynın sahibiyiz.</p>
-<p class="pCenter"><strong>MİHR VAKFI TÜRKİYE'NİN VE İSLÂM'IN GELECEĞE AÇILAN BİR KÖPRÜSÜDÜR.</strong></p>
-<p>&nbsp; &nbsp; Gelecek; dünya üzerinde yeni olayların vücuda geleceği ve dinlerin tek bir din olarak bir araya getirileceği, bütün dinlerin aynı çatı altında birleştirileceği bir vasıf taşımaktadır.</p>
-<p class="pCenter"><strong>VAKFIN KURULUŞ AMACI VE FAALİYETLERİ</strong></p>
-<p>&nbsp; &nbsp; Medeniyet-İrfan-Hayır-Ref (MİHR) vakfı 1989 yılında tesis edilmiş olup, 25.10.1989 tarihli resmi gazetede Vakıflar Genel Müdürlüğünce ilan edilmiştir.<br>Vakıf Genel Merkezi, Ankara'dadır. Vakfın gayeleri şunlardır (Vakıf senedi yani ana sözleşme madde 5):</p>
-<ol>
-<li>Yardıma muhtaç kişilere yardım etmek.</li>
-<li>
-<ol style="list-style-type: lower-alpha;">
-<li>İslâm</li>
-<li>Modern Teknoloji</li>
-<li>Nükleer Fizik Kimya</li>
-<li>Enerji</li>
-<li>Ekonomi</li>
-<li>Finans</li>
-<li>İş Etütleri</li>
-</ol></li>
-<li>İslâmi Teknik ve Sosyal İlimlerin yukarıda adı geçmeyen dalları ve bunların dışında kalan ilimler alanlarında,</li>
-<ol style="list-style-type: lower-alpha;">
-<li>Araştırma yapmak ve yaptırmak</li>
-<li>Yurt içinde ve dışında bu ilimlerin gelişmesi istikametinde her türlü neşriyatta bulunmak, konferans ve seminerler düzenlemek ve düzenlenen seminerlere iştirak etmek,</li>
-<li>Kurslar düzenlemek, fakülteler ve üniversiteler kurmak, mevcut üniversitelere katılmaktır.</li>
-</ol></ol>
-<p>&nbsp; &nbsp; Vakfın bu ana gayeleri doğrultusunda ve kuruluşundan bu güne kadar geçen kısa bir zaman içinde yurt içinde ve yurt dışında birçok seri konferanslar düzenlenmiştir. 1990 ve 1991 yıllarında A.B.D de, 1991'de Azerbaycan'da, 1992 yılında Almanya'da ve Belçika'da İslâm ve Tasavvuf konularında Vakıf Genel Başkanı Sayın İskender Erol Evrenosoğlu tarafından konferanslar verilmiştir. Ayrıca Ankara başta olmak üzere İstanbul, İzmir, Aydın, Denizli'de Ocak 1992'den beri her ay seri konferanslar düzenlenmiştir. </p> 
-<p>&nbsp; &nbsp; Samsun, Gaziantep, Malatya, Adana, Konya, Hopa, Gönen ve diğer bazı il ve ilçelerde de sık sık konferanslar ve sohbetler tertiplemek suretiyle Vakıf, İslâmı, Peygamberimizin tebliği ve sahabenin yaşadığı şekliyle yurtta ve dünyada anlatmak, yaşatmak için azimli bir faaliyet içinde bulunmaktadır. İslâm dünyasında bu gün İslâm sadece şekil olarak yaşanmaktadır. Bir gurup insan tarafından birinci asr-ı saadet dönemindeki İslâm yaşanmaktadır. Ancak bunlar çok azınlıkta kalmaktadır.</p>
-<p>&nbsp; &nbsp; Kur'ân'a bütün olarak ittiba etmek, Kur'ân'ın ruhuna, özüne inilerek İslâmı yaşamak ve yaşatmak asıldır. Sahabe İslâm'ı nasıl yaşamış, nasıl hayatına tatbik etmiş ve nasıl irşad olmuş ise ve bu şekilde İslâm şerefine nasıl ulaşmış ise, bizlerin de öyle İslâm'ı yaşamamız Allah'ın (C.C) kesin emridir. Şimdiki İslâm'ın zahiri 5 şartı ile yaşamak Kur'ân hükümlerine göre eksik ve kurtuluşa götürmeyen bir anlayış ve tatbik tarzıdır. Bu cümleden olarak Vakfımızca eserler yayınlanmaktadır. Tasavvuf alanındaki eserleri, Tasavvuf Nurları, Kur'ân-ı Kerim Işığında Tasavvuf, Mutluluk-Tasavvuf-İslâm ve Sohbet. Tasavvufun Kur'ân-ı Kerim'deki Kökleri, Sohbet. Ekonomi alanındaki eserleri, Türkiye'de Orta Vadeli Krediler, Türk Sanayiinin Finansal Problemleri, Türk Banka Sisteminde Kaynak İsrafı, Federal Almanya- Türkiye İşgücü ilişkileri, Türkiye'de Enflasyon Probleminin Çözümü ve Kalkınma adlı eserleri yayınlanmıştır. Ayrıca Enerji-Madde ve Hız Kanunları adlı eserler yayınlanmış bulunmaktadır. Bunlardan, Enerji-Madde ve Hız Kanunları ile Sohbet adlı eserler İngilizceye çevrilmiştir.</p>
-<p class="aPageName">İMAM İSKENDER ALİ MİHR HAZRETLERİ KİMDİR?</p>
-<p><iframe style="position: sticky;  width: 100%; height: 480px;" src="https://www.youtube.com/embed/1UNuyCNIMS0?si=76NNWen8zWL4Raln"></iframe>
-<br>İMAM İSKENDER ALİ MİHR KİMDİR?<br>TANITIM BELGESELİ (1:27:09)
-<br><br><video controls preload="metadata" poster="pict/mihr.png" width="100%" src="https://www.mihr.com/Videolar/mp4/efendimiz_konferans_tanitim.mp4" type="video/mp4"></video>
-<br>Efendi Hazretleri<br>Tanıtım Videosu (0:15:56)
-<br><br><iframe style="position: sticky;  width: 100%; height: 480px;" src="https://www.youtube.com/embed/Prtn-J1W2gw?si=slV0T3kkDfMXMvLq"></iframe>
-<br>Efendi Hazretleri<br>Tanıtım Videosu (0:16:20)
-<br><br></p>
-<p>&nbsp; &nbsp; İskender Erol Evrenosoğlu Eşref Rumi Hazretleri'nin bir işareti ile 29.11.1933 tarihinde ailenin üçüncü ve tek erkek evladı olarak İznik'te dünyaya gelmiştir. Bozoklu Han'dan başlayan soy kütüğüne sahiptir. Şeriftir. Evli ve iki çocuk babasıdır.
-</p> <p>&nbsp; &nbsp;  İlk, orta ve lise tahsilini Bursa'da tamamlamıştır. 1956'da İstanbul Yüksek Ekonomi ve Ticaret Okulu (şimdiki Marmara Üniversitesi), Banka ve Muhasebe Bölümünden mezun olmuştur. Yüksek Lisans'ını ODTÜ'de ekonomi üzerine yapmıştır.
-</p> <p>&nbsp; &nbsp;  Askerliğini 1957-1958 yılları arasında Kore'de tamamlamıştır.
-</p> <p>&nbsp; &nbsp;  Kamu İktisadi Teşekkülleri, Türkiye Vakıflar Bankası ve DPT'de (Devlet Planlama Teşkilatı'nda) Müfettişlik, Müdürlük, Uzmanlık görevlerinde bulunmuştur. Müfettiş olarak, Bandırma'da daha sonra Tokat'ta görev almıştır. 1972 yılında DPT'den ayrılan Efendi Hazretleri, Fizibilite etütleri yapan bir iş yeri açmıştır. Daha sonra İktisadi Planlama bölümünde çalışmak üzere Devlet Planlama Teşkilatı'ndaki görevine tekrar çağırılmıştır.
-</p> <p>&nbsp; &nbsp;  O yıllarda Planlama, Teşvik ve Uygulama'da Türkiye İktisat Meseleleri dergilerinde ve Ticaretliler Dergisi'nde yazmıştır. Ege Dergisi'nde Teşvik ve uygulamayla alâkalı yeni çıkan kararnameleri dizayn etmiştir.
-</p> <p>&nbsp; &nbsp;  1989 yılında, İslâm, Modern Teknoloji, Nükleer Fizik, Kimya, Enerji, Ekonomi, Finans, İş Etütleri alanlarında çalışmalar yapan, yurt içinde ve yurt dışında bu ilimlerin gelişmesi istikametinde konferans ve seminerler düzenleyen MİHR VAKFI'NI kurmuştur. Halen vakfın Genel Başkanlığı'nı yürütmektedir.
-</p> <p>&nbsp; &nbsp;  Manevi alandaki eserlerinde Allah-û Tealâ'nın kendisine verdiği İmam İskender Ali MİHR ünvanını kullanmaktadır.
-</p> <p>&nbsp; &nbsp;  1992 yılında yayın hayatına başlayan aylık MİHR DERGİSİ'nin başyazarıdır. Şu anda uydu üzerinden yayın yapan MİHR TV ve MİHR RADYOSU'nun kurucusudur. Efendi Hazretleri İmam İskender Ali Mihr, kâinattaki ilk ve tek "ALLAH'IN ÜNİVERSİTESİ'ni (UNIVERSITY OF ALLAH)" 1 Nisan 2000 tarihinde kurmuştur. Aynı zamanda üniversitenin Rektörüdür.
-</p> <p>&nbsp; &nbsp;  Üniversitede verdiği Tefsir derslerine paralel olarak, Kur'ân-ı Kerim'deki her âyetin Arapçası, Latincesi, Türkçesi ve kelime kelime mealiyle dizayn edilen KURAN-I KERİM TEFSİRİ 19 cilt olarak hazırlanmaktadır.
-</p> <p class="aPageName">ÇALIŞMALARI</p> 
-<p class="pCenter"><strong>MAKRO EKONOMİ ALANINDA YAYINLANMIŞ KİTAPLARI</strong></p>
-<ol><li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/731" target="_blank" rel="noopener">Likit Mekanizma</a>&nbsp;</li>
-<li>Türkiye'de Ekonomik Darboğazdan Nasıl Kurtulunur?</li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/10" target="_blank" rel="noopener">Türkiye'de Enflasyon Probleminin Çözümü ve Kalkınma</a></li>
-<li>Türkiye'de Orta Vadeli Krediler (1973)</li>
-<li>Türkiye Sanayisinde Finansal Problemler (1974)</li>
-<li>Türkiye Bankalar Sisteminde Kaynak İsrafı (1984)</li>
-<li>Türkiye Federal Almanya İşgücü İlişkileri (1973)</li>
-</ol>
-<p class="pCenter"><strong>DPT KÜTÜPHANESİNDEKİ ARAŞTIRMALARINDAN BİRKAÇI </strong></p>
-<ol><li>Mevduat Hacminin Türkiye'nin Kalkınmasındaki Yeri</li>
-<li>Para Arzı ve Fiyat İlişkileri</li>
-<li>Para Çoğaltanı Faktörü ve Finansal Sistem</li>
-<li>Türkiye'de Emisyon, Paranın Devir Hızı ve Enflasyon Hızı Arasındaki İlişkiler</li>
-<li>Türkiye'de Enflasyon Teşhis ve Tedavisi</li>
-<li>Türkiye'deki 10 Bankanın Analizi ve Türkiye</li>
-<li>Tasarruf Bonoları ve Kalkınma Bankası Hakkında Rapor</li>
-<li>Ticari Krediler ve Yatırım Kredileri</li>
-<li>1982 yılında Türk Bankacılık Sistemindeki Likit Mekanizma ve Kaynak İsrafı</li>
-<li>Türk Bankacılığı Sisteminde Krediler ve İştirakler</li>
-<li>Bankalardaki Tasarrufların Maliyeti ve Verimlilik</li>
-<li>Kredi Gelirlerinin Hesaplanması ve Tasarruf Faizlerinin Maliyeti</li>
-<li>Türkiye Bankalar Sisteminde Kredi Mevduat İlişkisi</li>
-<li>Çalışma Bakanlığı'nca Hazırlanmış Olan "İşsizlik Sigortası Kanun Tasarısı" Hakkında</li>
-<li>1983 Yılının 8. Ayı Sonunda Türkiye Bankacılığında Durum Özeti</li>
-</ol>
-<p class="pCenter"><strong>MANEVİ ALANDAKİ MAKALELERİ</strong></p>
-<ol><li>Sebil Mecmuası 13 makale</li>
-<li>Milli Gazete 17 makale</li>
-</ol>
-<p class="pCenter"><strong>MAKRO EKONOMİ ALANINDAKİ MAKALELERİ</strong></p>
-<ol>
-<li>Türkiye İktisat Gazetesi'nde 33 makale</li>
-<li>Ticaret Dergisi'nde 8 makale</li>
-</ol>
-<p class="pCenter"><strong>KONFERANSLARI</strong></p> <p>(Efendi Hazretleri'nin tüm konferansları için <strong><a title="Tüm Konferanslar" href="https://www.mihr.com/sohbetler/27/0/konferanslar" target="_blank" rel="noopener">tıklayın.)</a></strong></p>
-<ol><li>1990-1991 A.B.D</li>
-<li>1991 Azerbaycan</li>
-<li>1992 Almanya ve Belçika</li>
-<li>1992 Ankara, İstanbul, İzmir, Aydın, Denizli 'de aylık</li>
-<li>Samsun, Gaziantep, Malatya, Adana, Konya, Hopa, Gönen ve bazı illerde periyodik konferanslar</li>
-</ol>
-<p class="pCenter"><strong>MANEVİ ALANDAKİ KİTAPLARI </strong></p>
-<ol><li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/9" target="_blank" rel="noopener">Mutluluk Tasavvuf İslâm</a></li>
-<li>Sohbet</li>
-<li>Kur'ân'da ki İslâm</li>
-<li>Islam In The Quran</li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/21" target="_blank" rel="noopener">Risalet Nurları</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/1795" target="_blank" rel="noopener">Tövbe</a></li>
-<li>Yeminler</li>
-<li>Vuslat</li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/14" target="_blank" rel="noopener">Tebliğ</a></li>
-<li>Kader Kaza</li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/25" target="_blank" rel="noopener">Vel Asr 1</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/25" target="_blank" rel="noopener">Vel Asr 2</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/25" target="_blank" rel="noopener">Vel Asr 3</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/25" target="_blank" rel="noopener">Vel Asr 4</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/19" target="_blank" rel="noopener">Mü'min Olmak</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/20" target="_blank" rel="noopener">Tevhid</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Content/images/kapak/2150f582.jpg" target="_blank" rel="noopener">Tekzib</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/13" target="_blank" rel="noopener">Tavzih</a></li>
-<li>Nezir</li>
-<li>Şiirler</li>
-<li>Gizlenerek Ve Saptırılarak Cennete Girmeye Mani Olan Kur'ân-ı Kerim Mealleri</li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/740" target="_blank" rel="noopener">Kadir Gecesi</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/343" target="_blank" rel="noopener">What's Islam</a></li>
-<li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/360" target="_blank" rel="noopener">Tasavvuf Der Islam Im Kuran</a></li>
-<li>İslâm Mutluluk Tasavvuf</li>
-<li>İslâmiyet Ve Tasavvuf 1 ve 2. Cilt</li>
-<li>Kur'ân-ı Kerim Tefsiri (19 cilt)</li>
-</ol>
-      </div>
-
-      <div id="GorevDIVGG" style="display: none" class="NamazDIVS">
-	<ol>
-  <li> Virdi 7000 zikirle başlar ve 47000'e ulaşıncaya kadar 15 günde bir 2000 artırır.</li>
-  <li> Beş vakit namazı, her vaktin kazası ile birlikte kılar. Vaktin kazasında vakit farz namazı kılınır.</li>
-  <li> Teheccüd ve kuşluk namazlarını kılar.</li>
-  <li> Hergün Esma-ül Hüsna âyetlerini okur.</li>
-  <li> Esma-ül Hüsna'yı yanlarında gösterilen sayıda okur. (El İlâh, El Masîr hergün çekilmelidir.)</li>
-  <li> Ramazan ayında tuttuğu oruca ilâveten perşembe günleri, kandillerde ve Muharrem'in 10. günü ve bazı özel günlerde oruç tutar.</li>
-  <li> 125 defa <strong>"subhânallâhu vel hamdu lillâhi ve lâ ilâhe illallâhu vallâhu ekber, ve lâ havle ve lâ kuvvete illâ billâhil aliyyul azîm"</strong> çeker.</li>
-  <li> 250 defa <strong>"allâhumme salli alâ seyyidinâ muhammedin ve alâ alî seyyidinâ muhammed"</strong> çeker.</li>
-	</ol>
-      </div>
-
-      <div id="GorevDIVVR" style="display: none" class="NamazDIVS">
-<p>&nbsp; &nbsp; Takriben 2,5m.x2,5m. ebatlarında tülbentten yapılmış beyaz vird örtüsü altında, yatmadan önce, sabah ezanından önce veya ne zaman istenirse 25 defa uzun olarak "<b>estağfurullah</b>" çekilir. Her "<b>estağfurullah</b>" kelimesi, derinden alınan nefes yavaş yavaş bırakılırken, nefes bitene kadar uzatılarak söylenir.</p>
-<p>&nbsp; &nbsp; 7 Fatiha Suresi okunur ve "<b>Yarabbi, okuduğum Fatihaları başta Peygamber Efendimiz (S.A.V)'e ve bütün peygamberlere, kıymetli ashabına, bütün mürşidlere ve Mehdi (A.S)'a hediye ettim, kabul buyur.</b>" denilerek bağışlanır. Mürşid düşünülür (rabıta).</p>
-<p>&nbsp; &nbsp; Sabah namaz vaktinden ertesi sabah namazı vaktine kadar bildirilen sayıda zikir yapılır. Her 100, 500 veya 1000 "<b>Allah</b>" zikrinden sonra; "<b>ilâhi ente maksudî ve rızake matlubî</b>" denir.</p>
-<p>&nbsp; &nbsp; Günün diğer saatlerinde verilen sayıda zikrini tamamlayabilmek için gün içinde vakit buldukça 25 kısa "<b>estağfurullah</b>"tan sonra tesbihini çekerek Allah'ı zikreder. Tesbihini bitirirken 25 kısa "<b>estağfurullah</b>" çeker.</p>
-<p>&nbsp; &nbsp; Günlük vird bitirilmiş olsa da her an; ayaktayken, otururken ve yanüstü yatarken de "<b>Allah</b>" zikri devam ettirilmeye gayret edilir.</p>
-
-<p class="aPageName"> <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1739" target="_blank">
-  GÖK KATLARINA GÖRE ZİKRİN ÇEKİLMESİ</a></p>
-
-<ol>
-  <li>İlk 15 bin "<b>Allah</b>" zikri; 1. katta (sol göğsün 4 parmak altında) çekilir.</li>
-  <li>Sonraki 2 bin "<b>Allah</b>" zikri; 2. katta (sağ göğsün 4 parmak altında) çekilir (zikir sayısı 17.000'e tamamlanır).</li>
-  <li>Sonraki 2 bin "<b>Allah</b>" zikri; 3. katta (sol göğsün 4 parmak üstünde) çekilir (zikir sayısı 19.000'e tamamlanır).</li>
-  <li>Sonraki 2 bin "<b>Allah</b>" zikri; 4. katta (sağ göğsün 4 parmak üstünde) çekilir (zikir sayısı 21.000'e tamamlanır).</li>
-  <li>5- Sonraki 2 bin "<b>Allah</b>" zikri; 5. katta (boyunda, köprücük kemiklerinin omuzlardan îmân tahtası denen kemiğe uzanan kemiklerin bittiği yerde) çekilir (zikir sayısı 23.000'e tamamlanır).</li>
-  <li>Sonraki 2 bin "<b>Allah</b>" zikri; 6. katta (alında sağ ve sol kaşların birleştiği yerin az üstü) çekilir (zikir sayısı 25.000'e tamamlanır).</li>
-  <li>Sonraki 22 bin "<b>Allah</b>" zikri; 7. katta (alınla saçın birleştiği yerde) çekilir (zikir sayısı 47.000'e tamamlanır). </p>
-</ol>
-      </div>
-
-      <div id="GorevDIVES" style="display: none" class="NamazDIVS">
-<p><strong>5/MAİDE-97:</strong> Cealallâhul ka'betel beytel harâme kıyâmen lin nâsi veş şehral harâme vel hedye vel kalâid(kalâide), zâlike li ta'lemû ennellâhe ya'lemu mâ fîs semâvâti ve mâ fîl ardı ve ennallâhe bikulli şey'in alîm(alîmun).
-</p><p><strong>19/MERYEM-19, 20:</strong> Kâle innemâ ene resûlu rabbiki li ehebe leki gulâmen zekiyyâ(zekiyyen) kâlet ennâ yekûnu lî gulâmun ve lem yemsesnî beşerun ve lem eku bagıyyâ(bagıyyen).
-</p><p><strong>21/ENBİYA-32, 33:</strong> Ve cealnes semâe sakfen mahfûzâ(mahfûzen), ve hum an âyâtihâ mu'ridûn(mu'ridûne) ve huvellezî halakal leyle ven nehâre veş şemse vel kamer(kamere), kullun fî felekin yesbehûn(yesbehûne).
-</p><p><strong>33/AHZAB-27, 28, 29:</strong> Ve evresekum ardahum ve diyârehum ve emvâlehum ve ardan lem tetauhâ, ve kânallâhu alâ kulli şey'in kadîrâ(kadîran) yâ eyyuhen nebiyyu kul li ezvâcike in kuntunne turidnel hayâted dunyâ ve ziynetehâ fe teâleyne umetti'kunne ve userrihkunne serâhan cemîlâ(cemîlen) ve in kuntunne turidnallâhe ve resûlehu ved dârel âhırete fe innallâhe eadde lil muhsinâti minkunne ecren azîmâ(azîmen).
-</p><p><strong>7/A'RAF-14, 15:</strong> Kâle enzırnî ilâ yevmi yub'asûn(yub'asûne) kâle inneke minel munzarîn(munzarîne).
-</p><p><strong>5/MAİDE-9:</strong> Vaadallâhullezîne âmenû ve amilûs sâlihâti lehum magfiretun ve ecrun azîm(azîmun).
-</p><p><strong>18/KEHF-10, 11, 12:</strong> İz evel fityetu ilel kehfi fe kâlû rabbenâ âtinâ min ledunke rahmeten ve heyyi' lenâ min emrinâ reşedâ(reşeden) fe darabnâ alâ âzânihim fîl kehfi sinîne adedâ(adeden) summe beasnâhum li na'leme eyyul hızbeyni ahsâ limâ lebisû emedâ(emeden).
-</p><p><strong>39/ZUMER-23:</strong> Allâhu nezzele ahsenel hadîsi kitâben muteşâbihen mesâniye takşaırru minhu culûdullezîne yahşevne rabbehum, summe telînu culûduhum ve kulûbuhum ilâ zikrillâh(zikrillâhi), zâlike hudallâhi yehdî bihî men yeşâu, ve men yudlilillâhu fe mâ lehu min hâd(hâdin).
-</p><p><strong>5/MAİDE-28:</strong> Le in besadte ileyye yedeke li taktulenî mâ ene bi bâsitın yediye ileyke li aktulek(aktuleke), innî ehâfullâhe rabbel âlemîn(âlemîne).
-</p><p><strong>2/BAKARA-126:</strong> Ve iz kâle ibrâhîmu rabbic'al hâzâ beleden âminen verzuk ehlehu mines semerâti men âmene minhum billâhi vel yevmil âhır(âhiri), kâle ve men kefere fe umettiuhu kalîlen summe adtarrûhu ilâ azâbin nâr(nâri), ve bi'sel masîr(masîru).
-</p><p><strong>41/FUSSİLET-12:</strong> Fe kadâhunne seb'a semâvâtin fî yevmeyni ve evhâ fî kulli semâin emrehâ ve zeyyennes semâed dunyâ bi mesâbîha ve hıfzâ(hıfzen), zâlike takdîrul azîzil alîm(alîmi).
-</p><p><strong>39/ZUMER-17:</strong> Vellezînectenebût tâgûte en ya'budûhâ ve enâbû ilâllâhi lehumul buşrâ, fe beşşir ibâd(ibâdi).
-</p><p><strong>16/NAHL-98:</strong> Fe izâ kare'tel kur'âne festeız billâhi mineş şeytânir racîm(racîmi).
-</p><p><strong>17/İSRA-80:</strong> Ve kul rabbi edhılnî mudhale sıdkın ve ahricnî muhrece sıdkın vec'al lî min ledunke sultânen nasîrâ(nasîren).
-</p><p><strong>19/MERYEM-17:</strong> Fettehazet min dûnihim hicâben fe erselnâ ileyhâ rûhanâ fe temessele lehâ beşeren seviyyâ(seviyyen).
-</p><p><strong>21/ENBİYA-83:</strong> Ve eyyûbe iz nâdâ rabbehû ennî messeniyed durru ve ente erhamur râhimîn(râhimîne).
-</p><p><strong>21/ENBİYA-89:</strong> Ve zekeriyyâ iz nâdâ rabbehu rabbi lâ tezernî ferden ve ente hayrul vârisîn(vârisîne).
-</p><p><strong>21/ENBİYA-92:</strong> İnne hâzihî ummetukum ummeten vâhıdeten ve ene rabbukum fa'budûn(fa'budûni).
-</p><p><strong>21/ENBİYA-107:</strong> Ve mâ erselnâke illâ rahmeten lil âlemîn(âlemîne).
-</p><p><strong>21/ENBİYA-112:</strong> Kâle rabbıhkum bil hakk(hakkı), ve rabbuner rahmânul musteânu alâ mâ tasıfûn(tasıfûne).
-</p><p><strong>22/HAC-68:</strong> Ve in câdelûke fe kulillâhu a'lemu bimâ ta'melûn(ta'melûne).
-</p><p><strong>23/MU'MİNUN-26:</strong> Kâle rabbinsurnî bimâ kezzebûn(kezzebûni).
-</p><p><strong>39/ZUMER-19:</strong> E fe men hakka aleyhi kelimetul azâb(azâbi), e fe ente tunkızu men fîn nâr(nâri).
-</p><p><strong>23/MU'MİNUN-29:</strong> Ve kul rabbi enzilnî munzelen mubâreken ve ente hayrul munzilîn(munzilîne).
-</p><p><strong>23/MU'MİNUN-93:</strong> Kul rabbi immâ turiyennî mâ yûadûn(yûadûne).
-</p><p><strong>23/MU'MİNUN-94:</strong> Rabbi fe lâ tec'alnî fîl kavmiz zâlimîn(zâlimîne).
-</p><p><strong>23/MU'MİNUN-97:</strong> Ve kul rabbi eûzu bike min hemezatiş şeyâtîn(şeyâtîni).
-</p><p><strong>23/MU'MİNUN-98:</strong> Ve eûzu bike rabbi en yahdurûn(yahdurûni).
-</p><p><strong>23/MU'MİNUN-118:</strong> Ve kul rabbigfir verham ve ente hayrur râhımîn(râhımîne).
-</p><p><strong>25/FURKAN-6:</strong> Kul enzelehullezî ya'lemus sırre fîs semâvâti vel ard(ardı), innehu kâne gafûran rahîmâ(rahîmen).
-</p><p><strong>26/ŞUARA-62:</strong> Kâle kellâ, inne maiye rabbî seyehdîn(seyehdîni).
-</p><p><strong>26/ŞUARA-83:</strong> Rabbi heb lî hukmen ve elhıknî bis sâlihîn(sâlihîne).
-</p><p><strong>26/ŞUARA-85:</strong> Vec'alnî min vereseti cennetin naîm(naîmi).
-</p>
-
-
-
-    <!-- MAIN PAGE DIV -->
-    <div id="MainPageDIV">
-      <p class="aPageName"> <a href="https://orrstudio.github.io/Esmalar" target="_blank">
-        ESMAÜL HÜSNA</a></p>
-      <!-- WEEK NAME DIV's -->
-      <div id="myDIV1" class="beautifully" style="display: none"><a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
-        I - PAZARTESİ</a></div>
-      <div id="myDIV2" class="beautifully" style="display: none"><a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
-        II - SALI</a></div>
-      <div id="myDIV3" class="beautifully" style="display: none"><a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
-        III - ÇARŞAMBA</a></div>
-      <div id="myDIV4" class="beautifully" style="display: none"><a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
-        IV - PERŞEMBE</a></div>
-      <div id="myDIV5" class="beautifully" style="display: none"><a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
-        V - CUMA</a></div>
-      <div id="myDIV6" class="beautifully" style="display: none"><a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
-        VI - CUMARTESİ</a></div>
-      <div id="myDIV7" class="beautifully" style="display: none"><a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
-        VII - PAZAR</a></div>
-      <!-- DATE -->
-      <div class="beautifullyDate">
-        <script>
-          var d = new Date(),
-            month = new Array(
-              "Ocak",
-              "Şubat",
-              "Mart",
-              "Nisan",
-              "Mayıs",
-              "Haziran",
-              "Temmuz",
-              "Ağustos",
-              "Eylül",
-              "Ekim",
-              "Kasım",
-              "Aralık"
-            );
-          document.write(
-              d.getDate() +
-              " " +
-              month[d.getMonth()] +
-              " " +
-              d.getFullYear()
-          );
-        </script>
-      </div>
-      <!-- END WEEK NAME DIV's -->
-
-      <!-- NOT CHANGE DIV -->
-      <p class="pCenter" style="font-size:20px;">EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br>BİSMİLLÂHİRRAHMÂNİRRAHÎM</p>
-
-      <script>
-        function myFunction1() {
-          (document.getElementById("myDIV1").style.display = "block"),
-            (document.getElementById("myDIV11").style.display = "block"),
-            (document.getElementById("myDIV2").style.display = "none"),
-            (document.getElementById("myDIV22").style.display = "none"),
-            (document.getElementById("myDIV3").style.display = "none"),
-            (document.getElementById("myDIV33").style.display = "none"),
-            (document.getElementById("myDIV4").style.display = "none"),
-            (document.getElementById("myDIV44").style.display = "none"),
-            (document.getElementById("myDIV5").style.display = "none"),
-            (document.getElementById("myDIV55").style.display = "none"),
-            (document.getElementById("myDIV6").style.display = "none"),
-            (document.getElementById("myDIV66").style.display = "none"),
-            (document.getElementById("myDIV7").style.display = "none"),
-            (document.getElementById("myDIV77").style.display = "none"),
-            (document.getElementById("MENUSECTION").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none");
-        }
-        function myFunction2() {
-          (document.getElementById("myDIV1").style.display = "none"),
-            (document.getElementById("myDIV11").style.display = "none"),
-            (document.getElementById("myDIV2").style.display = "block"),
-            (document.getElementById("myDIV22").style.display = "block"),
-            (document.getElementById("myDIV3").style.display = "none"),
-            (document.getElementById("myDIV33").style.display = "none"),
-            (document.getElementById("myDIV4").style.display = "none"),
-            (document.getElementById("myDIV44").style.display = "none"),
-            (document.getElementById("myDIV5").style.display = "none"),
-            (document.getElementById("myDIV55").style.display = "none"),
-            (document.getElementById("myDIV6").style.display = "none"),
-            (document.getElementById("myDIV66").style.display = "none"),
-            (document.getElementById("myDIV7").style.display = "none"),
-            (document.getElementById("myDIV77").style.display = "none"),
-            (document.getElementById("MENUSECTION").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none");
-        }
-        function myFunction3() {
-          (document.getElementById("myDIV1").style.display = "none"),
-            (document.getElementById("myDIV11").style.display = "none"),
-            (document.getElementById("myDIV2").style.display = "none"),
-            (document.getElementById("myDIV22").style.display = "none"),
-            (document.getElementById("myDIV3").style.display = "block"),
-            (document.getElementById("myDIV33").style.display = "block"),
-            (document.getElementById("myDIV4").style.display = "none"),
-            (document.getElementById("myDIV44").style.display = "none"),
-            (document.getElementById("myDIV5").style.display = "none"),
-            (document.getElementById("myDIV55").style.display = "none"),
-            (document.getElementById("myDIV6").style.display = "none"),
-            (document.getElementById("myDIV66").style.display = "none"),
-            (document.getElementById("myDIV7").style.display = "none"),
-            (document.getElementById("myDIV77").style.display = "none"),
-            (document.getElementById("MENUSECTION").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none");
-        }
-        function myFunction4() {
-          (document.getElementById("myDIV1").style.display = "none"),
-            (document.getElementById("myDIV11").style.display = "none"),
-            (document.getElementById("myDIV2").style.display = "none"),
-            (document.getElementById("myDIV22").style.display = "none"),
-            (document.getElementById("myDIV3").style.display = "none"),
-            (document.getElementById("myDIV33").style.display = "none"),
-            (document.getElementById("myDIV4").style.display = "block"),
-            (document.getElementById("myDIV44").style.display = "block"),
-            (document.getElementById("myDIV5").style.display = "none"),
-            (document.getElementById("myDIV55").style.display = "none"),
-            (document.getElementById("myDIV6").style.display = "none"),
-            (document.getElementById("myDIV66").style.display = "none"),
-            (document.getElementById("myDIV7").style.display = "none"),
-            (document.getElementById("myDIV77").style.display = "none"),
-            (document.getElementById("MENUSECTION").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none");
-        }
-        function myFunction5() {
-          (document.getElementById("myDIV1").style.display = "none"),
-            (document.getElementById("myDIV11").style.display = "none"),
-            (document.getElementById("myDIV2").style.display = "none"),
-            (document.getElementById("myDIV22").style.display = "none"),
-            (document.getElementById("myDIV3").style.display = "none"),
-            (document.getElementById("myDIV33").style.display = "none"),
-            (document.getElementById("myDIV4").style.display = "none"),
-            (document.getElementById("myDIV44").style.display = "none"),
-            (document.getElementById("myDIV5").style.display = "block"),
-            (document.getElementById("myDIV55").style.display = "block"),
-            (document.getElementById("myDIV6").style.display = "none"),
-            (document.getElementById("myDIV66").style.display = "none"),
-            (document.getElementById("myDIV7").style.display = "none"),
-            (document.getElementById("myDIV77").style.display = "none"),
-            (document.getElementById("MENUSECTION").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none");
-        }
-        function myFunction6() {
-          (document.getElementById("myDIV1").style.display = "none"),
-            (document.getElementById("myDIV11").style.display = "none"),
-            (document.getElementById("myDIV2").style.display = "none"),
-            (document.getElementById("myDIV22").style.display = "none"),
-            (document.getElementById("myDIV3").style.display = "none"),
-            (document.getElementById("myDIV33").style.display = "none"),
-            (document.getElementById("myDIV4").style.display = "none"),
-            (document.getElementById("myDIV44").style.display = "none"),
-            (document.getElementById("myDIV5").style.display = "none"),
-            (document.getElementById("myDIV55").style.display = "none"),
-            (document.getElementById("myDIV6").style.display = "block"),
-            (document.getElementById("myDIV66").style.display = "block"),
-            (document.getElementById("myDIV7").style.display = "none"),
-            (document.getElementById("myDIV77").style.display = "none"),
-            (document.getElementById("MENUSECTION").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none");
-        }
-        function myFunction7() {
-          (document.getElementById("myDIV1").style.display = "none"),
-            (document.getElementById("myDIV11").style.display = "none"),
-            (document.getElementById("myDIV2").style.display = "none"),
-            (document.getElementById("myDIV22").style.display = "none"),
-            (document.getElementById("myDIV3").style.display = "none"),
-            (document.getElementById("myDIV33").style.display = "none"),
-            (document.getElementById("myDIV4").style.display = "none"),
-            (document.getElementById("myDIV44").style.display = "none"),
-            (document.getElementById("myDIV5").style.display = "none"),
-            (document.getElementById("myDIV55").style.display = "none"),
-            (document.getElementById("myDIV6").style.display = "none"),
-            (document.getElementById("myDIV66").style.display = "none"),
-            (document.getElementById("myDIV7").style.display = "block"),
-            (document.getElementById("myDIV77").style.display = "block"),
-            (document.getElementById("MENUSECTION").style.display = "none"),
-            (document.getElementById("MainPageDIV").style.display = "block"),
-            (document.getElementById("ButtonMENU").style.display = "block"),
-            (document.getElementById("ButtonMENUX").style.display = "none");
-        }
-      </script>
-      <!-- END HAFTA BUTTONS & scripts -->
-
-      <div style="display: block">
-        <table>
-          <tr>
-            <td>
-              Allah (El İlâh) - 269
-              <input
-                id="Heart"
-                style="display: none"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Heart"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div style="display: block">
-        <table>
-          <tr>
-            <td>
-              El Masîr - 535
-              <input
-                style="display: none"
-                id="Masir"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Masir"></label>
-            </td>
-          </tr>
-        </table>
-        <!-- END NOT CHANGE DIV -->
-      </div>
-
-      <!-- ESMAÜL HÜSNA I DIV-->
-      <div id="myDIV11" style="display: none">
-        <table>
-          <tr>
-            <td>El Mugnî - 1337<input
-                style="display: none"
-                id="Mugnî"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mugnî"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Es Sabûr - 519<input
-                style="display: none"
-                id="Sabûr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Sabûr"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Vedûd - 372<input
-                style="display: none"
-                id="Vedûd"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Vedûd"></label>
-            </td>
-          </tr>
-        </table>
-          <table>
-          <tr>
-            <td>El Vehhâb - 218<input
-                style="display: none"
-                id="Vehhâb"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Vehhâb"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Es Semîu - 351<input
-                style="display: none"
-                id="Semîu"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Semîu"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Fettâh - 1082<input
-                style="display: none"
-                id="Fettâh"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Fettâh"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Muhyî - 190<input
-                style="display: none"
-                id="Muhyî"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Muhyî"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Kayyûm - 444<input
-                style="display: none"
-                id="Kayyûm"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Kayyûm"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Muizz - 236<input
-                style="display: none"
-                id="Muizz"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Muizz"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Mukaddim - 638<input
-                style="display: none"
-                id="Mukaddim"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mukaddim"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Hamîd - 283<input
-                style="display: none"
-                id="Hamîd"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Hamîd"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Eş Şekûr - 813<input
-                style="display: none"
-                id="Şekûr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Şekûr"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <!-- ESMAÜL HÜSNA II DIV-->
-      <div id="myDIV22" style="display: none">
-        <table>
-          <tr>
-            <td>El Muktedir - 1115<input
-                style="display: none"
-                id="Muktedir"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Muktedir"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Hakîm - 280<input
-                style="display: none"
-                id="Hakîm"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Hakîm"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Gafûr - 1563<input
-                style="display: none"
-                id="Gafûr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Gafûr"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Kâdir - 745<input
-                style="display: none"
-                id="Kâdir"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Kâdir"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Er Rahmân - 544<input
-                style="display: none"
-                id="Rahmân"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Rahmân"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Azîm - 1201<input
-                style="display: none"
-                id="Azîm"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Azîm"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Es Samed - 358<input
-                style="display: none"
-                id="Samed"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Samed"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Er Rahîm - 449<input
-                style="display: none"
-                id="Rahîm"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Rahîm"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Halîm - 250<input
-                style="display: none"
-                id="Halîm"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Halîm"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Ehad - 303<input
-                style="display: none"
-                id="Ehad"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Ehad"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Habîr - 954<input
-                style="display: none"
-                id="Habîr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Habîr"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Vâhid - 385<input
-                style="display: none"
-                id="Vâhid"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Vâhid"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Muheymin - 303<input
-                style="display: none"
-                id="Muheymin"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Muheymin"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Latîf - 242<input
-                style="display: none"
-                id="Latîf"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Latîf"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <!-- ESMAÜL HÜSNA III DIV-->
-      <div id="myDIV33" style="display: none">
-        <table>
-          <tr>
-            <td>El Vâlî - 285<input
-                style="display: none"
-                id="Vâlî"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Vâlî"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Bâtın - 309<input
-                style="display: none"
-                id="Bâtın"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Bâtın"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Er Raşîd - 745<input
-                style="display: none"
-                id="Raşîd"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Raşîd"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Vâris - 974<input
-                style="display: none"
-                id="İrşad"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="İrşad"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Vâsiu - 453<input
-                style="display: none"
-                id="Vâsiu"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Vâsiu"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Mu’min - 368<input
-                style="display: none"
-                id="Mu’min"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mu’min"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Ez Zâhir - 1367<input
-                style="display: none"
-                id="Zâhir"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Zâhir"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Es Selâm - 402<input
-                style="display: none"
-                id="Selâm"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Selâm"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Mukît - 752<input
-                style="display: none"
-                id="Mukît"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mukît"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Âhir - 1061<input
-                style="display: none"
-                id="Âhir"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Âhir"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Kuddûs - 660<input
-                style="display: none"
-                id="Kuddûs"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Kuddûs"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <!-- ESMAÜL HÜSNA IV DIV-->
-      <div id="myDIV44" style="display: none">
-        <table>
-          <tr>
-            <td>El Hafîz - 1140<input
-                style="display: none"
-                id="Hafîz"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Hafîz"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Evvel - 356<input
-                style="display: none"
-                id="Evvel"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Evvel"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Melik - 262<input
-                style="display: none"
-                id="Melik"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Melik"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Kebîr - 385<input
-                style="display: none"
-                id="Kebîr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Kebîr"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Muahhir - 1782<input
-                style="display: none"
-                id="Muahhir"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Muahhir"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Bâriu - 405<input
-                style="display: none"
-                id="Bâriu"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Bâriu"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Aliyy - 223<input
-                style="display: none"
-                id="Aliyy"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Aliyy"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Er Rauf - 433<input
-                style="display: none"
-                id="Rauf"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Rauf"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Hâlık - 1112<input
-                style="display: none"
-                id="Hâlik"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Hâlik"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Kerîm - 472<input
-                style="display: none"
-                id="Kerîm"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Kerîm"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Afuvv - 375<input
-                style="display: none"
-                id="Afuvv"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Afuvv"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Kaviyy - 354<input
-                style="display: none"
-                id="Kaviyy"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Kaviyy"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <!-- ESMAÜL HÜSNA V DIV-->
-      <div id="myDIV55" style="display: none">
-        <table>
-          <tr>
-            <td>El Vekîl - 265<input
-                style="display: none"
-                id="Vekîl"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Vekîl"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Et Tevvâb - 689<input
-                style="display: none"
-                id="Tevvâb"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Tevvâb"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Azîz - 157<input
-                style="display: none"
-                id="Azîz"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Azîz"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Hakk - 578<input
-                style="display: none"
-                id="Hakk"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Hakk"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Berr - 543<input
-                style="display: none"
-                id="Berr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Berr"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Er Rezzâk - 657<input
-                style="display: none"
-                id="Rezzâk"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Rezzâk"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Eş Şehîd - 481<input
-                style="display: none"
-                id="Şehîd"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Şehîd"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Muteâlî - 824<input
-                style="display: none"
-                id="Muteâlî"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Muteâlî"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Âti - 350<input
-                style="display: none"
-                id="Âti"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Âti"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Bedîu - 248<input
-                style="display: none"
-                id="Bedîu"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Bedîu"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Mucîb - 157<input
-                style="display: none"
-                id="Mucîb"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mucîb"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Er Rakîb - 534<input
-                style="display: none"
-                id="Rakîb"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Rakîb"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Gaffâr - 1683<input
-                style="display: none"
-                id="Gaffâr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Gaffâr"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <!-- ESMAÜL HÜSNA VI DIV-->
-      <div id="myDIV66" style="display: none">
-        <table>
-          <tr>
-            <td>El Bâis - 755<input
-                style="display: none"
-                id="Bâis"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Bâis"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Ganî - 1258<input
-                style="display: none"
-                id="Ganî"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Ganî"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Musavvir - 688<input
-                style="display: none"
-                id="Musavvir"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Musavvir"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Mecîd - 258<input
-                style="display: none"
-                id="Mecîd"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mecîd"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Câmiu - 394<input
-                style="display: none"
-                id="Câmiu"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Câmiu"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Er Râfiu - 602<input
-                style="display: none"
-                id="Râfiu"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Râfiu"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Muîd - 335<input
-                style="display: none"
-                id="Muîd"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Muîd"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Mubdiu - 208<input
-                style="display: none"
-                id="Mubdiu"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mubdiu"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Bâsıt - 323<input
-                style="display: none"
-                id="Bâsıt"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Bâsıt"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Muhsî - 354<input
-                style="display: none"
-                id="Muhsî"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Muhsî"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Mâlikul Mulk - 837<input
-                style="display: none"
-                id="Mulk"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mulk"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <!-- ESMAÜL HÜSNA VII DIV-->
-      <div id="myDIV77" style="display: none">
-        <table>
-          <tr>
-            <td>El Velî - 175<input
-                style="display: none"
-                id="Velî"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Velî"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Hâdî - 242<input
-                style="display: none"
-                id="Hâdî"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Hâdî"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Alîm - 302<input
-                style="display: none"
-                id="Alîm"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Alîm"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Metîn - 608<input
-                style="display: none"
-                id="Metîn"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Metîn"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>En Nûr - 458<input
-                style="display: none"
-                id="Nûr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Nûr"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Adl - 305<input
-                style="display: none"
-                id="Adl"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Adl"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Mâcid - 368<input
-                style="display: none"
-                id="Mâcid"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Mâcid"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>En Nâfiu - 438<input
-                style="display: none"
-                id="Nâfiu"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Nâfiu"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Hakem - 269<input
-                style="display: none"
-                id="Hakem"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Hakem"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>El Vâcid - 360<input
-                style="display: none"
-                id="Vâcid"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Vâcid"></label>
-            </td>
-          </tr>
-          <tr>
-            <td>Ed Dârr - 1535<input
-                style="display: none"
-                id="Dârr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Dârr"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>El Basîr - 448<input
-                style="display: none"
-                id="Basîr"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Basîr"></label>
-            </td>
-          <tr>
-            <td>El Hayy - 100<input
-                style="display: none"
-                id="Hayy"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Hayy"></label>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>Eş Şafi - 884<input
-                style="display: none"
-                id="Şafi"
-                type="checkbox"
-                class="chekboxInput"
-              />
-              <label for="Şafi"></label>
-            </td>
-          </tr>
-        </table>
-      </div>
-
     </div>
 
-    <!-- WEEKDAY CHOISE TO OPEN PAGE -->
-    <script>
-      var now = new Date(),
-        HaftaDay = now.getDay();
-      (1 === HaftaDay
-        ? myFunction1
-        : 2 === HaftaDay
-        ? myFunction2
-        : 3 === HaftaDay
-        ? myFunction3
-        : 4 === HaftaDay
-        ? myFunction4
-        : 5 === HaftaDay
-        ? myFunction5
-        : 6 === HaftaDay
-        ? myFunction6
-        : myFunction7)();
-    </script>
+    <!--******* Main Page DIV *******-->
+    <div id="MainPageDIV" style="display: none;">
 
+      <!--******* Page NAME DIVs *******-->
+      <div id="GorevPageNameDIVON" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1708" target="_blank">
+          ÖNSÖZ</a>
+      </div>
+      <div id="GorevPageNameDIVMV" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://www.mihr.com/mihrvakfi" target="_blank">
+          MİHR VAKFI</a>
+      </div>
+      <div id="GorevPageNameDIVGG" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1737" target="_blank">
+          TASAVVUFA GİREN KİŞİNİN GÜNLÜK GÖREVLERİ</a>
+      </div>
+      <div id="GorevPageNameDIVVR" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1738" target="_blank">
+          VİRD'İN AÇILMASI</a>
+      </div>
+      <div id="GorevPageNameDIVES" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1743" target="_blank">
+          ESMAÜL HÜSNA ÂYETLERİ</a>
+      </div>
 
+      <div id="PageNameDIV1" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://www.mihr.com/sohbetler/29/0/namazlar-dualar-ve-zikir" target="_blank">
+          GÜNLÜK NAMAZLAR<br>(5 vakit + kuşluk + teheccüd)</a>
+      </div>
+      <div id="PageNameDIV2" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1730" target="_blank">
+          HACET NAMAZI</a>
+      </div>
+      <div id="PageNameDIV3" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1732" target="_blank">
+          HAMD ve ŞÜKÜR NAMAZI</a>
+      </div>
+      <div id="PageNameDIV4" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1731" target="_blank">
+          TÖVBE NAMAZI</a>
+      </div>
+      <div id="PageNameDIV5" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1735" target="_blank">
+          İSTİHARE NAMAZI</a>
+      </div>
 
+      <div id="DuaPageNameDIV1" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1729" target="_blank">
+          NAMAZ DUALARI</a>
+      </div>
+      <div id="DuaPageNameDIV2" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1736" target="_blank">
+          TÖVBE VE İSTİĞFAR DUASI</a>
+      </div>
+      <div id="DuaPageNameDIV3" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1745" target="_blank">
+          SOFRA DUALARI</a>
+      </div>
+      <div id="DuaPageNameDIV4" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1723" target="_blank">
+          NAZARDAN KORUNMA DUASI</a>
+      </div>
+      <div id="DuaPageNameDIV5" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1725" target="_blank">
+          AİLE GEÇİMSİZLİĞİNE KARŞI DUA</a>
+      </div>
+      <div id="DuaPageNameDIV6" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1726" target="_blank">
+          SİHİR VE BÜYÜ NASIL ETKİSİZ HALE GETİRİLİR?</a>
+      </div>
+      <div id="DuaPageNameDIV7" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1746" target="_blank">
+          HATİM DUASI</a>
+      </div>
+      <!--******* END Page NAME DIVs *******-->
+
+      <p class="pCenter" style="font-size:20px">
+        <strong>EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br>BİSMİLLÂHİRRAHMÂNİRRAHÎM</strong>
+      </p>
+
+      <!--******* Gorev DIVS *******-->
+
+      <!--  TASAVVUF  --  ÖNSÖZ  -->
+
+      <div id="GorevDIVON" style="display: none" class="NamazDIVS">
+        <p>&nbsp; &nbsp; Sevgili okuyucular, Allah ile O’nun en kıymetli yaratığı olan insan arasındaki en büyük ilişki
+          vasıtası duadır.
+        </p>
+        <p>&nbsp; &nbsp; Allah, Kendisinden talep edilendir. Kul, Allah’tan talep edendir.
+        </p>
+        <p>&nbsp; &nbsp; Allah’a dua edilir. Dua, Allah’ı herhangibir şeyi yerine getirme konusundaki davetin adıdır.
+          Dua ve davet kelimeleri aynı kökten gelir.
+        </p>
+        <p>&nbsp; &nbsp; Dünyaya ait olan duada, kişi ister Allah’a ulaşmayı dilesin ister dilemesin Allah o talebi
+          kabul eder. Yeter ki kişinin kalbinde talep olsun. Haksız para kazanma talebi... Ne olursa... Allahû Tealâ
+          onları kabul eder ama o insanlar o kadar da cezayı yüklenerek bu dünyadan ayrılırlar.
+        </p>
+        <p>&nbsp; &nbsp; Kişi, Allah’a ulaşmayı dilemezse onun davetine icabet edilmez!
+        </p>
+        <p>&nbsp; &nbsp; Allah’a ulaşmayı dilemeyenlerin kurtuluşları mümkün değildir! Onların Allah’ın cennetine
+          gitmek, dünya saadetine ulaşmak konusundaki talepleri kabul edilmez! Onların şükürleri de kabul edilmez!
+        </p>
+        <p>&nbsp; &nbsp; Allahû Tealâ’nın yolunda eğer Allah’a manevî tekâmül konusunda dua edecekseniz, eğer siz,
+          Allah’a karşı tevekkül sahibi iseniz o zaman duanız mutlaka kabul edilir.
+        </p>
+        <p>&nbsp; &nbsp; Kesin şekilde inanmak, kalbî talebin sahibi olmak demektir. İnsanlar Allah’a ulaşmayı
+          dilemedikçe, talepleri Allahû Tealâ tarafından kabul edilmez!
+        </p>
+        <p>&nbsp; &nbsp; Allahû Tealâ’dan kalbinizden bir dilekte bulunmak, kalbinizle bir dilekte bulunmak, duadır.
+        </p>
+        <p><strong>Dua, Allah’ı davettir</strong>.
+        </p>
+        <p><strong>Allah’ı, ruhu Kendisine ulaştırmaya davettir</strong>.
+        </p>
+        <p><strong>Allah’ı, fizik vücudu teslim almaya davettir</strong>.
+        </p>
+        <p><strong>Allah’ı, nefsi teslim almaya davettir</strong>.
+        </p>
+        <p><strong>Allah’ı, bizleri irşada ulaştırmaya davettir</strong>.
+        </p>
+        <p><strong>Allah’ı, iradeyi teslim almasına davettir</strong>.
+        </p>
+        <p>&nbsp; &nbsp; Allah, kalbinde inanç bulunanlara, o talebin sahibi olanlara gerekeni yapar. Allah ile
+          ilişkinizi sağlayan müessesenin adı, duadır. Ama kalbinizle dua etmediyseniz, sadece söz olarak dua ettiyseniz
+          bu Allah’ın katında bir değer ifade etmez. Allah söze bakmaz, kalbe bakar. Kalbinizde ne var?
+        </p>
+        <p>&nbsp; &nbsp; Sevgili okuyucular, Allah’a bütün duaları <strong>“inanarak”</strong> edin!
+        </p>
+        <p>&nbsp; &nbsp; Kalbinizde ne varsa, kalbiniz aynadır, onu Allah’a aksettirir. Diliniz aksettirmeye yeterli
+          değildir. Diliniz sadece kalbinizdekini söylediği taktirde, konuşmanız Allahû Tealâ tarafından dua hüviyetine
+          girer. Öyleyse Allahû Tealâ sizin kalbinizde olan inanç seviyesiyle ilişkilidir.
+        </p>
+        <p><strong>Îmân, duanın temelini teşkil eder</strong>.
+        </p>
+        <p>&nbsp; &nbsp; Talep ettiğiniz şeyin Allahû Tealâ tarafından yerine getirileceğine inanın! İnanıyorsanız, bu
+          inancın kalben sahibi iseniz Allahû Tealâ o talebinizi mutlaka yerine getirir.
+        </p>
+        <p>&nbsp; &nbsp; Îmânınız, Allah katındaki miyarınızdır. Allah’ın size değer verme ölçüsü, îmânınızdır. Neye ve
+          ne kadar inanıyorsunuz? Allah yolunda hangi güçlükler olursa olsun, hepsine katlanmaya hazır mısınız? Bu îmânı
+          kalbinize yerleştirdiniz mi, o zaman korkmayın! Güçlüklerin mahiyeti ne olursa olsun, hepsinin üstesinden
+          gelirsiniz.
+        </p>
+        <p class="pCenter">Allah razı olsun.</p>
+      </div>
+
+      <!--  TASAVVUF  --  MİHR VAKFI  -->
+
+      <div id="GorevDIVMV" style="display: none" class="NamazDIVS">
+        <p>&nbsp; &nbsp; Mihr Vakfı Genel Başkanı <strong>Efendi Hazretleri Dr. İskender Ali Mihr</strong>'in vakıf
+          hakkındaki kısa açıklaması:
+          <br>Allah-û Tealâ 1989 yılında MİHR VAKFI'nı kurmayı nasip kıldı. MİHR VAKFI Allah yolunda çalışan, Allah için
+          var olan bir vakıftır. Bu vakfın müntesiplerinin en güzele ulaşması, bu vakıf muhtevası içinde ele alınmıştır.
+          Atalarımız diyorlar ki: <br>"Bir elin nesi var, iki elin sesi var."<br>Biz çok elli, çok sesli bir dizaynın
+          sahibiyiz.
+        </p>
+        <p class="pCenter"><strong>MİHR VAKFI TÜRKİYE'NİN VE İSLÂM'IN GELECEĞE AÇILAN BİR KÖPRÜSÜDÜR.</strong></p>
+        <p>&nbsp; &nbsp; Gelecek; dünya üzerinde yeni olayların vücuda geleceği ve dinlerin tek bir din olarak bir araya
+          getirileceği, bütün dinlerin aynı çatı altında birleştirileceği bir vasıf taşımaktadır.</p>
+        <p class="pCenter"><strong>VAKFIN KURULUŞ AMACI VE FAALİYETLERİ</strong></p>
+        <p>&nbsp; &nbsp; Medeniyet-İrfan-Hayır-Ref (MİHR) vakfı 1989 yılında tesis edilmiş olup, 25.10.1989 tarihli
+          resmi gazetede Vakıflar Genel Müdürlüğünce ilan edilmiştir.<br>Vakıf Genel Merkezi, Ankara'dadır. Vakfın
+          gayeleri şunlardır (Vakıf senedi yani ana sözleşme madde 5):</p>
+        <ol>
+          <li>Yardıma muhtaç kişilere yardım etmek.</li>
+          <li>
+            <ol style="list-style-type: lower-alpha;">
+              <li>İslâm</li>
+              <li>Modern Teknoloji</li>
+              <li>Nükleer Fizik Kimya</li>
+              <li>Enerji</li>
+              <li>Ekonomi</li>
+              <li>Finans</li>
+              <li>İş Etütleri</li>
+            </ol>
+          </li>
+          <li>İslâmi Teknik ve Sosyal İlimlerin yukarıda adı geçmeyen dalları ve bunların dışında kalan ilimler
+            alanlarında,</li>
+          <ol style="list-style-type: lower-alpha;">
+            <li>Araştırma yapmak ve yaptırmak</li>
+            <li>Yurt içinde ve dışında bu ilimlerin gelişmesi istikametinde her türlü neşriyatta bulunmak, konferans ve
+              seminerler düzenlemek ve düzenlenen seminerlere iştirak etmek,</li>
+            <li>Kurslar düzenlemek, fakülteler ve üniversiteler kurmak, mevcut üniversitelere katılmaktır.</li>
+          </ol>
+        </ol>
+        <p>&nbsp; &nbsp; Vakfın bu ana gayeleri doğrultusunda ve kuruluşundan bu güne kadar geçen kısa bir zaman içinde
+          yurt içinde ve yurt dışında birçok seri konferanslar düzenlenmiştir. 1990 ve 1991 yıllarında A.B.D de, 1991'de
+          Azerbaycan'da, 1992 yılında Almanya'da ve Belçika'da İslâm ve Tasavvuf konularında Vakıf Genel Başkanı Sayın
+          İskender Erol Evrenosoğlu tarafından konferanslar verilmiştir. Ayrıca Ankara başta olmak üzere İstanbul,
+          İzmir, Aydın, Denizli'de Ocak 1992'den beri her ay seri konferanslar düzenlenmiştir. </p>
+        <p>&nbsp; &nbsp; Samsun, Gaziantep, Malatya, Adana, Konya, Hopa, Gönen ve diğer bazı il ve ilçelerde de sık sık
+          konferanslar ve sohbetler tertiplemek suretiyle Vakıf, İslâmı, Peygamberimizin tebliği ve sahabenin yaşadığı
+          şekliyle yurtta ve dünyada anlatmak, yaşatmak için azimli bir faaliyet içinde bulunmaktadır. İslâm dünyasında
+          bu gün İslâm sadece şekil olarak yaşanmaktadır. Bir gurup insan tarafından birinci asr-ı saadet dönemindeki
+          İslâm yaşanmaktadır. Ancak bunlar çok azınlıkta kalmaktadır.</p>
+        <p>&nbsp; &nbsp; Kur'ân'a bütün olarak ittiba etmek, Kur'ân'ın ruhuna, özüne inilerek İslâmı yaşamak ve yaşatmak
+          asıldır. Sahabe İslâm'ı nasıl yaşamış, nasıl hayatına tatbik etmiş ve nasıl irşad olmuş ise ve bu şekilde
+          İslâm şerefine nasıl ulaşmış ise, bizlerin de öyle İslâm'ı yaşamamız Allah'ın (C.C) kesin emridir. Şimdiki
+          İslâm'ın zahiri 5 şartı ile yaşamak Kur'ân hükümlerine göre eksik ve kurtuluşa götürmeyen bir anlayış ve
+          tatbik tarzıdır. Bu cümleden olarak Vakfımızca eserler yayınlanmaktadır. Tasavvuf alanındaki eserleri,
+          Tasavvuf Nurları, Kur'ân-ı Kerim Işığında Tasavvuf, Mutluluk-Tasavvuf-İslâm ve Sohbet. Tasavvufun Kur'ân-ı
+          Kerim'deki Kökleri, Sohbet. Ekonomi alanındaki eserleri, Türkiye'de Orta Vadeli Krediler, Türk Sanayiinin
+          Finansal Problemleri, Türk Banka Sisteminde Kaynak İsrafı, Federal Almanya- Türkiye İşgücü ilişkileri,
+          Türkiye'de Enflasyon Probleminin Çözümü ve Kalkınma adlı eserleri yayınlanmıştır. Ayrıca Enerji-Madde ve Hız
+          Kanunları adlı eserler yayınlanmış bulunmaktadır. Bunlardan, Enerji-Madde ve Hız Kanunları ile Sohbet adlı
+          eserler İngilizceye çevrilmiştir.</p>
+        <p class="aPageName">İMAM İSKENDER ALİ MİHR HAZRETLERİ KİMDİR?</p>
+        <p><iframe style="position: sticky;  width: 100%; height: 480px;"
+            src="https://www.youtube.com/embed/1UNuyCNIMS0?si=76NNWen8zWL4Raln"></iframe>
+          <br>İMAM İSKENDER ALİ MİHR KİMDİR?<br>TANITIM BELGESELİ (1:27:09)
+          <br><br><video controls preload="metadata" poster="pict/mihr.png" width="100%"
+            src="https://www.mihr.com/Videolar/mp4/efendimiz_konferans_tanitim.mp4" type="video/mp4"></video>
+          <br>Efendi Hazretleri<br>Tanıtım Videosu (0:15:56)
+          <br><br><iframe style="position: sticky;  width: 100%; height: 480px;"
+            src="https://www.youtube.com/embed/Prtn-J1W2gw?si=slV0T3kkDfMXMvLq"></iframe>
+          <br>Efendi Hazretleri<br>Tanıtım Videosu (0:16:20)
+          <br><br>
+        </p>
+        <p>&nbsp; &nbsp; İskender Erol Evrenosoğlu Eşref Rumi Hazretleri'nin bir işareti ile 29.11.1933 tarihinde
+          ailenin üçüncü ve tek erkek evladı olarak İznik'te dünyaya gelmiştir. Bozoklu Han'dan başlayan soy kütüğüne
+          sahiptir. Şeriftir. Evli ve iki çocuk babasıdır.
+        </p>
+        <p>&nbsp; &nbsp; İlk, orta ve lise tahsilini Bursa'da tamamlamıştır. 1956'da İstanbul Yüksek Ekonomi ve Ticaret
+          Okulu (şimdiki Marmara Üniversitesi), Banka ve Muhasebe Bölümünden mezun olmuştur. Yüksek Lisans'ını ODTÜ'de
+          ekonomi üzerine yapmıştır.
+        </p>
+        <p>&nbsp; &nbsp; Askerliğini 1957-1958 yılları arasında Kore'de tamamlamıştır.
+        </p>
+        <p>&nbsp; &nbsp; Kamu İktisadi Teşekkülleri, Türkiye Vakıflar Bankası ve DPT'de (Devlet Planlama Teşkilatı'nda)
+          Müfettişlik, Müdürlük, Uzmanlık görevlerinde bulunmuştur. Müfettiş olarak, Bandırma'da daha sonra Tokat'ta
+          görev almıştır. 1972 yılında DPT'den ayrılan Efendi Hazretleri, Fizibilite etütleri yapan bir iş yeri
+          açmıştır. Daha sonra İktisadi Planlama bölümünde çalışmak üzere Devlet Planlama Teşkilatı'ndaki görevine
+          tekrar çağırılmıştır.
+        </p>
+        <p>&nbsp; &nbsp; O yıllarda Planlama, Teşvik ve Uygulama'da Türkiye İktisat Meseleleri dergilerinde ve
+          Ticaretliler Dergisi'nde yazmıştır. Ege Dergisi'nde Teşvik ve uygulamayla alâkalı yeni çıkan kararnameleri
+          dizayn etmiştir.
+        </p>
+        <p>&nbsp; &nbsp; 1989 yılında, İslâm, Modern Teknoloji, Nükleer Fizik, Kimya, Enerji, Ekonomi, Finans, İş
+          Etütleri alanlarında çalışmalar yapan, yurt içinde ve yurt dışında bu ilimlerin gelişmesi istikametinde
+          konferans ve seminerler düzenleyen MİHR VAKFI'NI kurmuştur. Halen vakfın Genel Başkanlığı'nı yürütmektedir.
+        </p>
+        <p>&nbsp; &nbsp; Manevi alandaki eserlerinde Allah-û Tealâ'nın kendisine verdiği İmam İskender Ali MİHR ünvanını
+          kullanmaktadır.
+        </p>
+        <p>&nbsp; &nbsp; 1992 yılında yayın hayatına başlayan aylık MİHR DERGİSİ'nin başyazarıdır. Şu anda uydu
+          üzerinden yayın yapan MİHR TV ve MİHR RADYOSU'nun kurucusudur. Efendi Hazretleri İmam İskender Ali Mihr,
+          kâinattaki ilk ve tek "ALLAH'IN ÜNİVERSİTESİ'ni (UNIVERSITY OF ALLAH)" 1 Nisan 2000 tarihinde kurmuştur. Aynı
+          zamanda üniversitenin Rektörüdür.
+        </p>
+        <p>&nbsp; &nbsp; Üniversitede verdiği Tefsir derslerine paralel olarak, Kur'ân-ı Kerim'deki her âyetin Arapçası,
+          Latincesi, Türkçesi ve kelime kelime mealiyle dizayn edilen KURAN-I KERİM TEFSİRİ 19 cilt olarak
+          hazırlanmaktadır.
+        </p>
+        <p class="aPageName">ÇALIŞMALARI</p>
+        <p class="pCenter"><strong>MAKRO EKONOMİ ALANINDA YAYINLANMIŞ KİTAPLARI</strong></p>
+        <ol>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/731" target="_blank"
+              rel="noopener">Likit Mekanizma</a>&nbsp;</li>
+          <li>Türkiye'de Ekonomik Darboğazdan Nasıl Kurtulunur?</li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/10" target="_blank"
+              rel="noopener">Türkiye'de Enflasyon Probleminin Çözümü ve Kalkınma</a></li>
+          <li>Türkiye'de Orta Vadeli Krediler (1973)</li>
+          <li>Türkiye Sanayisinde Finansal Problemler (1974)</li>
+          <li>Türkiye Bankalar Sisteminde Kaynak İsrafı (1984)</li>
+          <li>Türkiye Federal Almanya İşgücü İlişkileri (1973)</li>
+        </ol>
+        <p class="pCenter"><strong>DPT KÜTÜPHANESİNDEKİ ARAŞTIRMALARINDAN BİRKAÇI </strong></p>
+        <ol>
+          <li>Mevduat Hacminin Türkiye'nin Kalkınmasındaki Yeri</li>
+          <li>Para Arzı ve Fiyat İlişkileri</li>
+          <li>Para Çoğaltanı Faktörü ve Finansal Sistem</li>
+          <li>Türkiye'de Emisyon, Paranın Devir Hızı ve Enflasyon Hızı Arasındaki İlişkiler</li>
+          <li>Türkiye'de Enflasyon Teşhis ve Tedavisi</li>
+          <li>Türkiye'deki 10 Bankanın Analizi ve Türkiye</li>
+          <li>Tasarruf Bonoları ve Kalkınma Bankası Hakkında Rapor</li>
+          <li>Ticari Krediler ve Yatırım Kredileri</li>
+          <li>1982 yılında Türk Bankacılık Sistemindeki Likit Mekanizma ve Kaynak İsrafı</li>
+          <li>Türk Bankacılığı Sisteminde Krediler ve İştirakler</li>
+          <li>Bankalardaki Tasarrufların Maliyeti ve Verimlilik</li>
+          <li>Kredi Gelirlerinin Hesaplanması ve Tasarruf Faizlerinin Maliyeti</li>
+          <li>Türkiye Bankalar Sisteminde Kredi Mevduat İlişkisi</li>
+          <li>Çalışma Bakanlığı'nca Hazırlanmış Olan "İşsizlik Sigortası Kanun Tasarısı" Hakkında</li>
+          <li>1983 Yılının 8. Ayı Sonunda Türkiye Bankacılığında Durum Özeti</li>
+        </ol>
+        <p class="pCenter"><strong>MANEVİ ALANDAKİ MAKALELERİ</strong></p>
+        <ol>
+          <li>Sebil Mecmuası 13 makale</li>
+          <li>Milli Gazete 17 makale</li>
+        </ol>
+        <p class="pCenter"><strong>MAKRO EKONOMİ ALANINDAKİ MAKALELERİ</strong></p>
+        <ol>
+          <li>Türkiye İktisat Gazetesi'nde 33 makale</li>
+          <li>Ticaret Dergisi'nde 8 makale</li>
+        </ol>
+        <p class="pCenter"><strong>KONFERANSLARI</strong></p>
+        <p>(Efendi Hazretleri'nin tüm konferansları için <strong><a title="Tüm Konferanslar"
+              href="https://www.mihr.com/sohbetler/27/0/konferanslar" target="_blank"
+              rel="noopener">tıklayın.)</a></strong></p>
+        <ol>
+          <li>1990-1991 A.B.D</li>
+          <li>1991 Azerbaycan</li>
+          <li>1992 Almanya ve Belçika</li>
+          <li>1992 Ankara, İstanbul, İzmir, Aydın, Denizli 'de aylık</li>
+          <li>Samsun, Gaziantep, Malatya, Adana, Konya, Hopa, Gönen ve bazı illerde periyodik konferanslar</li>
+        </ol>
+        <p class="pCenter"><strong>MANEVİ ALANDAKİ KİTAPLARI </strong></p>
+        <ol>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/9" target="_blank"
+              rel="noopener">Mutluluk Tasavvuf İslâm</a></li>
+          <li>Sohbet</li>
+          <li>Kur'ân'da ki İslâm</li>
+          <li>Islam In The Quran</li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/21" target="_blank"
+              rel="noopener">Risalet Nurları</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/1795" target="_blank"
+              rel="noopener">Tövbe</a></li>
+          <li>Yeminler</li>
+          <li>Vuslat</li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/14" target="_blank"
+              rel="noopener">Tebliğ</a></li>
+          <li>Kader Kaza</li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/25" target="_blank"
+              rel="noopener">Vel Asr 1</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/25" target="_blank"
+              rel="noopener">Vel Asr 2</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/25" target="_blank"
+              rel="noopener">Vel Asr 3</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/25" target="_blank"
+              rel="noopener">Vel Asr 4</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/19" target="_blank"
+              rel="noopener">Mü'min Olmak</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/20" target="_blank"
+              rel="noopener">Tevhid</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Content/images/kapak/2150f582.jpg"
+              target="_blank" rel="noopener">Tekzib</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/13" target="_blank"
+              rel="noopener">Tavzih</a></li>
+          <li>Nezir</li>
+          <li>Şiirler</li>
+          <li>Gizlenerek Ve Saptırılarak Cennete Girmeye Mani Olan Kur'ân-ı Kerim Mealleri</li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/740" target="_blank"
+              rel="noopener">Kadir Gecesi</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/343" target="_blank"
+              rel="noopener">What's Islam</a></li>
+          <li><a title="Esere gitmek için tıklayınız" href="https://www.mihr.com/Home/Kitaplar/360" target="_blank"
+              rel="noopener">Tasavvuf Der Islam Im Kuran</a></li>
+          <li>İslâm Mutluluk Tasavvuf</li>
+          <li>İslâmiyet Ve Tasavvuf 1 ve 2. Cilt</li>
+          <li>Kur'ân-ı Kerim Tefsiri (19 cilt)</li>
+        </ol>
+      </div>
+
+      <!--  TASAVVUF  --  GÖREVLER  -->
+
+      <div id="GorevDIVGG" style="display: none" class="NamazDIVS">
+        <ol>
+          <li> Virdi 7000 zikirle başlar ve 47000'e ulaşıncaya kadar 15 günde bir 2000 artırır.</li>
+          <li> Beş vakit namazı, her vaktin kazası ile birlikte kılar. Vaktin kazasında vakit farz namazı kılınır.</li>
+          <li> Teheccüd ve kuşluk namazlarını kılar.</li>
+          <li> Hergün Esma-ül Hüsna âyetlerini okur.</li>
+          <li> Esma-ül Hüsna'yı yanlarında gösterilen sayıda okur. (El İlâh, El Masîr hergün çekilmelidir.)</li>
+          <li> Ramazan ayında tuttuğu oruca ilâveten perşembe günleri, kandillerde ve Muharrem'in 10. günü ve bazı özel
+            günlerde oruç tutar.</li>
+          <li> 125 defa <strong>"subhânallâhu vel hamdu lillâhi ve lâ ilâhe illallâhu vallâhu ekber, ve lâ havle ve lâ
+              kuvvete illâ billâhil aliyyul azîm"</strong> çeker.</li>
+          <li> 250 defa <strong>"allâhumme salli alâ seyyidinâ muhammedin ve alâ alî seyyidinâ muhammed"</strong> çeker.
+          </li>
+        </ol>
+      </div>
+
+      <!--  TASAVVUF  --  VİRD  -->
+
+      <div id="GorevDIVVR" style="display: none" class="NamazDIVS">
+        <p>&nbsp; &nbsp; Takriben 2,5m.x2,5m. ebatlarında tülbentten yapılmış beyaz vird örtüsü altında, yatmadan önce,
+          sabah ezanından önce veya ne zaman istenirse 25 defa uzun olarak "<b>estağfurullah</b>" çekilir. Her
+          "<b>estağfurullah</b>" kelimesi, derinden alınan nefes yavaş yavaş bırakılırken, nefes bitene kadar uzatılarak
+          söylenir.</p>
+        <p>&nbsp; &nbsp; 7 Fatiha Suresi okunur ve "<b>Yarabbi, okuduğum Fatihaları başta Peygamber Efendimiz (S.A.V)'e
+            ve bütün peygamberlere, kıymetli ashabına, bütün mürşidlere ve Mehdi (A.S)'a hediye ettim, kabul buyur.</b>"
+          denilerek bağışlanır. Mürşid düşünülür (rabıta).</p>
+        <p>&nbsp; &nbsp; Sabah namaz vaktinden ertesi sabah namazı vaktine kadar bildirilen sayıda zikir yapılır. Her
+          100, 500 veya 1000 "<b>Allah</b>" zikrinden sonra; "<b>ilâhi ente maksudî ve rızake matlubî</b>" denir.</p>
+        <p>&nbsp; &nbsp; Günün diğer saatlerinde verilen sayıda zikrini tamamlayabilmek için gün içinde vakit buldukça
+          25 kısa "<b>estağfurullah</b>"tan sonra tesbihini çekerek Allah'ı zikreder. Tesbihini bitirirken 25 kısa
+          "<b>estağfurullah</b>" çeker.</p>
+        <p>&nbsp; &nbsp; Günlük vird bitirilmiş olsa da her an; ayaktayken, otururken ve yanüstü yatarken de
+          "<b>Allah</b>" zikri devam ettirilmeye gayret edilir.</p>
+
+        <p class="aPageName"> <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1739"
+            target="_blank">
+            GÖK KATLARINA GÖRE ZİKRİN ÇEKİLMESİ</a></p>
+
+        <ol>
+          <li>İlk 15 bin "<b>Allah</b>" zikri; 1. katta (sol göğsün 4 parmak altında) çekilir.</li>
+          <li>Sonraki 2 bin "<b>Allah</b>" zikri; 2. katta (sağ göğsün 4 parmak altında) çekilir (zikir sayısı 17.000'e
+            tamamlanır).</li>
+          <li>Sonraki 2 bin "<b>Allah</b>" zikri; 3. katta (sol göğsün 4 parmak üstünde) çekilir (zikir sayısı 19.000'e
+            tamamlanır).</li>
+          <li>Sonraki 2 bin "<b>Allah</b>" zikri; 4. katta (sağ göğsün 4 parmak üstünde) çekilir (zikir sayısı 21.000'e
+            tamamlanır).</li>
+          <li>5- Sonraki 2 bin "<b>Allah</b>" zikri; 5. katta (boyunda, köprücük kemiklerinin omuzlardan îmân tahtası
+            denen kemiğe uzanan kemiklerin bittiği yerde) çekilir (zikir sayısı 23.000'e tamamlanır).</li>
+          <li>Sonraki 2 bin "<b>Allah</b>" zikri; 6. katta (alında sağ ve sol kaşların birleştiği yerin az üstü) çekilir
+            (zikir sayısı 25.000'e tamamlanır).</li>
+          <li>Sonraki 22 bin "<b>Allah</b>" zikri; 7. katta (alınla saçın birleştiği yerde) çekilir (zikir sayısı
+            47.000'e tamamlanır). </p>
+        </ol>
+      </div>
+
+      <!--  TASAVVUF  --  ESMAÜL HÜSNA  -->
+
+      <div id="GorevDIVES" style="display: none" class="NamazDIVS">
+        <p><strong>5/MAİDE-97:</strong> Cealallâhul ka'betel beytel harâme kıyâmen lin nâsi veş şehral harâme vel hedye
+          vel kalâid(kalâide), zâlike li ta'lemû ennellâhe ya'lemu mâ fîs semâvâti ve mâ fîl ardı ve ennallâhe bikulli
+          şey'in alîm(alîmun).
+        </p>
+        <p><strong>19/MERYEM-19, 20:</strong> Kâle innemâ ene resûlu rabbiki li ehebe leki gulâmen zekiyyâ(zekiyyen)
+          kâlet ennâ yekûnu lî gulâmun ve lem yemsesnî beşerun ve lem eku bagıyyâ(bagıyyen).
+        </p>
+        <p><strong>21/ENBİYA-32, 33:</strong> Ve cealnes semâe sakfen mahfûzâ(mahfûzen), ve hum an âyâtihâ
+          mu'ridûn(mu'ridûne) ve huvellezî halakal leyle ven nehâre veş şemse vel kamer(kamere), kullun fî felekin
+          yesbehûn(yesbehûne).
+        </p>
+        <p><strong>33/AHZAB-27, 28, 29:</strong> Ve evresekum ardahum ve diyârehum ve emvâlehum ve ardan lem tetauhâ, ve
+          kânallâhu alâ kulli şey'in kadîrâ(kadîran) yâ eyyuhen nebiyyu kul li ezvâcike in kuntunne turidnel hayâted
+          dunyâ ve ziynetehâ fe teâleyne umetti'kunne ve userrihkunne serâhan cemîlâ(cemîlen) ve in kuntunne
+          turidnallâhe ve resûlehu ved dârel âhırete fe innallâhe eadde lil muhsinâti minkunne ecren azîmâ(azîmen).
+        </p>
+        <p><strong>7/A'RAF-14, 15:</strong> Kâle enzırnî ilâ yevmi yub'asûn(yub'asûne) kâle inneke minel
+          munzarîn(munzarîne).
+        </p>
+        <p><strong>5/MAİDE-9:</strong> Vaadallâhullezîne âmenû ve amilûs sâlihâti lehum magfiretun ve ecrun
+          azîm(azîmun).
+        </p>
+        <p><strong>18/KEHF-10, 11, 12:</strong> İz evel fityetu ilel kehfi fe kâlû rabbenâ âtinâ min ledunke rahmeten ve
+          heyyi' lenâ min emrinâ reşedâ(reşeden) fe darabnâ alâ âzânihim fîl kehfi sinîne adedâ(adeden) summe beasnâhum
+          li na'leme eyyul hızbeyni ahsâ limâ lebisû emedâ(emeden).
+        </p>
+        <p><strong>39/ZUMER-23:</strong> Allâhu nezzele ahsenel hadîsi kitâben muteşâbihen mesâniye takşaırru minhu
+          culûdullezîne yahşevne rabbehum, summe telînu culûduhum ve kulûbuhum ilâ zikrillâh(zikrillâhi), zâlike
+          hudallâhi yehdî bihî men yeşâu, ve men yudlilillâhu fe mâ lehu min hâd(hâdin).
+        </p>
+        <p><strong>5/MAİDE-28:</strong> Le in besadte ileyye yedeke li taktulenî mâ ene bi bâsitın yediye ileyke li
+          aktulek(aktuleke), innî ehâfullâhe rabbel âlemîn(âlemîne).
+        </p>
+        <p><strong>2/BAKARA-126:</strong> Ve iz kâle ibrâhîmu rabbic'al hâzâ beleden âminen verzuk ehlehu mines semerâti
+          men âmene minhum billâhi vel yevmil âhır(âhiri), kâle ve men kefere fe umettiuhu kalîlen summe adtarrûhu ilâ
+          azâbin nâr(nâri), ve bi'sel masîr(masîru).
+        </p>
+        <p><strong>41/FUSSİLET-12:</strong> Fe kadâhunne seb'a semâvâtin fî yevmeyni ve evhâ fî kulli semâin emrehâ ve
+          zeyyennes semâed dunyâ bi mesâbîha ve hıfzâ(hıfzen), zâlike takdîrul azîzil alîm(alîmi).
+        </p>
+        <p><strong>39/ZUMER-17:</strong> Vellezînectenebût tâgûte en ya'budûhâ ve enâbû ilâllâhi lehumul buşrâ, fe
+          beşşir ibâd(ibâdi).
+        </p>
+        <p><strong>16/NAHL-98:</strong> Fe izâ kare'tel kur'âne festeız billâhi mineş şeytânir racîm(racîmi).
+        </p>
+        <p><strong>17/İSRA-80:</strong> Ve kul rabbi edhılnî mudhale sıdkın ve ahricnî muhrece sıdkın vec'al lî min
+          ledunke sultânen nasîrâ(nasîren).
+        </p>
+        <p><strong>19/MERYEM-17:</strong> Fettehazet min dûnihim hicâben fe erselnâ ileyhâ rûhanâ fe temessele lehâ
+          beşeren seviyyâ(seviyyen).
+        </p>
+        <p><strong>21/ENBİYA-83:</strong> Ve eyyûbe iz nâdâ rabbehû ennî messeniyed durru ve ente erhamur
+          râhimîn(râhimîne).
+        </p>
+        <p><strong>21/ENBİYA-89:</strong> Ve zekeriyyâ iz nâdâ rabbehu rabbi lâ tezernî ferden ve ente hayrul
+          vârisîn(vârisîne).
+        </p>
+        <p><strong>21/ENBİYA-92:</strong> İnne hâzihî ummetukum ummeten vâhıdeten ve ene rabbukum fa'budûn(fa'budûni).
+        </p>
+        <p><strong>21/ENBİYA-107:</strong> Ve mâ erselnâke illâ rahmeten lil âlemîn(âlemîne).
+        </p>
+        <p><strong>21/ENBİYA-112:</strong> Kâle rabbıhkum bil hakk(hakkı), ve rabbuner rahmânul musteânu alâ mâ
+          tasıfûn(tasıfûne).
+        </p>
+        <p><strong>22/HAC-68:</strong> Ve in câdelûke fe kulillâhu a'lemu bimâ ta'melûn(ta'melûne).
+        </p>
+        <p><strong>23/MU'MİNUN-26:</strong> Kâle rabbinsurnî bimâ kezzebûn(kezzebûni).
+        </p>
+        <p><strong>39/ZUMER-19:</strong> E fe men hakka aleyhi kelimetul azâb(azâbi), e fe ente tunkızu men fîn
+          nâr(nâri).
+        </p>
+        <p><strong>23/MU'MİNUN-29:</strong> Ve kul rabbi enzilnî munzelen mubâreken ve ente hayrul munzilîn(munzilîne).
+        </p>
+        <p><strong>23/MU'MİNUN-93:</strong> Kul rabbi immâ turiyennî mâ yûadûn(yûadûne).
+        </p>
+        <p><strong>23/MU'MİNUN-94:</strong> Rabbi fe lâ tec'alnî fîl kavmiz zâlimîn(zâlimîne).
+        </p>
+        <p><strong>23/MU'MİNUN-97:</strong> Ve kul rabbi eûzu bike min hemezatiş şeyâtîn(şeyâtîni).
+        </p>
+        <p><strong>23/MU'MİNUN-98:</strong> Ve eûzu bike rabbi en yahdurûn(yahdurûni).
+        </p>
+        <p><strong>23/MU'MİNUN-118:</strong> Ve kul rabbigfir verham ve ente hayrur râhımîn(râhımîne).
+        </p>
+        <p><strong>25/FURKAN-6:</strong> Kul enzelehullezî ya'lemus sırre fîs semâvâti vel ard(ardı), innehu kâne
+          gafûran rahîmâ(rahîmen).
+        </p>
+        <p><strong>26/ŞUARA-62:</strong> Kâle kellâ, inne maiye rabbî seyehdîn(seyehdîni).
+        </p>
+        <p><strong>26/ŞUARA-83:</strong> Rabbi heb lî hukmen ve elhıknî bis sâlihîn(sâlihîne).
+        </p>
+        <p><strong>26/ŞUARA-85:</strong> Vec'alnî min vereseti cennetin naîm(naîmi).
+        </p>
+
+        <!-- MAIN PAGE DIV -->
+        <div id="MainPageDIV">
+          <p class="aPageName"> <a href="https://orrstudio.github.io/Esmalar" target="_blank">
+              ESMAÜL HÜSNA</a></p>
+          <!-- WEEK NAME DIV's -->
+          <div id="myDIV1" class="beautifully" style="display: none"><a class="aPageName"
+              href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
+            I - PAZARTESİ</a></div>
+          <div id="myDIV2" class="beautifully" style="display: none"><a class="aPageName"
+              href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
+            II - SALI</a></div>
+          <div id="myDIV3" class="beautifully" style="display: none"><a class="aPageName"
+              href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
+            III - ÇARŞAMBA</a></div>
+          <div id="myDIV4" class="beautifully" style="display: none"><a class="aPageName"
+              href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
+            IV - PERŞEMBE</a></div>
+          <div id="myDIV5" class="beautifully" style="display: none"><a class="aPageName"
+              href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
+            V - CUMA</a></div>
+          <div id="myDIV6" class="beautifully" style="display: none"><a class="aPageName"
+              href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
+            VI - CUMARTESİ</a></div>
+          <div id="myDIV7" class="beautifully" style="display: none"><a class="aPageName"
+              href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1740" target="_blank"></a>
+            VII - PAZAR</a></div>
+          <!-- DATE -->
+          <div class="beautifullyDate">
+            <script>
+              var d = new Date(),
+                month = new Array(
+                  "Ocak",
+                  "Şubat",
+                  "Mart",
+                  "Nisan",
+                  "Mayıs",
+                  "Haziran",
+                  "Temmuz",
+                  "Ağustos",
+                  "Eylül",
+                  "Ekim",
+                  "Kasım",
+                  "Aralık"
+                );
+              document.write(
+                d.getDate() +
+                " " +
+                month[d.getMonth()] +
+                " " +
+                d.getFullYear()
+              );
+            </script>
+          </div>
+          <!-- END WEEK NAME DIV's -->
+
+          <!-- NOT CHANGE DIV -->
+          <p class="pCenter" style="font-size:20px;">EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br>BİSMİLLÂHİRRAHMÂNİRRAHÎM</p>
+
+          <script>
+            function myFunction1() {
+              (document.getElementById("myDIV1").style.display = "block"),
+                (document.getElementById("myDIV11").style.display = "block"),
+                (document.getElementById("myDIV2").style.display = "none"),
+                (document.getElementById("myDIV22").style.display = "none"),
+                (document.getElementById("myDIV3").style.display = "none"),
+                (document.getElementById("myDIV33").style.display = "none"),
+                (document.getElementById("myDIV4").style.display = "none"),
+                (document.getElementById("myDIV44").style.display = "none"),
+                (document.getElementById("myDIV5").style.display = "none"),
+                (document.getElementById("myDIV55").style.display = "none"),
+                (document.getElementById("myDIV6").style.display = "none"),
+                (document.getElementById("myDIV66").style.display = "none"),
+                (document.getElementById("myDIV7").style.display = "none"),
+                (document.getElementById("myDIV77").style.display = "none"),
+                (document.getElementById("MENUSECTION").style.display = "none"),
+                (document.getElementById("MainPageDIV").style.display = "block"),
+                (document.getElementById("ButtonMENU").style.display = "block"),
+                (document.getElementById("ButtonMENUX").style.display = "none");
+            }
+            function myFunction2() {
+              (document.getElementById("myDIV1").style.display = "none"),
+                (document.getElementById("myDIV11").style.display = "none"),
+                (document.getElementById("myDIV2").style.display = "block"),
+                (document.getElementById("myDIV22").style.display = "block"),
+                (document.getElementById("myDIV3").style.display = "none"),
+                (document.getElementById("myDIV33").style.display = "none"),
+                (document.getElementById("myDIV4").style.display = "none"),
+                (document.getElementById("myDIV44").style.display = "none"),
+                (document.getElementById("myDIV5").style.display = "none"),
+                (document.getElementById("myDIV55").style.display = "none"),
+                (document.getElementById("myDIV6").style.display = "none"),
+                (document.getElementById("myDIV66").style.display = "none"),
+                (document.getElementById("myDIV7").style.display = "none"),
+                (document.getElementById("myDIV77").style.display = "none"),
+                (document.getElementById("MENUSECTION").style.display = "none"),
+                (document.getElementById("MainPageDIV").style.display = "block"),
+                (document.getElementById("ButtonMENU").style.display = "block"),
+                (document.getElementById("ButtonMENUX").style.display = "none");
+            }
+            function myFunction3() {
+              (document.getElementById("myDIV1").style.display = "none"),
+                (document.getElementById("myDIV11").style.display = "none"),
+                (document.getElementById("myDIV2").style.display = "none"),
+                (document.getElementById("myDIV22").style.display = "none"),
+                (document.getElementById("myDIV3").style.display = "block"),
+                (document.getElementById("myDIV33").style.display = "block"),
+                (document.getElementById("myDIV4").style.display = "none"),
+                (document.getElementById("myDIV44").style.display = "none"),
+                (document.getElementById("myDIV5").style.display = "none"),
+                (document.getElementById("myDIV55").style.display = "none"),
+                (document.getElementById("myDIV6").style.display = "none"),
+                (document.getElementById("myDIV66").style.display = "none"),
+                (document.getElementById("myDIV7").style.display = "none"),
+                (document.getElementById("myDIV77").style.display = "none"),
+                (document.getElementById("MENUSECTION").style.display = "none"),
+                (document.getElementById("MainPageDIV").style.display = "block"),
+                (document.getElementById("ButtonMENU").style.display = "block"),
+                (document.getElementById("ButtonMENUX").style.display = "none");
+            }
+            function myFunction4() {
+              (document.getElementById("myDIV1").style.display = "none"),
+                (document.getElementById("myDIV11").style.display = "none"),
+                (document.getElementById("myDIV2").style.display = "none"),
+                (document.getElementById("myDIV22").style.display = "none"),
+                (document.getElementById("myDIV3").style.display = "none"),
+                (document.getElementById("myDIV33").style.display = "none"),
+                (document.getElementById("myDIV4").style.display = "block"),
+                (document.getElementById("myDIV44").style.display = "block"),
+                (document.getElementById("myDIV5").style.display = "none"),
+                (document.getElementById("myDIV55").style.display = "none"),
+                (document.getElementById("myDIV6").style.display = "none"),
+                (document.getElementById("myDIV66").style.display = "none"),
+                (document.getElementById("myDIV7").style.display = "none"),
+                (document.getElementById("myDIV77").style.display = "none"),
+                (document.getElementById("MENUSECTION").style.display = "none"),
+                (document.getElementById("MainPageDIV").style.display = "block"),
+                (document.getElementById("ButtonMENU").style.display = "block"),
+                (document.getElementById("ButtonMENUX").style.display = "none");
+            }
+            function myFunction5() {
+              (document.getElementById("myDIV1").style.display = "none"),
+                (document.getElementById("myDIV11").style.display = "none"),
+                (document.getElementById("myDIV2").style.display = "none"),
+                (document.getElementById("myDIV22").style.display = "none"),
+                (document.getElementById("myDIV3").style.display = "none"),
+                (document.getElementById("myDIV33").style.display = "none"),
+                (document.getElementById("myDIV4").style.display = "none"),
+                (document.getElementById("myDIV44").style.display = "none"),
+                (document.getElementById("myDIV5").style.display = "block"),
+                (document.getElementById("myDIV55").style.display = "block"),
+                (document.getElementById("myDIV6").style.display = "none"),
+                (document.getElementById("myDIV66").style.display = "none"),
+                (document.getElementById("myDIV7").style.display = "none"),
+                (document.getElementById("myDIV77").style.display = "none"),
+                (document.getElementById("MENUSECTION").style.display = "none"),
+                (document.getElementById("MainPageDIV").style.display = "block"),
+                (document.getElementById("ButtonMENU").style.display = "block"),
+                (document.getElementById("ButtonMENUX").style.display = "none");
+            }
+            function myFunction6() {
+              (document.getElementById("myDIV1").style.display = "none"),
+                (document.getElementById("myDIV11").style.display = "none"),
+                (document.getElementById("myDIV2").style.display = "none"),
+                (document.getElementById("myDIV22").style.display = "none"),
+                (document.getElementById("myDIV3").style.display = "none"),
+                (document.getElementById("myDIV33").style.display = "none"),
+                (document.getElementById("myDIV4").style.display = "none"),
+                (document.getElementById("myDIV44").style.display = "none"),
+                (document.getElementById("myDIV5").style.display = "none"),
+                (document.getElementById("myDIV55").style.display = "none"),
+                (document.getElementById("myDIV6").style.display = "block"),
+                (document.getElementById("myDIV66").style.display = "block"),
+                (document.getElementById("myDIV7").style.display = "none"),
+                (document.getElementById("myDIV77").style.display = "none"),
+                (document.getElementById("MENUSECTION").style.display = "none"),
+                (document.getElementById("MainPageDIV").style.display = "block"),
+                (document.getElementById("ButtonMENU").style.display = "block"),
+                (document.getElementById("ButtonMENUX").style.display = "none");
+            }
+            function myFunction7() {
+              (document.getElementById("myDIV1").style.display = "none"),
+                (document.getElementById("myDIV11").style.display = "none"),
+                (document.getElementById("myDIV2").style.display = "none"),
+                (document.getElementById("myDIV22").style.display = "none"),
+                (document.getElementById("myDIV3").style.display = "none"),
+                (document.getElementById("myDIV33").style.display = "none"),
+                (document.getElementById("myDIV4").style.display = "none"),
+                (document.getElementById("myDIV44").style.display = "none"),
+                (document.getElementById("myDIV5").style.display = "none"),
+                (document.getElementById("myDIV55").style.display = "none"),
+                (document.getElementById("myDIV6").style.display = "none"),
+                (document.getElementById("myDIV66").style.display = "none"),
+                (document.getElementById("myDIV7").style.display = "block"),
+                (document.getElementById("myDIV77").style.display = "block"),
+                (document.getElementById("MENUSECTION").style.display = "none"),
+                (document.getElementById("MainPageDIV").style.display = "block"),
+                (document.getElementById("ButtonMENU").style.display = "block"),
+                (document.getElementById("ButtonMENUX").style.display = "none");
+            }
+          </script>
+          <!-- END HAFTA BUTTONS & scripts -->
+
+          <div style="display: block">
+            <table>
+              <tr>
+                <td>
+                  Allah (El İlâh) - 269
+                  <input id="Heart" style="display: none" type="checkbox" class="chekboxInput" />
+                  <label for="Heart"></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div style="display: block">
+            <table>
+              <tr>
+                <td>
+                  El Masîr - 535
+                  <input style="display: none" id="Masir" type="checkbox" class="chekboxInput" />
+                  <label for="Masir"></label>
+                </td>
+              </tr>
+            </table>
+            <!-- END NOT CHANGE DIV -->
+          </div>
+
+          <!-- ESMAÜL HÜSNA I DIV-->
+          <div id="myDIV11" style="display: none">
+            <table>
+              <tr>
+                <td>El Mugnî - 1337<input style="display: none" id="Mugnî" type="checkbox" class="chekboxInput" />
+                  <label for="Mugnî"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Es Sabûr - 519<input style="display: none" id="Sabûr" type="checkbox" class="chekboxInput" />
+                  <label for="Sabûr"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Vedûd - 372<input style="display: none" id="Vedûd" type="checkbox" class="chekboxInput" />
+                  <label for="Vedûd"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Vehhâb - 218<input style="display: none" id="Vehhâb" type="checkbox" class="chekboxInput" />
+                  <label for="Vehhâb"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Es Semîu - 351<input style="display: none" id="Semîu" type="checkbox" class="chekboxInput" />
+                  <label for="Semîu"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Fettâh - 1082<input style="display: none" id="Fettâh" type="checkbox" class="chekboxInput" />
+                  <label for="Fettâh"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Muhyî - 190<input style="display: none" id="Muhyî" type="checkbox" class="chekboxInput" />
+                  <label for="Muhyî"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Kayyûm - 444<input style="display: none" id="Kayyûm" type="checkbox" class="chekboxInput" />
+                  <label for="Kayyûm"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Muizz - 236<input style="display: none" id="Muizz" type="checkbox" class="chekboxInput" />
+                  <label for="Muizz"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Mukaddim - 638<input style="display: none" id="Mukaddim" type="checkbox" class="chekboxInput" />
+                  <label for="Mukaddim"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Hamîd - 283<input style="display: none" id="Hamîd" type="checkbox" class="chekboxInput" />
+                  <label for="Hamîd"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Eş Şekûr - 813<input style="display: none" id="Şekûr" type="checkbox" class="chekboxInput" />
+                  <label for="Şekûr"></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ESMAÜL HÜSNA II DIV-->
+          <div id="myDIV22" style="display: none">
+            <table>
+              <tr>
+                <td>El Muktedir - 1115<input style="display: none" id="Muktedir" type="checkbox" class="chekboxInput" />
+                  <label for="Muktedir"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Hakîm - 280<input style="display: none" id="Hakîm" type="checkbox" class="chekboxInput" />
+                  <label for="Hakîm"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Gafûr - 1563<input style="display: none" id="Gafûr" type="checkbox" class="chekboxInput" />
+                  <label for="Gafûr"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Kâdir - 745<input style="display: none" id="Kâdir" type="checkbox" class="chekboxInput" />
+                  <label for="Kâdir"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Er Rahmân - 544<input style="display: none" id="Rahmân" type="checkbox" class="chekboxInput" />
+                  <label for="Rahmân"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Azîm - 1201<input style="display: none" id="Azîm" type="checkbox" class="chekboxInput" />
+                  <label for="Azîm"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Es Samed - 358<input style="display: none" id="Samed" type="checkbox" class="chekboxInput" />
+                  <label for="Samed"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Er Rahîm - 449<input style="display: none" id="Rahîm" type="checkbox" class="chekboxInput" />
+                  <label for="Rahîm"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Halîm - 250<input style="display: none" id="Halîm" type="checkbox" class="chekboxInput" />
+                  <label for="Halîm"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Ehad - 303<input style="display: none" id="Ehad" type="checkbox" class="chekboxInput" />
+                  <label for="Ehad"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Habîr - 954<input style="display: none" id="Habîr" type="checkbox" class="chekboxInput" />
+                  <label for="Habîr"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Vâhid - 385<input style="display: none" id="Vâhid" type="checkbox" class="chekboxInput" />
+                  <label for="Vâhid"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Muheymin - 303<input style="display: none" id="Muheymin" type="checkbox" class="chekboxInput" />
+                  <label for="Muheymin"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Latîf - 242<input style="display: none" id="Latîf" type="checkbox" class="chekboxInput" />
+                  <label for="Latîf"></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ESMAÜL HÜSNA III DIV-->
+          <div id="myDIV33" style="display: none">
+            <table>
+              <tr>
+                <td>El Vâlî - 285<input style="display: none" id="Vâlî" type="checkbox" class="chekboxInput" />
+                  <label for="Vâlî"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Bâtın - 309<input style="display: none" id="Bâtın" type="checkbox" class="chekboxInput" />
+                  <label for="Bâtın"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Er Raşîd - 745<input style="display: none" id="Raşîd" type="checkbox" class="chekboxInput" />
+                  <label for="Raşîd"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Vâris - 974<input style="display: none" id="İrşad" type="checkbox" class="chekboxInput" />
+                  <label for="İrşad"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Vâsiu - 453<input style="display: none" id="Vâsiu" type="checkbox" class="chekboxInput" />
+                  <label for="Vâsiu"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Mu’min - 368<input style="display: none" id="Mu’min" type="checkbox" class="chekboxInput" />
+                  <label for="Mu’min"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Ez Zâhir - 1367<input style="display: none" id="Zâhir" type="checkbox" class="chekboxInput" />
+                  <label for="Zâhir"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Es Selâm - 402<input style="display: none" id="Selâm" type="checkbox" class="chekboxInput" />
+                  <label for="Selâm"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Mukît - 752<input style="display: none" id="Mukît" type="checkbox" class="chekboxInput" />
+                  <label for="Mukît"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Âhir - 1061<input style="display: none" id="Âhir" type="checkbox" class="chekboxInput" />
+                  <label for="Âhir"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Kuddûs - 660<input style="display: none" id="Kuddûs" type="checkbox" class="chekboxInput" />
+                  <label for="Kuddûs"></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ESMAÜL HÜSNA IV DIV-->
+          <div id="myDIV44" style="display: none">
+            <table>
+              <tr>
+                <td>El Hafîz - 1140<input style="display: none" id="Hafîz" type="checkbox" class="chekboxInput" />
+                  <label for="Hafîz"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Evvel - 356<input style="display: none" id="Evvel" type="checkbox" class="chekboxInput" />
+                  <label for="Evvel"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Melik - 262<input style="display: none" id="Melik" type="checkbox" class="chekboxInput" />
+                  <label for="Melik"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Kebîr - 385<input style="display: none" id="Kebîr" type="checkbox" class="chekboxInput" />
+                  <label for="Kebîr"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Muahhir - 1782<input style="display: none" id="Muahhir" type="checkbox" class="chekboxInput" />
+                  <label for="Muahhir"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Bâriu - 405<input style="display: none" id="Bâriu" type="checkbox" class="chekboxInput" />
+                  <label for="Bâriu"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Aliyy - 223<input style="display: none" id="Aliyy" type="checkbox" class="chekboxInput" />
+                  <label for="Aliyy"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Er Rauf - 433<input style="display: none" id="Rauf" type="checkbox" class="chekboxInput" />
+                  <label for="Rauf"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Hâlık - 1112<input style="display: none" id="Hâlik" type="checkbox" class="chekboxInput" />
+                  <label for="Hâlik"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Kerîm - 472<input style="display: none" id="Kerîm" type="checkbox" class="chekboxInput" />
+                  <label for="Kerîm"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Afuvv - 375<input style="display: none" id="Afuvv" type="checkbox" class="chekboxInput" />
+                  <label for="Afuvv"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Kaviyy - 354<input style="display: none" id="Kaviyy" type="checkbox" class="chekboxInput" />
+                  <label for="Kaviyy"></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ESMAÜL HÜSNA V DIV-->
+          <div id="myDIV55" style="display: none">
+            <table>
+              <tr>
+                <td>El Vekîl - 265<input style="display: none" id="Vekîl" type="checkbox" class="chekboxInput" />
+                  <label for="Vekîl"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Et Tevvâb - 689<input style="display: none" id="Tevvâb" type="checkbox" class="chekboxInput" />
+                  <label for="Tevvâb"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Azîz - 157<input style="display: none" id="Azîz" type="checkbox" class="chekboxInput" />
+                  <label for="Azîz"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Hakk - 578<input style="display: none" id="Hakk" type="checkbox" class="chekboxInput" />
+                  <label for="Hakk"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Berr - 543<input style="display: none" id="Berr" type="checkbox" class="chekboxInput" />
+                  <label for="Berr"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Er Rezzâk - 657<input style="display: none" id="Rezzâk" type="checkbox" class="chekboxInput" />
+                  <label for="Rezzâk"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Eş Şehîd - 481<input style="display: none" id="Şehîd" type="checkbox" class="chekboxInput" />
+                  <label for="Şehîd"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Muteâlî - 824<input style="display: none" id="Muteâlî" type="checkbox" class="chekboxInput" />
+                  <label for="Muteâlî"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Âti - 350<input style="display: none" id="Âti" type="checkbox" class="chekboxInput" />
+                  <label for="Âti"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Bedîu - 248<input style="display: none" id="Bedîu" type="checkbox" class="chekboxInput" />
+                  <label for="Bedîu"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Mucîb - 157<input style="display: none" id="Mucîb" type="checkbox" class="chekboxInput" />
+                  <label for="Mucîb"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Er Rakîb - 534<input style="display: none" id="Rakîb" type="checkbox" class="chekboxInput" />
+                  <label for="Rakîb"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Gaffâr - 1683<input style="display: none" id="Gaffâr" type="checkbox" class="chekboxInput" />
+                  <label for="Gaffâr"></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ESMAÜL HÜSNA VI DIV-->
+          <div id="myDIV66" style="display: none">
+            <table>
+              <tr>
+                <td>El Bâis - 755<input style="display: none" id="Bâis" type="checkbox" class="chekboxInput" />
+                  <label for="Bâis"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Ganî - 1258<input style="display: none" id="Ganî" type="checkbox" class="chekboxInput" />
+                  <label for="Ganî"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Musavvir - 688<input style="display: none" id="Musavvir" type="checkbox" class="chekboxInput" />
+                  <label for="Musavvir"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Mecîd - 258<input style="display: none" id="Mecîd" type="checkbox" class="chekboxInput" />
+                  <label for="Mecîd"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Câmiu - 394<input style="display: none" id="Câmiu" type="checkbox" class="chekboxInput" />
+                  <label for="Câmiu"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Er Râfiu - 602<input style="display: none" id="Râfiu" type="checkbox" class="chekboxInput" />
+                  <label for="Râfiu"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Muîd - 335<input style="display: none" id="Muîd" type="checkbox" class="chekboxInput" />
+                  <label for="Muîd"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Mubdiu - 208<input style="display: none" id="Mubdiu" type="checkbox" class="chekboxInput" />
+                  <label for="Mubdiu"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Bâsıt - 323<input style="display: none" id="Bâsıt" type="checkbox" class="chekboxInput" />
+                  <label for="Bâsıt"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Muhsî - 354<input style="display: none" id="Muhsî" type="checkbox" class="chekboxInput" />
+                  <label for="Muhsî"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Mâlikul Mulk - 837<input style="display: none" id="Mulk" type="checkbox" class="chekboxInput" />
+                  <label for="Mulk"></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- ESMAÜL HÜSNA VII DIV-->
+          <div id="myDIV77" style="display: none">
+            <table>
+              <tr>
+                <td>El Velî - 175<input style="display: none" id="Velî" type="checkbox" class="chekboxInput" />
+                  <label for="Velî"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Hâdî - 242<input style="display: none" id="Hâdî" type="checkbox" class="chekboxInput" />
+                  <label for="Hâdî"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Alîm - 302<input style="display: none" id="Alîm" type="checkbox" class="chekboxInput" />
+                  <label for="Alîm"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Metîn - 608<input style="display: none" id="Metîn" type="checkbox" class="chekboxInput" />
+                  <label for="Metîn"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>En Nûr - 458<input style="display: none" id="Nûr" type="checkbox" class="chekboxInput" />
+                  <label for="Nûr"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Adl - 305<input style="display: none" id="Adl" type="checkbox" class="chekboxInput" />
+                  <label for="Adl"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Mâcid - 368<input style="display: none" id="Mâcid" type="checkbox" class="chekboxInput" />
+                  <label for="Mâcid"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>En Nâfiu - 438<input style="display: none" id="Nâfiu" type="checkbox" class="chekboxInput" />
+                  <label for="Nâfiu"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Hakem - 269<input style="display: none" id="Hakem" type="checkbox" class="chekboxInput" />
+                  <label for="Hakem"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>El Vâcid - 360<input style="display: none" id="Vâcid" type="checkbox" class="chekboxInput" />
+                  <label for="Vâcid"></label>
+                </td>
+              </tr>
+              <tr>
+                <td>Ed Dârr - 1535<input style="display: none" id="Dârr" type="checkbox" class="chekboxInput" />
+                  <label for="Dârr"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>El Basîr - 448<input style="display: none" id="Basîr" type="checkbox" class="chekboxInput" />
+                  <label for="Basîr"></label>
+                </td>
+              <tr>
+                <td>El Hayy - 100<input style="display: none" id="Hayy" type="checkbox" class="chekboxInput" />
+                  <label for="Hayy"></label>
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td>Eş Şafi - 884<input style="display: none" id="Şafi" type="checkbox" class="chekboxInput" />
+                  <label for="Şafi"></label>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- WEEKDAY CHOISE TO OPEN PAGE -->
+        <script>
+          var now = new Date(),
+            HaftaDay = now.getDay();
+          (1 === HaftaDay
+            ? myFunction1
+            : 2 === HaftaDay
+              ? myFunction2
+              : 3 === HaftaDay
+                ? myFunction3
+                : 4 === HaftaDay
+                  ? myFunction4
+                  : 5 === HaftaDay
+                    ? myFunction5
+                    : 6 === HaftaDay
+                      ? myFunction6
+                      : myFunction7)();
+        </script>
 
       </div>
-<!--******* END Gorev DIVS *******-->
+      <!--******* END Gorev DIVS *******-->
 
-<!--******* Namaz DIVS *******-->
+      <!--******* Namaz DIVS *******-->
+
+      <!--  NAMAZLAR  --  FARZ NAMAZLAR  -->
+
       <div id="NamazDIV1" style="display: none" class="NamazDIVS">
         <p><strong>
-          1. SABAH NAMAZI
-        </strong></p>
-                      <ul>
-                          <li>1.1 Borc (2 rekât)</li>
-                          <li>1.2 Sünnet (2 rekât)</li>
-                          <li>1.3 Farz (2 rekât)</li>
-                          <li>1.4 Hamd ve Şükür namazı (4 rekât)</li>
-                      </ul>
+            1. SABAH NAMAZI
+          </strong></p>
+        <ul>
+          <li>1.1 Borc (2 rekât)</li>
+          <li>1.2 Sünnet (2 rekât)</li>
+          <li>1.3 Farz (2 rekât)</li>
+          <li>1.4 Hamd ve Şükür namazı (4 rekât)</li>
+        </ul>
         <p><strong>
-          2. KUŞLUK NAMAZI
-        </strong></p>
-                      <p>&nbsp; &nbsp; Namazın vakti, güneş doğmasından 1 saat sonra başlar, öğle ezanının yarım saat öncesinde biter. Böylece sadece farzlardan oluşan 11 rekâtlık namaz kılınmış olur.</p>
-                      <p>Kuşluk namazında niyetler şöyledir:</p>
-                      <ul>
-                          <li>2.1 Kuşluk sünneti niyetine, öğle (günorta) namazının borcuna (4 rekât)</li>
-                          <li>2.2 Kuşluk sünneti niyetine, ikindi namazının borcuna (4 rekât)</li>
-                          <li>2.3 Kuşluk sünneti niyetine, akşam (şam) namazının borcuna (3 rekât)</li>
-                      </ul>
-                      <p>&nbsp; &nbsp; Bir günlük geçmiş namazın borcunu, bu süreler içinde kıldığımız zaman hem kuşluk ve teheccüd namazlarının sevabını kazanırız hem de borcumuzu öderiz.</p>
+            2. KUŞLUK NAMAZI
+          </strong></p>
+        <p>&nbsp; &nbsp; Namazın vakti, güneş doğmasından 1 saat sonra başlar, öğle ezanının yarım saat öncesinde biter.
+          Böylece sadece farzlardan oluşan 11 rekâtlık namaz kılınmış olur.</p>
+        <p>Kuşluk namazında niyetler şöyledir:</p>
+        <ul>
+          <li>2.1 Kuşluk sünneti niyetine, öğle (günorta) namazının borcuna (4 rekât)</li>
+          <li>2.2 Kuşluk sünneti niyetine, ikindi namazının borcuna (4 rekât)</li>
+          <li>2.3 Kuşluk sünneti niyetine, akşam (şam) namazının borcuna (3 rekât)</li>
+        </ul>
+        <p>&nbsp; &nbsp; Bir günlük geçmiş namazın borcunu, bu süreler içinde kıldığımız zaman hem kuşluk ve teheccüd
+          namazlarının sevabını kazanırız hem de borcumuzu öderiz.</p>
         <p><strong>
-          3. ÖĞLE NAMAZI
-        </strong></p>
-                      <ul>
-                          <li>3.1 Borc (4 rekât)</li>
-                          <li>3.2 Ön Sünnet (4 rekât)</li>
-                          <li>3.3 Farz (4 rekât)</li>
-                          <li>3.4 Son Sünnet (2 rekât)</li>
-                      </ul>
+            3. ÖĞLE NAMAZI
+          </strong></p>
+        <ul>
+          <li>3.1 Borc (4 rekât)</li>
+          <li>3.2 Ön Sünnet (4 rekât)</li>
+          <li>3.3 Farz (4 rekât)</li>
+          <li>3.4 Son Sünnet (2 rekât)</li>
+        </ul>
         <p><strong>
-          4. IKINDI NAMAZI
-        </strong></p>
-                      <ul>
-                          <li>4.1 Borc (4 rekât)</li>
-                          <li>4.2 Ön Sünnet (4 rekât)</li>
-                          <li>4.3 Farz (4 rekât)</li>
-                          <li>4.4 Hamd və Şükür namazı (4 rekât)</li>
-                      </ul>
+            4. IKINDI NAMAZI
+          </strong></p>
+        <ul>
+          <li>4.1 Borc (4 rekât)</li>
+          <li>4.2 Ön Sünnet (4 rekât)</li>
+          <li>4.3 Farz (4 rekât)</li>
+          <li>4.4 Hamd və Şükür namazı (4 rekât)</li>
+        </ul>
         <p><strong>
-          5. AXŞAM NAMAZI
-        </strong></p>
-                      <ul>
-                          <li>5.1 Borc (3 rekât)</li>
-                          <li>5.2 Farz (3 rekât)</li>
-                          <li>5.3 Sünnet (2 rekât)</li>
-                      </ul>
+            5. AXŞAM NAMAZI
+          </strong></p>
+        <ul>
+          <li>5.1 Borc (3 rekât)</li>
+          <li>5.2 Farz (3 rekât)</li>
+          <li>5.3 Sünnet (2 rekât)</li>
+        </ul>
         <p><strong>
-          6. YATSI NAMAZI
-        </strong></p>
-                      <ul>
-                          <li>6.1 Farzın Borc (4 rekât)</li>
-                          <li>6.2 Vitrin borcu (3 rekât)</li>
-                          <li>6.3 Ön Sünnet (4 rekât)</li>
-                          <li>6.4 Farz (4 rekât)</li>
-                          <li>6.5 Son Sünnet (2 rekât)</li>
-                          <li>6.6 Vitir namazı (3 rekât)</li>
-                      </ul>
+            6. YATSI NAMAZI
+          </strong></p>
+        <ul>
+          <li>6.1 Farzın Borc (4 rekât)</li>
+          <li>6.2 Vitrin borcu (3 rekât)</li>
+          <li>6.3 Ön Sünnet (4 rekât)</li>
+          <li>6.4 Farz (4 rekât)</li>
+          <li>6.5 Son Sünnet (2 rekât)</li>
+          <li>6.6 Vitir namazı (3 rekât)</li>
+        </ul>
         <p><strong>
-          7. TEHECCÜD NAMAZI
-        </strong></p>
-                      <p>&nbsp; &nbsp; Gece, kış saati uygulamasında saat 24.00'te, yaz saati uygulamasında saat 01.00'de başlayan imsak vaktinde son bulan süre içerisinde kılınır. Böylece sadece farzlardan oluşan 9 rekâtlık namaz bitirilir.</p>
-                      <p>Teheccüd namazında niyetler şöyledir:</p>
-                      <ul>
-                          <li>7.1 Teheccüd sünneti niyetine, sabah (süb) namazının borcuna (2 rekât)</li>
-                          <li>7.2 Teheccüd sünneti niyetine, yatsı (gecə) namazının borcuna (4 rekât)</li>
-                          <li>7.3 Teheccüd sünneti niyetine, vitr namazının borcuna (3 rekât)</li>
-                      </ul>
+            7. TEHECCÜD NAMAZI
+          </strong></p>
+        <p>&nbsp; &nbsp; Gece, kış saati uygulamasında saat 24.00'te, yaz saati uygulamasında saat 01.00'de başlayan
+          imsak vaktinde son bulan süre içerisinde kılınır. Böylece sadece farzlardan oluşan 9 rekâtlık namaz bitirilir.
+        </p>
+        <p>Teheccüd namazında niyetler şöyledir:</p>
+        <ul>
+          <li>7.1 Teheccüd sünneti niyetine, sabah (süb) namazının borcuna (2 rekât)</li>
+          <li>7.2 Teheccüd sünneti niyetine, yatsı (gecə) namazının borcuna (4 rekât)</li>
+          <li>7.3 Teheccüd sünneti niyetine, vitr namazının borcuna (3 rekât)</li>
+        </ul>
       </div>
 
+      <!--  NAMAZLAR  --  HACET NAMAZI  -->
+
       <div id="NamazDIV2" style="display: none" class="NamazDIVS">
-        <p><iframe style="position: sticky;  width: 100%; height: 480px;" src="https://www.youtube.com/embed/L48Eqa8Rjlw?si=rXza7XRqfzbMr5mk"></iframe></p>
-        <p>&nbsp; &nbsp; 4 rekâttır. Hacet namazının persembeyi cumaya bağlayan gecelerde veya kandil gecelerinde kılınması asıldır ama bütün gecelerde de kılınabilir. Önce boy abdesti alınır. Sonra hacet namazına niyet edilir.</p>
+        <p><iframe style="position: sticky;  width: 100%; height: 480px;"
+            src="https://www.youtube.com/embed/L48Eqa8Rjlw?si=rXza7XRqfzbMr5mk"></iframe></p>
+        <p>&nbsp; &nbsp; 4 rekâttır. Hacet namazının persembeyi cumaya bağlayan gecelerde veya kandil gecelerinde
+          kılınması asıldır ama bütün gecelerde de kılınabilir. Önce boy abdesti alınır. Sonra hacet namazına niyet
+          edilir.</p>
         <ol style="list-style-type: none">
           <li><strong>1. Rekât: </strong>Sübhaneke + Fâtiha + 3 Âyetel Kürsî</li>
           <li><strong>2. Rekât: </strong>Fâtiha + İhlâs + Felâk + Nas</li>
@@ -1735,109 +1567,269 @@
           <li><strong>3. Rekâtta: </strong>Fâtiha + İhlâs + Felâk + Nas</li>
           <li><strong>4. Rekâtta: </strong>Fâtiha + İhlâs + Felâk + Nas</li>
           <li><strong>Oturuş: </strong>Et Tehiyyatü + Allahümme Salli + Allahümme Barik + Rabbena</li>
-          </ol>
-        <p>&nbsp; &nbsp; Namazdan sonra duada: Allah'tan hacet neyse o istenir. Allah'tan mürşid istemek için bu namaz kılındıysa mürşid istenir.</p>
-        <p>&nbsp; &nbsp; Bu namazdan sonra hiç konuşmadan yatmak gerekir. Yatarken kıbleyi sağa alacak şekilde yatak kurulur. Vücudun ön cephesi kıbleye çevrilerek yan üstü yatılır. 3 Âyetel Kürsî okunur ve Allah'tan mürşid istenir. Eğer kişinin haceti mürşid değil de başka bir hedefe ulaşmaksa (zahirî veya batinî bir hedef olabilir) o hedefe ulaşmak istenir. Sessiz zikir (hafî zikir) bu istekten sonra başlar. Yan üstü yatıldığı için sağ kulak yastığa gelecektir. Baş biraz sağa, sola oynatılarak kulakta kalbin atışlarının, basınç sebebiyle rahatça duyulacağı pozisyona gelinir. Ve kalbin her çift atışında "Allah, Allah" diyerek kişi Allah'ı zikr-i hafî ile (yani sessiz olarak) içinden zikredecektir.</p>
-        <p>&nbsp; &nbsp; Eğer ilk namazdan sonra yatıldığında bir şey görülmez ise, tekrar tekrar her perşembeyi cumaya bağlayan gece namaza devam edilmelidir. Her gece de kılınabilir.</p>
+        </ol>
+        <p>&nbsp; &nbsp; Namazdan sonra duada: Allah'tan hacet neyse o istenir. Allah'tan mürşid istemek için bu namaz
+          kılındıysa mürşid istenir.</p>
+        <p>&nbsp; &nbsp; Bu namazdan sonra hiç konuşmadan yatmak gerekir. Yatarken kıbleyi sağa alacak şekilde yatak
+          kurulur. Vücudun ön cephesi kıbleye çevrilerek yan üstü yatılır. 3 Âyetel Kürsî okunur ve Allah'tan mürşid
+          istenir. Eğer kişinin haceti mürşid değil de başka bir hedefe ulaşmaksa (zahirî veya batinî bir hedef
+          olabilir) o hedefe ulaşmak istenir. Sessiz zikir (hafî zikir) bu istekten sonra başlar. Yan üstü yatıldığı
+          için sağ kulak yastığa gelecektir. Baş biraz sağa, sola oynatılarak kulakta kalbin atışlarının, basınç
+          sebebiyle rahatça duyulacağı pozisyona gelinir. Ve kalbin her çift atışında "Allah, Allah" diyerek kişi
+          Allah'ı zikr-i hafî ile (yani sessiz olarak) içinden zikredecektir.</p>
+        <p>&nbsp; &nbsp; Eğer ilk namazdan sonra yatıldığında bir şey görülmez ise, tekrar tekrar her perşembeyi cumaya
+          bağlayan gece namaza devam edilmelidir. Her gece de kılınabilir.</p>
       </div>
 
+      <!--  NAMAZLAR  --  HAMD VE ŞÜKÜR  -->
+
       <div id="NamazDIV3" style="display: none" class="NamazDIVS">
-        <video controls preload="metadata" poster="https://www.mihr.com/Videolar/thumbnail/Hamd%20ve%20%C5%9E%C3%BCk%C3%BCr%20Namaz%C4%B1.jpeg" width="100%" src="https://www.mihr.com/Videolar/mp4/Hamd%20ve%20%C5%9E%C3%BCk%C3%BCr%20Namaz%C4%B1.mp4" type="video/mp4"></video>
-<br>
-      <p>4 rekâttır. Sabah namazının arkasından ve perşembe iftarlarda akşam namazından sonra kılınır. (Ayrıca istenildiği her an kılınabilir.)</p>
-      <ol style="list-style-type: none">
-      <li>1. Rekât: Sübhaneke + <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a> + <a title="7/A'RAF-43" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">7/A'RAF-43</a> </li>
-        <li>2. Rekât: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a> + <a title="7/A'RAF-43" href="https://www.mihr.com/Kuran/Meal/27/neml/19" target="_blank" rel="noopener">27/NEML-19</a> </li>
-        <li>Oturuş: Ettehiyyâtü</li>
-        <li>3. Rekâtta: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a></li>
-        <li>4. Rekâtta: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a></li>
-        <li>Oturuş: Et Tehiyyatü + Allahümme Salli + Allahümme Barik + Rabbena</li>
+        <video controls preload="metadata"
+          poster="https://www.mihr.com/Videolar/thumbnail/Hamd%20ve%20%C5%9E%C3%BCk%C3%BCr%20Namaz%C4%B1.jpeg"
+          width="100%" src="https://www.mihr.com/Videolar/mp4/Hamd%20ve%20%C5%9E%C3%BCk%C3%BCr%20Namaz%C4%B1.mp4"
+          type="video/mp4"></video>
+        <br>
+        <p>4 rekâttır. Sabah namazının arkasından ve perşembe iftarlarda akşam namazından sonra kılınır. (Ayrıca
+          istenildiği her an kılınabilir.)</p>
+        <ol style="list-style-type: none">
+          <li>1. Rekât: Sübhaneke + <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a> + <a title="7/A'RAF-43" href="https://www.mihr.com/Kuran/Meal/7/araf/43"
+              target="_blank" rel="noopener">7/A'RAF-43</a> </li>
+          <li>2. Rekât: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a> + <a title="7/A'RAF-43" href="https://www.mihr.com/Kuran/Meal/27/neml/19"
+              target="_blank" rel="noopener">27/NEML-19</a> </li>
+          <li>Oturuş: Ettehiyyâtü</li>
+          <li>3. Rekâtta: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a></li>
+          <li>4. Rekâtta: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a></li>
+          <li>Oturuş: Et Tehiyyatü + Allahümme Salli + Allahümme Barik + Rabbena</li>
         </ol>
-      <p>
-<a title="7/A'RAF-43" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">7/A'RAF-43: </a> Ve kâlûl hamdu lillâhillezî hedânâ li hâzâ ve mâ kunnâ li nehtediye lev lâ en hedânallâh(hedânallâhu), lekad câet rusulu rabbinâ bil hakk(hakkı).
-</p><p>
-  <a title="7/A'RAF-43" href="https://www.mihr.com/Kuran/Meal/27/neml/19" target="_blank" rel="noopener">27/NEML-19: </a> Ve kâle rabbi evzı'nî en eşkure ni'metekelletî en'amte aleyye ve alâ vâlideyye ve en a'mele salihan terdâhu ve edhılnî bi rahmetike fî ibâdikes sâlihîn(sâlihîne).
-</p>
+        <p>
+          <a title="7/A'RAF-43" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+            rel="noopener">7/A'RAF-43: </a> Ve kâlûl hamdu lillâhillezî hedânâ li hâzâ ve mâ kunnâ li nehtediye lev lâ
+          en hedânallâh(hedânallâhu), lekad câet rusulu rabbinâ bil hakk(hakkı).
+        </p>
+        <p>
+          <a title="7/A'RAF-43" href="https://www.mihr.com/Kuran/Meal/27/neml/19" target="_blank"
+            rel="noopener">27/NEML-19: </a> Ve kâle rabbi evzı'nî en eşkure ni'metekelletî en'amte aleyye ve alâ
+          vâlideyye ve en a'mele salihan terdâhu ve edhılnî bi rahmetike fî ibâdikes sâlihîn(sâlihîne).
+        </p>
       </div>
+
+      <!--  NAMAZLAR  --  TÖVBE NAMAZI  -->
 
       <div id="NamazDIV4" style="display: none" class="NamazDIVS">
         <p>4 rekâttır. İstenildiği her an kılınabilir:</p>
         <ol style="list-style-type: none">
-        <li>1. Rekât: Sübhaneke + <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a> + <a title="4/NİSÂ-64" href="https://www.mihr.com/Kuran/Meal/4/nisa/64" target="_blank" rel="noopener">4/NİSÂ-64</a></li>
-        <li>2. Rekât: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a> + <a title="4/NİSÂ - 64" href="https://www.mihr.com/Kuran/Meal/23/muminun/40" target="_blank" rel="noopener">23/MU'MİNUN-40</a></li>
-        <li>Oturuş: Ettehiyyâtü</li>
-        <li>3. Rekâtta: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a></li>
-        <li>4. Rekâtta: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a></li>
-        <li>Oturuş: Et Tehiyyatü + Allahümme Salli + Allahümme Barik + Rabbena</li>
-      </ol>
-      <p>
-<a title="4/NİSÂ - 64" href="https://www.mihr.com/Kuran/Meal/4/nisa/64" target="_blank" rel="noopener">4/NİSÂ-64: </a> Ve mâ erselnâ min resûlin illâ li yutâa bi iznillâh(iznillâhi), ve lev ennehum iz zalemû enfusehum câuke festagferûllâhe vestagfere lehumur resûlu le vecedûllâhe tevvâben rahîmâ(rahîmen).</li>
-</p><p>
-<a title="4/NİSÂ - 64" href="https://www.mihr.com/Kuran/Meal/23/muminun/40" target="_blank" rel="noopener">23/MU'MİNUN-40: </a> Kâle ammâ kalîlin le yusbihunne nâdimîn(nâdimîne).</li>
-      </p>
+          <li>1. Rekât: Sübhaneke + <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a> + <a title="4/NİSÂ-64" href="https://www.mihr.com/Kuran/Meal/4/nisa/64"
+              target="_blank" rel="noopener">4/NİSÂ-64</a></li>
+          <li>2. Rekât: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a> + <a title="4/NİSÂ - 64" href="https://www.mihr.com/Kuran/Meal/23/muminun/40"
+              target="_blank" rel="noopener">23/MU'MİNUN-40</a></li>
+          <li>Oturuş: Ettehiyyâtü</li>
+          <li>3. Rekâtta: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a></li>
+          <li>4. Rekâtta: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a></li>
+          <li>Oturuş: Et Tehiyyatü + Allahümme Salli + Allahümme Barik + Rabbena</li>
+        </ol>
+        <p>
+          <a title="4/NİSÂ - 64" href="https://www.mihr.com/Kuran/Meal/4/nisa/64" target="_blank"
+            rel="noopener">4/NİSÂ-64: </a> Ve mâ erselnâ min resûlin illâ li yutâa bi iznillâh(iznillâhi), ve lev
+          ennehum iz zalemû enfusehum câuke festagferûllâhe vestagfere lehumur resûlu le vecedûllâhe tevvâben
+          rahîmâ(rahîmen).</li>
+        </p>
+        <p>
+          <a title="4/NİSÂ - 64" href="https://www.mihr.com/Kuran/Meal/23/muminun/40" target="_blank"
+            rel="noopener">23/MU'MİNUN-40: </a> Kâle ammâ kalîlin le yusbihunne nâdimîn(nâdimîne).</li>
+        </p>
       </div>
+
+      <!--  NAMAZLAR  --  İSTİHARE NAMAZI  -->
 
       <div id="NamazDIV5" style="display: none" class="NamazDIVS">
         <p>2 rekâttır. Bu dünya için istediğimiz bir işi yapıp yapmayacağımıza karar vermek için kılınır.</p>
         <ol style="list-style-type: none">
-        <li>1. Rekât: Sübhaneke + <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a> + <a title="KÂFİRÛN" href="https://www.mihr.com/Kuran/Meal/109/kafirun/1" target="_blank" rel="noopener">KÂFİRÛN</a></li>
-        <li>2. Rekât: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank" rel="noopener">FÂTİHA</a> + <a title="112/İHLÂS" href="https://www.mihr.com/Kuran/Meal/112/ihlas/1" target="_blank" rel="noopener">112/İHLÂS</a></li>
-        <li>Oturuş: Et Tehiyyatü + Allahümme Salli + Allahümme Barik + Rabbena</li>
+          <li>1. Rekât: Sübhaneke + <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a> + <a title="KÂFİRÛN" href="https://www.mihr.com/Kuran/Meal/109/kafirun/1"
+              target="_blank" rel="noopener">KÂFİRÛN</a></li>
+          <li>2. Rekât: <a title="FÂTİHA" href="https://www.mihr.com/Kuran/Meal/7/araf/43" target="_blank"
+              rel="noopener">FÂTİHA</a> + <a title="112/İHLÂS" href="https://www.mihr.com/Kuran/Meal/112/ihlas/1"
+              target="_blank" rel="noopener">112/İHLÂS</a></li>
+          <li>Oturuş: Et Tehiyyatü + Allahümme Salli + Allahümme Barik + Rabbena</li>
         </ol>
-<p>
-Namazdan sonra vücut, kıbleye dönük olacak şekilde yatılır.
-<br>Rüyada görülen beyaz veya yeşil renk olumlu, siyah veya kırmızı renk olumsuz anlamına gelir.
-</p>
-      </div>
-<!--******* END Namaz DIVS *******-->
-
-<!--******* Dua DIVS *******-->
-      <div id="DuaDIV1" style="display: none" class="NamazDIVS">
-	      DuaDIV1
-      </div>
-      <div id="DuaDIV2" style="display: none" class="NamazDIVS">
-	      DuaDIV2
-      </div>
-      <div id="DuaDIV3" style="display: none" class="NamazDIVS">
-	      DuaDIV3
-      </div>
-      <div id="DuaDIV4" style="display: none" class="NamazDIVS">
-	      DuaDIV4
-      </div>
-      <div id="DuaDIV5" style="display: none" class="NamazDIVS">
-	      DuaDIV5
-      </div>
-      <div id="DuaDIV6" style="display: none" class="NamazDIVS">
-	      DuaDIV6
-      </div>
-      <div id="DuaDIV7" style="display: none" class="NamazDIVS">
-	      DuaDIV7
-      </div>
-<!--******* END Dua DIVS *******-->
-	    
-<!--******* FOOTER *******-->
-      <footer class="MyFooter">
-       <br />
         <p>
-          Kaynak:<br /><a
-            href="https://www.mihr.com"
-            target="_blank"
-            class="beautifullyFooter"
-            >www.MIHR.com</a
-          ><br /><a
-            href="https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1707"
-            target="_blank" class="beautifullyFooter"
-            >DUA KITABI</a
-          ><br />Amacımız, bilgileri bir araya
+          Namazdan sonra vücut, kıbleye dönük olacak şekilde yatılır.
+          <br>Rüyada görülen beyaz veya yeşil renk olumlu, siyah veya kırmızı renk olumsuz anlamına gelir.
+        </p>
+      </div>
+      <!--******* END Namaz DIVS *******-->
+
+      <!--******* Dua DIVS *******-->
+
+      <!--  DUALAR  --  NAMAZ DUALARI  -->
+
+      <div id="DuaDIV1" style="display: none" class="NamazDIVS">
+        <p><strong>SÜBHANEKE</strong></p>
+        <p>Subhâneke allâhumme ve bi hamdik(hamdike) ve tebârekesmuk(tebârekesmuke) ve teâlâ cedduk(cedduke) (ve celle
+          senâuke) ve lâ ilâhe gayruk(gayruke).
+          <br>("ve celle senâuk" cenaze namazlarında okunur.)
+        </p>
+        <p><strong>ET TEHİYYATÜ</strong></p>
+        <p>Et tehıyyâtu lillâhi ves salavâtu vet tayyibâtu es selâmu aleyke eyyûhen nebiyyu ve rahmetullâhi ve
+          berekâtuh, es selâmu aleynâ ve alâ ibâdillâhis sâlihin(sâlihine) <br>eşhedu en lâ ilâhe illâllâh ve eşhedu
+          enne muhammeden abduhu ve resûluh(resûluhu).</p>
+        <p><strong>ALLAHÜMME SALLİ</strong></p>
+        <p>Allâhumme salli alâ seyyidinâ muhammedin ve alâ âli muhammedin kemâ salleyte alâ ibrâhîme ve alâ âli ibrâhîme
+          inneke hamîdun mecîd(mecîdun).</p>
+        <p><strong>ALLAHÜMME BARİK</strong></p>
+        <p>Allâhumme bârik alâ muhammedin ve alâ âli muhammedin kemâ bârekte alâ ibrâhîme ve alâ âli ibrâhîme inneke
+          hamîdun mecîd(mecîdun).</p>
+        <p><strong>RABBENA ATİNA</strong></p>
+        <p>Rabbenâ âtinâ fîd dunyâ haseneten ve fîl âhirati haseneten ve kınâ azâben nâr(nâri).</p>
+        <p><strong>RABBENA FİRLİ</strong></p>
+        <p>Rabbenâgfirlî ve li vâlideyye ve lil mu'minîne yevme yekûmul hisâbu.</p>
+        <p><strong>KUNUT DUALARI</strong></p>
+        <p>Allâhumme innâ nesteînuke ve nestagfiruke ve nestehdîke ve nu'minu bike ve netûbu ileyk(ileyke)<br>ve
+          netevekkelu aleyk(aleyke)<br>ve nusnî aleykel hayr(hayra) kullehu neşkuruke ve lâ nekfuruk (nekfuruke)<br>ve
+          nahleu ve netruku men yefcuruk(yefcuruke).</p>
+        <p>Allâhumme iyyâke nâ'budu ve leke nusalli ve nescudu ve ileyke nes'â ve nahfidu, nercû rahmeteke ve nahşâ
+          azâbeke inne azâbeke bil kuffâri mulhık mulhıke).</p>
+      </div>
+
+      <!--  DUALAR  --  TÖVBE VE İSTİĞFAR  -->
+
+      <div id="DuaDIV2" style="display: none" class="NamazDIVS">
+        <p>namazın sonunda okunur.</p>
+        <p>Ey Yüce Allah'ım! Bize vererek ihsan ettiğin ve vermeyerek ihsan ettiğin ni'metler için Sana sonsuz
+          (mahlûkatının sayısı kadar) hamd ve şükrederiz. Sana sonsuz tövbe ve istiğfar ederiz. Günahlarımızı affetmeni
+          ve bize mağfiret eylemeni dileriz. Bütün insanların bu sonsuz saadete ulaşmalarını dileriz. Ey Yüce Allah'ım!
+          Fıska ve dalâlete düşmeden Senden hayır ve hasenat dileriz. Bu hayır ve hasenatın hamdini, uygun gördüğün
+          biçimde eda etmeyi nasip eyle.
+        </p>
+      </div>
+
+      <!--  DUALAR  --  SOFRA DUALARI  -->
+
+      <div id="DuaDIV3" style="display: none" class="NamazDIVS">
+        <p><strong>Açılış Duası</strong></p>
+        <p>El Fatiha meas salâvât...</p>
+        <p>
+          Ey Yüce Allah'ım! Bizlere en'am buyurduğun bu tayyib ni'metlerle bizleri rızıklandırdığın için ve bugün de
+          karnımızı doyurmayı nasip kıldığın için Sana sonsuz hamd ve şükrolsun. Niyet ettik, Senin rızan için ihsan
+          buyurduğun bu tayyib ni'metlerden bugünkü rızkımızı almaya....
+        </p>
+        <p><strong>IFTARDA - Açılış Duası</strong></p>
+        <p>El Fatiha meas salâvât...</p>
+        <p>
+          Ey Yüce Allah'ım! Bizlere en'am buyurduğun bu tayyib ni'metlerle bu akşam da bizleri rızıklandırdığın için ve
+          bu akşam da Senin rızan için tuttuğumuz orucu açmayı nasip kıldığın için Sana sonsuz hamd ve şükrolsun. Niyet
+          ettik, Senin rızan için ihsan buyurduğun bu tayyib ni'metlerden bu akşamki rızkımızı almaya ve bu akşam da
+          Senin rızan için tuttuğumuz orucu açmaya....
+        </p>
+        <p><strong>Kapanış Duası</strong></p>
+        <p>
+          Ey Yüce Allah'ım! Bizlere en'am buyurduğun bu tayyib ni'metlerle bugün de karnımızı doyurmayı nasip kıldığın
+          için ve bugün de bizleri rızıklandırdığın için Sana sonsuz hamd ve şükrolsun. Ferah sofraları olsun! Bereket
+          sofraları olsun! Allah'ın sofraları olsun! Efendimiz'le birlikte yenen sofralar olsun! Allah hepinizden razı
+          olsun!
+        </p>
+        <p>El Fatiha meas salâvât...</p>
+        <p><strong>IFTARDA - Kapanış Duası</strong></p>
+        <p>
+          Ey Yüce Allah'ım! Bizlere en'am buyurduğun bu tayyib ni'metlerle bu akşam da bizleri rızıklandırdığın için, bu
+          akşam da Senin rızan için tuttuğumuz orucu açmayı nasip kıldığın için, bu akşam da bu tayyib ni'metlerle
+          karnımızı doyurmayı nasip kıldığın için Sana sonsuz Hamd ve şükrolsun. Ferah sofraları olsun! Bereket
+          sofraları olsun! Allah'ın sofraları olsun! Efendimiz'le birlikte yenen sofralar olsun! Allah hepinizden razı
+          olsun!
+        </p>
+        <p>El Fatiha meas salâvât...</p>
+      </div>
+
+      <!--  DUALAR  --  NAZARDAN  -->
+
+      <div id="DuaDIV4" style="display: none" class="NamazDIVS">
+        <p>Uîzu bi kelimâtillâhit tâmmâti min kulli şeytânin ve hâmmetin ve min kulli aynin lâmmeh.</p>
+      </div>
+
+      <!--  DUALAR  --  GEÇİMSİZLİĞDEN  -->
+
+      <div id="DuaDIV5" style="display: none" class="NamazDIVS">
+        <p>Her sabah ve akşam önce 1 Fatiha, 3 İhlâs, sonra bu dua 7 defa okunur: Hasbiyallâhu lâ ilâhe illâhu aleyhi
+          tevekkeltu ve huve rabbul arşil azîm.</p>
+      </div>
+
+      <!--  DUALAR  --  SİHİR VE BÜYÜDEN  -->
+
+      <div id="DuaDIV6" style="display: none" class="NamazDIVS">
+        <p>
+          Allah sihir (büyü) yapanları kâfir kabul etmiştir (Bakara-102). Yapanların mutlaka cehenneme gideceği de
+          açıklanmıştır. Büyünün büyücülere çözdürülmesi yerine Kur'ân-ı Kerim'deki muvaziyeteyn sureleri ile (Felâk ve
+          Nas Sureleri) çözülmesine çalışılmalıdır.
+        </p>
+        <p>
+          Bir ipe çözülmesi kolay iki yüz düğüm atılır. Sihir yapılanın önüne bir çay bardağı su konur. Sihir yapılan
+          kişi (daha iyisi tecvidle Kur'ân-ı Kerim'i okuyabilen birisi) Felâk Suresini okur. Birinci düğüme üfler,
+          hemen çözer, tekrar Felâk Suresini okur. 100 Felâk Suresini okuyarak 100 düğümü çözer. 101. düğümde Nas
+          Suresini okumaya başlar. 100 Nas Suresi okunduğu zaman 200 düğüm de çözülmüş olur. İp bardağın içinde
+          ıslatılır.
+          Bardaktaki su içilir. İp ise yakılır. Bu arada üzerlik tohumu yakılır ve buhur yapılır.
+        </p>
+      </div>
+
+      <!--  DUALAR  --  HATİM DUASI  -->
+
+      <div id="DuaDIV7" style="display: none" class="NamazDIVS">
+        <p>
+          Yarab! Yalnız Sana kulluk olur. Sadece Senden yardım ve rahmet dileriz. Gönlümüzü divanına açıyor, bizleri
+          bağışlayacağına inanarak niyaz ediyoruz. Umutlarımızı boşa çıkarma, yarabbi bizleri bağışla! Felekleri nura,
+          melekleri sürura bütün âlemleri huzura kavuşturan viladet-i ahmedi hürmetine, dergâhına uzanan ellerimizi,
+          muhabbetinle yanan tenlerimizi, aşkından başka ateşle yakma, yarabbi! Senden başka gidecek kapımız da yok.
+          Kalplerimizi zikrine kandır, bizleri daimî zikre ulaştır. Bizleri rahmet ve merhametine daldır, yarabbi!
+          Gönüllerimizi gerçekle bağlandıktan sonra kaydırma, yarabbi!
+        </p>
+        <p>
+          Okunan Kur'ân-ı Kerim'den, indirilen hatm-i şeriflerden hasıl olan sevabı; öncelikle insanlığa gerçeklerin
+          ufkunu açan Son İlâhi Rahmet Ahir Zaman Nebî'si Hz. Muhammed (S.A.V)'e arz ediyoruz. Kabul eyle, yarabbi! Hz.
+          Âdem'le başlayan Azîz Nebî'n ile son bulan Bu ikisi arasında kalan peygamber-i izamı ve bütün resûllerini ve
+          şimdiki
+          Resûl, Mehdi (A.S)'ı da haberdar eyle. Sevgili Peygamberimiz'i korumak için seve seve canlarını veren
+          sahâbileri, bu zevatın arkasından giden kimseleri de haberdar eyle. Ameller, rakamlı kitapta mizan ile tartıya
+          tâbî
+          tutulurken, Mahşer yerinde ömürlerin hesabı sorulurken .............. kardeşimizin bütün yakınlarından muhtaç
+          olan ölmüşlerine merhametinle muamele eyle, yarabbi! Cümlesini rahmetinle mutluluğa, Yüce Peygamberin'le
+          komşuluğa
+          erdir, yarabbi! Şu anda kabirlerini pür-nur, ahiretlerini mamur eyle, yarabbi! Sabırla bizi dinleyenlerin,
+          dualarımıza amin diyenlerin de ana babalarına rahmet, bütün geçmişlerine merhamet eyle, yarabbi! Gönüllerinde
+          bulunan dileklerini arz etmeye fırsat bulamadıkları niyetlerini kabul eyle yarabbi. Bizi mala mülke, kasaya,
+          keseye esir etme, yarabbi! Hasta kullarına şifalar, dertli olanlara devalar, borçlu olanlara edalar nasip
+          eyle, yarabbi! Vatan uğrunda canlarını seve seve vermiş şehitlerimize, ve şanlı atalarımıza da okuduğumuz
+          dualarımızı ulaştır. Bizleri onlara lâyık kıl, yarabbi! Bize dünyada selâmet, ahirette saadet ihsan eyle,
+          yarabbi! Okunan
+          Kur'ân'ın kabul olması, cümle geçmişlerimizin affolunması için Ümmet-i Muhammed'in sıhhat ve selâmeti için,
+          rızaen illâh, EL-FATİHA!
+        </p>
+      </div>
+      <!--******* END Dua DIVS *******-->
+
+      <!--******* FOOTER *******-->
+      <footer class="MyFooter">
+        <br />
+        <p>
+          Kaynak:<br /><a href="https://www.mihr.com" target="_blank" class="beautifullyFooter">www.MIHR.com</a><br /><a
+            href="https://www.mihr.com/kitaplar/457/dua-kitab?chapter=1707" target="_blank"
+            class="beautifullyFooter">DUA KITABI</a><br />Amacımız, bilgileri bir araya
           toplayarak kullanım için daha kolay ortam oluşturmaktır.<br />Saygı ve
           sevgilerimizle.<br />Allah razı olsun.
         </p>
         <div style="padding: 100px 0 0 0"></div>
-      </footer> 
-  <!--******* END FOOTER *******-->
-  </div> 
-<!--******* END Main Page DIV *******-->
-</div>
+      </footer>
+      <!--******* END FOOTER *******-->
+    </div>
+    <!--******* END Main Page DIV *******-->
+  </div>
 </body>
 
 </html>
