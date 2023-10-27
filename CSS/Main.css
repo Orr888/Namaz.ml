@@ -150,6 +150,14 @@ td {
   text-align: center;
 }
 
+.beautifullySmal {
+  text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
+  color: #58A6FF;
+  font-size: 40px !important;
+  font-weight: bold;
+  text-align: center;
+}
+
 .beautifullyDate {
   color: #C3CCD4;
   text-align: center;
