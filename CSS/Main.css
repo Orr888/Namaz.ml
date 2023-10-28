@@ -133,7 +133,7 @@ td {
 /*ESMA*/
 
 .beautifully {
-  text-shadow: 0 0 5em #58A6FF, 0 0 1em #214C87;
+  text-shadow: 0 0 1em #58A6FF, 0 0 1em #214C87;
   color: #58A6FF;
   font-size: 2.7em !important;
   font-weight: bold;
@@ -141,7 +141,7 @@ td {
 }
 
 .beautifullySmal {
-  text-shadow: 0 0 5em #58A6FF, 0 0 1em #214C87;
+  text-shadow: 0 0 1em #58A6FF, 0 0 1em #214C87;
   color: #58A6FF;
   font-size: 2em !important;
   font-weight: bold;
