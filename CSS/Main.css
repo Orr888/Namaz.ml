@@ -171,10 +171,10 @@ table {
 table td {
   border: 0.05em solid #58A6FF;
   border-collapse: collapse;
-  font-size: 5em;
+  font-size: 3.2em;
   text-align: left;
   color: #C3CCD4;
-  padding: 1em 1em 1em 1em;
+  padding: 0.1em 0.1em 0.1em 0.1em;
 }
 
 /* CHEKBOX STYLE */
@@ -183,7 +183,7 @@ input[type="checkbox"]+label:before {
   content: "\1f497";
   float: right;
   font-family: FontAwesome;
-  font-size: 5em;
+  font-size: 1em;
 }
 
 input[type="checkbox"]:checked+label:before {
