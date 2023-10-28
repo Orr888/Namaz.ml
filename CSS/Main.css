@@ -51,7 +51,7 @@ td {
   text-shadow: 0 0 1em #58A6FF, 0 0 1em #214C87;
   text-align: center;
   color: #58A6FF;
-  font-size: 5em !important;
+  font-size: 3em !important;
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -139,7 +139,7 @@ td {
 .beautifully {
   text-shadow: 0 0 5em #58A6FF, 0 0 1em #214C87;
   color: #58A6FF;
-  font-size: 4em !important;
+  font-size: 2em !important;
   font-weight: bold;
   text-align: center;
 }
@@ -147,7 +147,7 @@ td {
 .beautifullySmal {
   text-shadow: 0 0 5em #58A6FF, 0 0 1em #214C87;
   color: #58A6FF;
-  font-size: 4em !important;
+  font-size: 2em !important;
   font-weight: bold;
   text-align: center;
 }
@@ -156,7 +156,7 @@ td {
   color: #C3CCD4;
   text-align: center;
   padding: 1.4em 0.8em 1.4em 0.8em;
-  font-size: 4em !important;
+  font-size: 2em !important;
 }
 
 /* TABLES STYLE */
