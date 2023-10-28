@@ -18,7 +18,9 @@ body {
   background-color: #161b22;
   color: #C3CCD4;
 }
-
+.p {
+  text-align: left;
+}
 .header-container,
 .body-container,
 .footer-container {
