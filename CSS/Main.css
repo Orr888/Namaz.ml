@@ -14,13 +14,10 @@ a {
 body {
   font-family: Arial;
   font-size: calc(3vw);
-  text-align: center;
   background-color: #161b22;
   color: #C3CCD4;
 }
-.p {
-  text-align: left;
-}
+
 .header-container,
 .body-container,
 .footer-container {
