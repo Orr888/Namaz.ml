@@ -17,7 +17,9 @@ body {
   background-color: #161b22;
   color: #C3CCD4;
 }
-
+p {
+  font-size:2em;
+}
 .header-container,
 .body-container,
 .footer-container {
