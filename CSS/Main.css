@@ -1,17 +1,22 @@
 .GeneralDIV {
-  margin: 10px 10px 10px 10px;
-  /* border:1px solid #58A6FF; */
-  padding: 10px 10px 10px 10px;
+  /* margin: 10px 10px 10px 10px;
+  border:1px solid #58A6FF;
+  padding: 10px 10px 10px 10px; */
+  max-width: 1080px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+a {
+  color: #58A6FF;
 }
 
 body {
   font-family: Arial;
-  font-size: 32px;
+  font-size: calc(3vw);
+  text-align: center;
   background-color: #161b22;
   color: #C3CCD4;
-  max-width: 1080px;
-  margin: 0 auto !important;
-  float: none !important;
 }
 
 .header-container,
@@ -23,16 +28,7 @@ body {
 
 strong {
   color: #58A6FF;
-  font-weight: normal;
-}
-
-a {
-  color: #58A6FF;
-}
-
-p {
-  padding: 20px 20px 20px 20px;
-
+  font-size: 1.5em;
 }
 
 .pCenter {
@@ -42,37 +38,37 @@ p {
 li {
   text-align: left;
   list-style-position: inside;
-  padding: 20px 20px 20px 0px;
+  padding: 1em 1em 1em 0px;
 }
 
 table,
 tr,
 td {
-  border: 1px solid #58A6FF;
+  border: 0.05em solid #58A6FF;
   border-collapse: collapse;
 }
 
 .aPageName {
-  text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
+  text-shadow: 0px 0px 6em #58A6FF, 0 0 1em #214C87;
   text-align: center;
   color: #58A6FF;
-  padding: 20px 20px 20px 20px;
-  font-size: 100px !important;
+  padding: 1em 1em 1em 1em;
+  font-size: 6em !important;
   font-weight: bold;
   text-decoration: none;
   display: block;
 }
 
 .beautifullyFooter {
-  text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
+  text-shadow: 0px 0px 6em #58A6FF, 0 0 1em #214C87;
   color: #58A6FF;
-  font-size: 64px !important;
+  font-size: 4em !important;
   font-weight: bold;
 }
 
 .MyFooter {
   color: #276ebe;
-  font-size: 32px !important;
+  font-size: 2em !important;
   font-weight: normal;
   text-align: center;
 }
@@ -88,24 +84,24 @@ td {
   color: #58A6FF;
   background-color: #21262D;
   display: inline-block;
-  border: solid 4px #58A6FF;
-  border-radius: 30px;
+  border: solid 0.1em #58A6FF;
+  border-radius: 2em;
   text-align: center;
-  font-size: 120px;
+  font-size: 7em;
 }
 
 .GroupButton button {
   background-color: #21262D;
-  border: 2px solid #8B949E;
-  border-radius: 20px;
+  border: 0.05em solid #8B949E;
+  border-radius: 1em;
   /*закругленные углы*/
   color: #8B949E;
   width: 90%;
   align-items: center;
   font-size: 80px;
   text-align: center;
-  padding: 20px 10px 20px 10px;
-  margin: 0px 0px 10px 0px;
+  padding: 1em 0.7em 1em 0.7em;
+  margin: 0 0 0.7em 0;
   /*расположение от верха, правой стооны, низа и левой стооны*/
 }
 
@@ -123,7 +119,7 @@ td {
   right: 0;
   left: 0;
   top: 0;
-  padding: 0px 0px 100px 0px;
+  padding: 0 0 6em 0;
 }
 
 /* NAVBAR */
@@ -135,25 +131,25 @@ td {
 }
 
 .navbarDiv {
-  margin-top: 15px;
-  margin-right: 220px;
+  margin-top: 1em;
+  margin-right: 14em;
   float: right;
 }
 
 /*ESMA*/
 
 .beautifully {
-  text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
+  text-shadow: 0 0 5em #58A6FF, 0 0 1em #214C87;
   color: #58A6FF;
-  font-size: 90px !important;
+  font-size: 4em !important;
   font-weight: bold;
   text-align: center;
 }
 
 .beautifullySmal {
-  text-shadow: 0px 0px 100px #58A6FF, 0 0 1em #214C87;
+  text-shadow: 0 0 5em #58A6FF, 0 0 1em #214C87;
   color: #58A6FF;
-  font-size: 60px !important;
+  font-size: 4em !important;
   font-weight: bold;
   text-align: center;
 }
@@ -161,8 +157,8 @@ td {
 .beautifullyDate {
   color: #C3CCD4;
   text-align: center;
-  padding: 25px 10px 25px 10px;
-  font-size: 60px !important;
+  padding: 1.4em 0.8em 1.4em 0.8em;
+  font-size: 4em !important;
 }
 
 /* TABLES STYLE */
@@ -177,12 +173,12 @@ table {
 }
 
 table td {
-  border: 1px solid #58A6FF;
+  border: 0.05em solid #58A6FF;
   border-collapse: collapse;
-  font-size: 80px;
+  font-size: 5em;
   text-align: left;
   color: #C3CCD4;
-  padding: 20px 20px 20px 20px;
+  padding: 1em 1em 1em 1em;
 }
 
 /* CHEKBOX STYLE */
@@ -191,9 +187,12 @@ input[type="checkbox"]+label:before {
   content: "\1f497";
   float: right;
   font-family: FontAwesome;
-  font-size: 80px;
+  font-size: 5em;
 }
 
 input[type="checkbox"]:checked+label:before {
   content: "\1f49a";
 }
+
+@media screen and (min-width: 1081px) { 
+  body {font-size: calc(1080px*3/100);}
