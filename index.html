@@ -68,7 +68,7 @@
         <div id="DigerlDIV" class="DIVLabels">
           <p class="aPageName">DİGER</p>
           <button onclick="DigerFunction1()">SOSYAL MEDYA</button>
-          <button onclick="DigerFunction2()">ZİKİR UYGULAMASI</button>
+          <button onclick="DigerFunction2()">MOBİL UYGULAMALAR</button>
           <button onclick="DigerFunction3()">TAKVİM</button>
           <button onclick="DigerFunction4()">MİHR DERGİSİ</button>
           <button onclick="DigerFunction5()">YAZILI ESERLER</button>
@@ -158,7 +158,9 @@
             $('#MenuPageDIV').hide(); $('#MainPageDIV').show(); window.scrollTo(0, 0);
           }
           function DigerFunction2() {
-            window.open("https://play.google.com/store/apps/details?id=com.zikir.yap", "_blank");
+            $('.NamazDIVS').hide(); $('#ButtonMENU').show();
+            $('#DigerDIV2').show(); $('#DigerPageNameDIV2').show();
+            $('#MenuPageDIV').hide(); $('#MainPageDIV').show(); window.scrollTo(0, 0);
           }
           function DigerFunction3() {
             window.open("https://www.mihr.com/Home/Takvim", "_blank");
@@ -288,6 +290,11 @@
         <p></p>
         <a class="aPageName" href="https://mihr.com/kitaplar/457/dua-kitab?chapter=1729" target="_blank">
           MUTLULUK BU KANALLARDA!</a>
+      </div>
+      <div id="DigerPageNameDIV2" class="NamazDIVS" style="display: none">
+        <p></p>
+        <p></p>
+        MOBİL UYGULAMALAR
       </div>
       <div id="DigerPageNameDIV4" class="NamazDIVS" style="display: none">
         <p></p>
@@ -1975,6 +1982,17 @@
         <a href="https://www.facebook.com/ibrahimtvofficial" target="_blank">
           <i class="fa-brands fa-facebook"></i>  Facebook.com/ibrahimtvofficial</a><br>
         <br><br>
+      </div>
+
+      <!--  DİGER  --  MOBİL UYGULAMALAR  -->
+
+      <div id="DigerDIV2" style="display: none" class="NamazDIVS">
+        <br><br>
+        <img src="pict/zikr.png" style="height:32px;"><br>
+        <a href="https://play.google.com/store/apps/details?id=com.zikir.yap" target="_blank">
+          <i class="fa-brands fa-youtube"></i>  ZİKİR UYGULAMASI</a><br>
+        <br><br>
+ 
       </div>
 
       <!--  DİGER  --  MİHR DERGİSİ  -->
