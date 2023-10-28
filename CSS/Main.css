@@ -92,15 +92,15 @@ td {
 .GroupButton button {
   background-color: #21262D;
   border: 0.05em solid #8B949E;
-  border-radius: 1em;
+  border-radius: 0.5em;
   /*закругленные углы*/
   color: #8B949E;
   width: 90%;
   align-items: center;
-  font-size: 5em;
+  font-size: 2.7em;
   text-align: center;
-  padding: 1em 0.7em 1em 0.7em;
-  margin: 0 0 0.7em 0;
+  padding: 0.25em 0 0.25em 0;
+  margin: 0 0 0.2em 0;
   /*расположение от верха, правой стооны, низа и левой стооны*/
 }
 
