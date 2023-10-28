@@ -24,11 +24,15 @@
         </button>
         <script>
           function BtnMENU() {
-            ; (document.getElementById("MenuPageDIV").style.display = "block"),
-              (document.getElementById("MainPageDIV").style.display = "none"),
-              (document.getElementById("ButtonMENU").style.display = "none"),
-              window.scrollTo(0, 0)
-          }
+              // Hide the main page
+              document.getElementById("MainPageDIV").style.display = "none";
+              // Show the menu page
+              document.getElementById("MenuPageDIV").style.display = "block";
+              // Hide the menu button
+              document.getElementById("ButtonMENU").style.display = "none";
+              // Scroll to the top of the page
+              window.scrollTo(0, 0);
+            }
         </script>
       </nav>
     </div>
