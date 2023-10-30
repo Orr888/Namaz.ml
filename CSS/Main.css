@@ -19,7 +19,7 @@ body {
 }
 
 p {
-  font-size:2em;
+  font-size: 2em;
 }
 
 .header-container,
@@ -40,7 +40,7 @@ strong {
 li {
   text-align: left;
   list-style-position: inside;
-  font-size: 1.3em; 
+  font-size: 1.3em;
   /* padding: 1em 1em 1em 0px; */
 }
 
@@ -189,5 +189,7 @@ input[type="checkbox"]:checked+label:before {
   content: "\1f49a";
 }
 
-@media screen and (min-width: 1081px) { 
-  body {font-size: calc(1080px*3/100);}
+@media screen and (min-width: 1081px) {
+  body {
+    font-size: calc(1080px*3/100);
+  }
